@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="vi" id="html-root">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nhân Lực Quốc Dân — Tuyển dụng &amp; BPO Nhân sự quy mô lớn</title>
+<link rel="icon" type="image/png" href="logo-small.png">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+  :root {
+    --navy: #0B1F3A;
+    --navy-2: #13294B;
+    --navy-3: #1C3D6B;
+    --orange: #F2661D;
+    --amber: #FFA64D;
+    --paper: #F6F8FB;
+    --white: #FFFFFF;
+    --ink: #0F1B2D;
+    --slate: #4B5768;
+    --slate-2: #8592A6;
+    --line: rgba(255,255,255,0.14);
+    --line-dark: rgba(11,31,58,0.10);
+    --max: 1140px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; color: var(--ink); background: var(--paper); line-height: 1.55; -webkit-font-smoothing: antialiased; }
+  h1, h2, h3, .display { font-family: 'Manrope', sans-serif; font-weight: 700; letter-spacing: -0.01em; line-height: 1.15; text-wrap: balance; }
+  .title-lg { font-size: clamp(30px, 4vw, 40px); }
+  .wrap { max-width: var(--max); margin: 0 auto; padding: 0 32px; }
+  a { color: inherit; text-decoration: none; }
+  section { padding: 88px 0; }
+  .eyebrow { font-size: 13px; font-weight: 700; color: var(--orange); margin-bottom: 12px; }
+  .sec-head { max-width: 620px; margin-bottom: 44px; }
+  .sec-head h2 { font-size: clamp(28px, 4vw, 38px); }
+  .navy-text { color: var(--navy); }
+  .sec-head p { color: var(--slate); font-size: 16px; margin-top: 14px; }
+
+  /* ---------- NAV ---------- */
+  nav { position: sticky; top: 0; z-index: 50; background: rgba(246,248,251,0.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line-dark); }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .logo { display:flex; align-items:center; gap:10px; }
+  .logo-img { height: 32px; display: block; }
+  .logo-fallback { display: none; align-items: center; gap: 8px; }
+  .logo-fallback .stars { display:flex; gap:2px; }
+  .logo-fallback .stars svg { width: 12px; height:12px; fill: var(--orange); }
+  .logo-fallback .stars svg:nth-child(2) { width:15px; height:15px; }
+  .logo-fallback .word { font-family:'Manrope'; font-weight:800; font-size: 19px; color: var(--navy); letter-spacing: 0.01em; }
+  .navlinks { display:flex; gap: 26px; font-size: 14px; font-weight: 600; color: var(--slate); }
+  .navlinks a:hover { color: var(--orange); }
+  .nav-right { display:flex; align-items:center; gap: 16px; }
+  .lang-switch { display:flex; border: 1px solid var(--line-dark); border-radius: 100px; overflow: hidden; font-size: 12.5px; font-weight: 700; }
+  .lang-switch button { background: transparent; border: none; padding: 6px 12px; cursor: pointer; color: var(--slate-2); font-family: inherit; }
+  .lang-switch button.active { background: var(--navy); color: var(--white); }
+  .navcta { background: var(--orange); color: var(--white); padding: 9px 18px; border-radius: 4px; font-size: 14px; font-weight: 700; }
+  .navcta:hover { background: #d9550f; }
+  @media (max-width: 780px) { .navlinks { display: none; } .navcta { display: none; } }
+
+  /* ---------- HERO ---------- */
+  .hero { background: radial-gradient(ellipse 950px 520px at 78% 0%, var(--navy-3), var(--navy) 68%); color: var(--white); padding: 92px 0 80px; position: relative; overflow: hidden; }
+  .hero-grid { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+  .hero-text { flex: 1 1 540px; }
+  .hero-visual { flex: 0 0 400px; display: flex; justify-content: center; }
+  .hero-visual svg { width: 100%; max-width: 400px; height: auto; }
+  @media (max-width: 920px) { .hero-visual { display: none; } }
+  .rec { display:inline-flex; align-items:center; gap: 8px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.04em; color: var(--amber); margin-bottom: 26px; }
+  .rec .pulse { width: 7px; height: 7px; border-radius: 50%; background: var(--orange); animation: pulse 2s infinite; }
+  @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(242,102,29,0.55); } 70% { box-shadow: 0 0 0 8px rgba(242,102,29,0); } 100% { box-shadow: 0 0 0 0 rgba(242,102,29,0); } }
+  .hero h1 { font-size: clamp(34px, 4.8vw, 52px); max-width: 780px; }
+  .hero p.lead { font-family: 'Inter'; font-weight: 400; font-size: 17.5px; color: rgba(255,255,255,0.72); max-width: 540px; margin-top: 20px; }
+  .hero-ctas { display:flex; gap: 14px; margin-top: 34px; flex-wrap: wrap; }
+  .btn-primary { background: var(--orange); color: var(--white); font-weight: 700; font-size: 15px; padding: 13px 24px; border-radius: 4px; display:inline-block; border: none; cursor: pointer; font-family: inherit; }
+  .btn-primary:hover { background: #d9550f; }
+  .btn-ghost { border: 1px solid rgba(255,255,255,0.28); color: var(--white); font-weight: 700; font-size: 15px; padding: 13px 24px; border-radius: 4px; background: transparent; cursor: pointer; font-family: inherit; }
+  .btn-ghost:hover { border-color: var(--amber); color: var(--amber); }
+  .hero-tags { display:flex; gap: 10px; margin-top: 52px; flex-wrap: wrap; }
+  .tag { border: 1px solid var(--line); color: rgba(255,255,255,0.85); font-size: 13px; font-weight: 600; padding: 7px 14px; border-radius: 100px; }
+
+  /* ---------- STAT STRIP ---------- */
+  .stats { background: var(--navy); color: var(--white); border-top: 1px solid var(--line); }
+  .stats .wrap { display: grid; grid-template-columns: repeat(4, 1fr); padding: 28px 32px; }
+  .stat { padding: 0 20px; border-left: 1px solid var(--line); }
+  .stat:first-child { border-left: none; }
+  .stat .num { font-family:'Manrope'; font-size: 25px; font-weight: 800; color: var(--amber); }
+  .stat .label { font-size: 12.5px; color: rgba(255,255,255,0.62); margin-top: 4px; }
+  @media (max-width: 800px) { .stats .wrap { grid-template-columns: repeat(2, 1fr); row-gap: 22px; } .stat:nth-child(3) { border-left: none; } }
+
+  /* ---------- SERVICES ---------- */
+  .services-grid { display: flex; gap: 24px; flex-wrap: wrap; }
+  .services-grid .svc-card { flex: 1 1 360px; }
+  .svc-card { background: var(--white); border: 1px solid var(--line-dark); border-radius: 8px; padding: 34px 30px; }
+  .svc-eyebrow { font-family:'Manrope'; font-weight: 800; font-size: 13px; color: var(--orange); }
+  .svc-card h3 { font-size: 22px; margin-top: 10px; color: var(--navy); }
+  .svc-card p { font-size: 14.5px; color: var(--slate); margin-top: 12px; }
+  .svc-card ul { margin-top: 18px; padding-left: 0; list-style: none; }
+  .svc-card li { font-size: 13.5px; color: var(--ink); padding: 9px 0; border-top: 1px solid var(--line-dark); display:flex; gap:8px; }
+  .svc-card li::before { content: "—"; color: var(--orange); flex-shrink:0; }
+  .svc-note { margin-top: 28px; background: rgba(242,102,29,0.07); border: 1px solid rgba(242,102,29,0.22); border-radius: 8px; padding: 18px 22px; font-size: 14.5px; color: var(--navy); font-style: italic; }
+
+  /* ---------- WHY US ---------- */
+  .advantage { background: var(--navy); color: var(--white); }
+  .adv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+  .advantage .eyebrow { color: var(--amber); }
+  .adv-desc { margin-top: 16px; font-size: 16px; color: rgba(255,255,255,0.65); }
+  .advantage .sec-head p { color: rgba(255,255,255,0.65); }
+  .commit-box { margin-top: 22px; background: rgba(255,255,255,0.04); border: 1px solid var(--line); border-radius: 8px; padding: 22px 24px; font-size: 14.5px; color: rgba(255,255,255,0.72); }
+  .commit-box strong { color: var(--white); }
+  .value-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 22px; }
+  .value-item { display:flex; gap: 14px; align-items:flex-start; }
+  .value-num { font-family:'Manrope'; font-weight: 800; font-size: 14px; color: var(--navy); background: var(--amber); width: 28px; height: 28px; border-radius: 50%; display:flex; align-items:center; justify-content:center; flex-shrink: 0; }
+  .value-item p { font-size: 14px; color: rgba(255,255,255,0.85); line-height: 1.4; padding-top: 4px; }
+  @media (max-width: 860px) { .adv-grid { grid-template-columns: 1fr; gap: 36px; } .value-grid { grid-template-columns: 1fr; } }
+
+  /* ---------- PIPELINE ---------- */
+  .pipeline-steps { display: flex; position: relative; gap: 0; }
+  .pipeline-steps::before { content: ""; position: absolute; top: 22px; left: 0; right: 0; height: 2px; background: var(--line-dark); z-index: 0; }
+  .step-item { flex: 1; position: relative; z-index: 1; padding-right: 18px; }
+  .step-circle {
+    width: 44px; height: 44px; border-radius: 50%; background: var(--navy); color: var(--white);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Manrope'; font-weight: 800; font-size: 16px; margin-bottom: 18px;
+  }
+  .step-item h3 { font-size: 15px; color: var(--navy); }
+  .step-item p { font-size: 13px; color: var(--slate); margin-top: 7px; line-height: 1.5; }
+  @media (max-width: 860px) {
+    .pipeline-steps { flex-direction: column; gap: 26px; }
+    .pipeline-steps::before { top: 0; bottom: 0; left: 21px; right: auto; width: 2px; height: auto; }
+    .step-item { display: flex; gap: 18px; padding-right: 0; }
+    .step-circle { margin-bottom: 0; flex-shrink: 0; }
+  }
+  .pipe-benefits { margin-top: 44px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+  .pipe-benefit { font-size: 12.5px; color: var(--slate); background: var(--white); border: 1px solid var(--line-dark); border-radius: 6px; padding: 12px 14px; line-height: 1.4; }
+  @media (max-width: 900px) { .pipe-benefits { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .pipe-benefits { grid-template-columns: 1fr; } }
+
+  .bpo-note { margin-top: 40px; background: var(--white); border: 1px solid var(--line-dark); border-radius: 8px; padding: 26px 28px; display:flex; gap: 28px; flex-wrap: wrap; }
+  .bpo-note-text { flex: 1 1 220px; }
+  .bpo-note-text h3 { font-size: 17px; color: var(--navy); }
+  .bpo-note-text p { font-size: 13.5px; color: var(--slate); margin-top: 8px; }
+  .bpo-commit-list { flex: 2 1 320px; display:grid; grid-template-columns: 1fr 1fr; gap: 10px 20px; }
+  .bpo-commit-list div { font-size: 13px; color: var(--ink); padding: 9px 0 9px 16px; border-left: 2px solid var(--orange); }
+  @media (max-width: 640px) { .bpo-commit-list { grid-template-columns: 1fr; } }
+
+  /* ---------- CAPACITY (carousel) ---------- */
+  .case-carousel-wrap { position: relative; }
+  .case-slide { display: none; }
+  .case-slide.active { display: flex; }
+  .case-card {
+    display: flex; align-items: stretch; gap: 0; width: 100%;
+    background: var(--white); border: 1px solid var(--line-dark); border-radius: 10px; overflow: hidden;
+  }
+  .case-body { padding: 40px; flex: 1 1 52%; display: flex; flex-direction: column; justify-content: center; }
+  .case-img {
+    flex: 1 1 44%; width: 100%; align-self: center;
+    aspect-ratio: 4 / 3; height: auto; max-height: 320px;
+    object-fit: cover; display: block; background: var(--navy-3);
+  }
+  .case-tag { font-size: 12px; font-weight: 700; letter-spacing: 0.02em; color: var(--orange); }
+  .case-card h3 { font-size: 21px; margin-top: 12px; color: var(--navy); }
+  .case-card p { font-size: 14.5px; color: var(--slate); margin-top: 12px; }
+  .case-stats { display:flex; gap: 28px; margin-top: 22px; padding-top: 20px; border-top: 1px solid var(--line-dark); }
+  .case-stat .num { font-family:'Manrope'; font-size: 21px; font-weight: 800; color: var(--navy); }
+  .case-stat .label { font-size: 12px; color: var(--slate-2); margin-top: 4px; }
+  .case-nav { display:flex; align-items:center; justify-content: space-between; margin-bottom: 20px; }
+  .case-dots { display:flex; gap: 8px; }
+  .case-dots span { width: 8px; height: 8px; border-radius: 50%; background: var(--line-dark); cursor: pointer; }
+  .case-dots span.active { background: var(--orange); }
+  .case-nav-btns { display:flex; gap: 10px; }
+  .case-nav-btns button {
+    width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line-dark);
+    background: var(--white); cursor: pointer; font-size: 16px; color: var(--navy);
+  }
+  .case-nav-btns button:hover { border-color: var(--orange); color: var(--orange); }
+  @media (max-width: 760px) { .case-card { flex-direction: column; } .case-img { max-height: none; aspect-ratio: 16 / 9; } }
+
+  .capacity-tags-row { margin-top: 44px; padding-top: 32px; border-top: 1px solid var(--line-dark); }
+  .capacity-tags-title { font-size: 13px; font-weight: 700; color: var(--slate-2); text-transform: none; margin-bottom: 14px; }
+  .capacity-tags { display:flex; gap: 10px; flex-wrap: wrap; margin-bottom: 30px; }
+  .capacity-tags:last-child { margin-bottom: 0; }
+  .capacity-tag { border: 1px solid var(--line-dark); color: var(--navy); font-size: 13px; font-weight: 600; padding: 7px 14px; border-radius: 100px; background: var(--white); }
+
+  /* ---------- PARTNERS ---------- */
+  .partners-head { margin-bottom: 40px; }
+  .partners-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 26px 18px; align-items: center; justify-items: center;
+    background: var(--white); border: 1px solid var(--line-dark);
+    border-radius: 16px; padding: 32px 20px;
+  }
+  .partners-grid img { max-height: 36px; width: auto; max-width: 100%; object-fit: contain; filter: grayscale(15%); }
+  @media (min-width: 560px) { .partners-grid { grid-template-columns: repeat(4, 1fr); } }
+  @media (min-width: 860px) { .partners-grid { grid-template-columns: repeat(6, 1fr); gap: 30px 22px; padding: 38px; } .partners-grid img { max-height: 42px; } }
+
+  /* ---------- CTA + FORM ---------- */
+  .cta { background: radial-gradient(ellipse 720px 420px at 25% 30%, var(--navy-3), var(--navy) 75%); color: var(--white); }
+  .cta-grid { display: flex; gap: 56px; align-items: center; }
+  .cta-text { flex: 1 1 380px; }
+  .cta-text h2 { font-size: clamp(26px, 3.4vw, 36px); }
+  .cta-text p { color: rgba(255,255,255,0.65); margin-top: 16px; font-size: 16px; }
+  .cta-contact-list { margin-top: 28px; display:flex; flex-direction:column; gap:10px; }
+  .cta-contact-list a { font-size: 14.5px; color: rgba(255,255,255,0.85); font-weight: 600; }
+  .cta-contact-list a:hover { color: var(--amber); }
+  .lead-form { flex: 1 1 440px; max-width: 480px; margin: 0; background: rgba(255,255,255,0.04); border: 1px solid var(--line); border-radius: 10px; padding: 32px; }
+  @media (max-width: 860px) {
+    .cta-grid { flex-direction: column; align-items: stretch; gap: 32px; }
+    .cta-text { flex: unset; }
+    .lead-form { max-width: 100%; width: 100%; flex: unset; }
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-field { margin-bottom: 18px; }
+  .form-field label { display:block; font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.75); margin-bottom: 7px; }
+  .form-field input, .form-field textarea, .form-field select {
+    width: 100%; background: rgba(255,255,255,0.06); border: 1px solid var(--line); border-radius: 5px;
+    padding: 11px 13px; color: var(--white); font-family: inherit; font-size: 14.5px;
+  }
+  .form-field select option { color: var(--ink); }
+  .form-field input::placeholder, .form-field textarea::placeholder { color: rgba(255,255,255,0.35); }
+  .form-field input:focus, .form-field textarea:focus, .form-field select:focus { outline: none; border-color: var(--amber); }
+  .form-field textarea { resize: vertical; min-height: 90px; }
+  .form-submit { width: 100%; margin-top: 6px; padding: 14px; font-size: 15px; }
+  .form-note { font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 14px; text-align: center; }
+  @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+
+  /* ---------- FOOTER ---------- */
+  footer { background: var(--navy); color: rgba(255,255,255,0.55); padding: 52px 0 28px; font-size: 13.5px; border-top: 1px solid rgba(255,255,255,0.14); }
+  .footer-grid { display: grid; grid-template-columns: 1.3fr 1fr 1fr; gap: 40px; padding-bottom: 34px; border-bottom: 1px solid var(--line); }
+  .footer-brand .logo { color: var(--white); margin-bottom: 12px; }
+  .footer-brand p { color: rgba(255,255,255,0.5); max-width: 300px; line-height: 1.6; }
+  .footer-col h4 { font-size: 12.5px; color: rgba(255,255,255,0.8); font-weight: 700; margin-bottom: 14px; letter-spacing: 0.02em; }
+  .footer-col div { margin-bottom: 9px; }
+  .footer-col a:hover { color: var(--amber); }
+  .footer-branch { padding-bottom: 12px; margin-bottom: 12px; border-bottom: 1px dashed rgba(255,255,255,0.12); }
+  .footer-branch:last-child { border-bottom: none; }
+  .footer-branch .b-name { color: rgba(255,255,255,0.82); font-weight: 600; font-size: 13px; }
+  .footer-branch .b-addr { font-size: 12.5px; margin-top: 2px; color: rgba(255,255,255,0.5); }
+  .footer-qr-row { display: flex; gap: 20px; margin-top: 16px; }
+  .footer-qr { text-align: center; }
+  .footer-qr img { width: 84px; height: 84px; border-radius: 6px; background: var(--white); padding: 5px; display: block; }
+  .footer-qr .qr-label { font-size: 11px; color: rgba(255,255,255,0.55); margin-top: 6px; }
+  .footer-bottom { display:flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; padding-top: 22px; font-size: 12px; color: rgba(255,255,255,0.4); }
+  @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr; gap: 28px; } }
+
+  /* ---------- FLOATING CALL BUTTON ---------- */
+  .float-phone {
+    position: fixed; bottom: 26px; right: 26px; width: 58px; height: 58px; border-radius: 50%;
+    background: var(--orange); display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 10px 28px rgba(242,102,29,0.5); z-index: 999; color: var(--white);
+  }
+  .float-phone svg { width: 26px; height: 26px; }
+  .float-phone-ring {
+    position: absolute; inset: 0; border-radius: 50%; background: var(--orange);
+    opacity: 0.55; animation: floatring 1.8s ease-out infinite;
+  }
+  @keyframes floatring { 0% { transform: scale(1); opacity: 0.55; } 100% { transform: scale(1.7); opacity: 0; } }
+
+  @media (prefers-reduced-motion: reduce) { .pulse { animation: none; } .float-phone-ring { animation: none; display:none; } html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<nav>
+  <div class="wrap">
+    <a href="#" class="logo">
+      <!-- Thay logo.png bằng logo thật (SVG/PNG, cao ~32px). Nếu thiếu file sẽ tự hiện chữ thay thế. -->
+      <img src="logo.png" alt="Nhân Lực Quốc Dân" class="logo-img" onerror="var w=this.closest('.logo'); this.remove(); w.querySelector('.logo-fallback').style.display='flex'">
+      <span class="logo-fallback">
+        <span class="stars">
+          <svg viewBox="0 0 24 24"><path d="M12 1l2.9 6.9L22 9l-5.5 4.8L18 21l-6-3.9L6 21l1.5-7.2L2 9l7.1-1.1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 1l2.9 6.9L22 9l-5.5 4.8L18 21l-6-3.9L6 21l1.5-7.2L2 9l7.1-1.1z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 1l2.9 6.9L22 9l-5.5 4.8L18 21l-6-3.9L6 21l1.5-7.2L2 9l7.1-1.1z"/></svg>
+        </span>
+        <span class="word">QUỐC DÂN</span>
+      </span>
+    </a>
+    <div class="navlinks">
+      <a href="#services" data-i18n="nav.services">Dịch vụ</a>
+      <a href="#why" data-i18n="nav.why">Vì sao chọn chúng tôi</a>
+      <a href="#pipeline" data-i18n="nav.pipeline">Quy trình</a>
+      <a href="#capacity" data-i18n="nav.capacity">Năng lực</a>
+      <a href="#partners" data-i18n="nav.partners">Khách hàng</a>
+    </div>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button id="lang-vi" class="active" onclick="setLang('vi')">VI</button>
+        <button id="lang-en" onclick="setLang('en')">EN</button>
+      </div>
+      <a class="navcta" href="#contact" data-i18n="nav.cta">Liên hệ ngay</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <div class="rec"><span class="pulse"></span><span data-i18n="hero.eyebrow">TUYỂN DỤNG &amp; BPO NHÂN SỰ — MIỀN BẮC VIỆT NAM</span></div>
+      <h1 data-i18n="hero.headline">Nhân lực quy mô lớn, triển khai nhanh, vận hành ổn định</h1>
+      <p class="lead" data-i18n="hero.sub">Nhân Lực Quốc Dân tuyển dụng và cung ứng nhân sự cho doanh nghiệp sản xuất, đồng thời vận hành BPO thuê ngoài tại các nhà máy, khu công nghiệp và khu đô thị.</p>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="#contact" data-i18n="hero.cta1">Nhận tư vấn tuyển dụng</a>
+        <a class="btn-ghost" href="#services" data-i18n="hero.cta2">Xem dịch vụ</a>
+      </div>
+      <div class="hero-tags">
+        <span class="tag" data-i18n="hero.tag1">Tuyển dụng lao động</span>
+        <span class="tag" data-i18n="hero.tag2">BPO — Thuê ngoài vận hành</span>
+        <span class="tag" data-i18n="hero.tag3">Cung ứng 50–2.000 nhân sự</span>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 440 440" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="220" cy="220" r="170" fill="none" stroke="#FFFFFF" stroke-opacity="0.10" stroke-width="1.5"/>
+        <circle cx="220" cy="220" r="120" fill="none" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="1.5"/>
+        <!-- network lines connecting branch nodes -->
+        <line x1="220" y1="220" x2="220" y2="100" stroke="#F2661D" stroke-opacity="0.55" stroke-width="1.5"/>
+        <line x1="220" y1="220" x2="330" y2="170" stroke="#F2661D" stroke-opacity="0.55" stroke-width="1.5"/>
+        <line x1="220" y1="220" x2="335" y2="300" stroke="#F2661D" stroke-opacity="0.55" stroke-width="1.5"/>
+        <line x1="220" y1="220" x2="150" y2="330" stroke="#F2661D" stroke-opacity="0.55" stroke-width="1.5"/>
+        <line x1="220" y1="220" x2="105" y2="250" stroke="#F2661D" stroke-opacity="0.55" stroke-width="1.5"/>
+        <!-- hub -->
+        <circle cx="220" cy="220" r="34" fill="#13294B" stroke="#FFA64D" stroke-width="1.5"/>
+        <text x="220" y="216" fill="#FFA64D" font-family="Manrope, sans-serif" font-weight="800" font-size="11" text-anchor="middle">TRỤ SỞ</text>
+        <text x="220" y="230" fill="#FFFFFF" font-family="Manrope, sans-serif" font-weight="800" font-size="11" text-anchor="middle">HÀ NỘI</text>
+        <!-- branch nodes -->
+        <circle cx="220" cy="100" r="7" fill="#FFA64D"/>
+        <text x="220" y="82" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill-opacity="0.85">Hải Dương</text>
+        <circle cx="330" cy="170" r="7" fill="#FFA64D"/>
+        <text x="345" y="160" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="12" fill-opacity="0.85">Hải Phòng</text>
+        <circle cx="335" cy="300" r="7" fill="#FFA64D"/>
+        <text x="350" y="305" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="12" fill-opacity="0.85">Thái Bình</text>
+        <circle cx="150" cy="330" r="7" fill="#FFA64D"/>
+        <text x="150" y="356" fill="#FFFFFF" font-family="Inter, sans-serif" font-size="12" text-anchor="middle" fill-opacity="0.85">Hưng Yên</text>
+        <circle cx="105" cy="250" r="5" fill="#FFA64D" fill-opacity="0.7"/>
+        <!-- badge stars, echoing brand mark -->
+        <g transform="translate(60,54)">
+          <path d="M-14 -4 L-11.5 2 L-16 5.6 L-10.3 5.6 L-8.4 11.4 L-6 5.6 L0 5.6 L-4.8 2 L-2.6 -4 L-8.4 0 Z" fill="#FFA64D"/>
+          <path d="M14 -8 L17.4 0 L26 2.5 L18.8 8 L21 17 L14 11.6 L7 17 L9.2 8 L2 2.5 L10.6 0 Z" fill="#F2661D"/>
+          <path d="M38 -2 L40.5 4 L45 7.6 L39.3 7.6 L41.2 13.4 L38 7.6 L32 7.6 L36.8 4 L34.6 -2 L40.4 2 Z" fill="#FFA64D"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<!-- ============ STATS ============ -->
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><div class="num">120.000+</div><div class="label" data-i18n="stats.label1">Ứng viên đã tiếp cận (khối kỹ thuật)</div></div>
+    <div class="stat"><div class="num">10.000+</div><div class="label" data-i18n="stats.label2">Ứng viên tuyển dụng thành công</div></div>
+    <div class="stat"><div class="num">50–2.000</div><div class="label" data-i18n="stats.label3">Nhân sự triển khai mỗi đợt</div></div>
+    <div class="stat"><div class="num">05</div><div class="label" data-i18n="stats.label4">Tỉnh/thành có mạng lưới hoạt động</div></div>
+  </div>
+</div>
+
+<!-- ============ SERVICES ============ -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" data-i18n="services.eyebrow">Dịch vụ</div>
+      <h2 class="navy-text" data-i18n="services.title">Hai dịch vụ cốt lõi, một cam kết chất lượng</h2>
+      <p data-i18n="services.sub">Triển khai linh hoạt theo nhu cầu vận hành thực tế của từng doanh nghiệp — từ một đợt tuyển dụng đến vận hành trọn gói.</p>
+    </div>
+    <div class="services-grid">
+      <div class="svc-card">
+        <div class="svc-eyebrow" data-i18n="svc1.eyebrow">01</div>
+        <h3 data-i18n="svc1.title">Tuyển Dụng Lao Động</h3>
+        <p data-i18n="svc1.desc">Chúng tôi làm tuyển dụng theo hướng bài bản, minh bạch và có trách nhiệm, tập trung tuyển đúng người phù hợp với công việc và môi trường doanh nghiệp.</p>
+        <ul>
+          <li data-i18n="svc1.b1">Từ vị trí cấp cao, khối văn phòng đến kỹ thuật, kỹ sư, lao động phổ thông</li>
+          <li data-i18n="svc1.b2">Cung ứng 50–2.000 nhân sự cho doanh nghiệp trong thời gian ngắn</li>
+          <li data-i18n="svc1.b3">Quy trình 5 bước minh bạch, tuân thủ quy định pháp lý</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <div class="svc-eyebrow" data-i18n="svc2.eyebrow">02</div>
+        <h3 data-i18n="svc2.title">BPO — Thuê Ngoài Vận Hành</h3>
+        <p data-i18n="svc2.desc">Giải pháp vận hành thuê ngoài trọn gói cho nhà máy và doanh nghiệp sản xuất. Chúng tôi trực tiếp tuyển dụng, quản lý, thay thế nhân sự và vận hành theo KPI đã thống nhất.</p>
+        <ul>
+          <li data-i18n="svc2.b1">Hỗ trợ dây chuyền, cấp phát vật tư, picking &amp; logistics nội bộ</li>
+          <li data-i18n="svc2.b2">Sorting &amp; rework theo dự án; 5S &amp; vệ sinh cảnh quan khu vực</li>
+          <li data-i18n="svc2.b3">Đảm bảo sản xuất ổn định, liên tục theo KPI đã thống nhất</li>
+        </ul>
+      </div>
+    </div>
+    <div class="svc-note" data-i18n="svc.note">"Nhân Lực Quốc Dân hỗ trợ vận hành khu đô thị, khu công nghiệp, nhà máy hoạt động dịch vụ, sản xuất cốt lõi — không thay thế hoạt động chính."</div>
+  </div>
+</section>
+
+<!-- ============ WHY US ============ -->
+<section class="advantage" id="why">
+  <div class="wrap">
+    <div class="adv-grid">
+      <div>
+        <div class="eyebrow" data-i18n="why.eyebrow">Vì sao chọn Nhân Lực Quốc Dân</div>
+        <h2 class="title-lg" data-i18n="why.title">Lấy kết quả tuyển dụng làm cam kết, không chỉ quy trình</h2>
+        <p class="adv-desc" data-i18n="why.body">Chúng tôi cam kết huy động tối đa nguồn lực để cung cấp các giải pháp nhân sự chất lượng cao, phù hợp và tạo giá trị cho khách hàng. Mọi hoạt động được triển khai trách nhiệm, chính trực, minh bạch, cùng tinh thần đồng hành lâu dài.</p>
+        <div class="commit-box">
+          <strong data-i18n="why.visionLabel">Tầm nhìn.</strong> <span data-i18n="why.visionText">Trở thành đơn vị cung ứng nhân lực uy tín và hàng đầu, đóng vai trò cầu nối hiệu quả giữa doanh nghiệp và người lao động.</span><br><br>
+          <strong data-i18n="why.missionLabel">Sứ mệnh.</strong> <span data-i18n="why.missionText">Cung cấp giải pháp tuyển dụng phù hợp với nhu cầu thực tế của doanh nghiệp, góp phần xây dựng đội ngũ nhân sự ổn định và hiệu quả.</span>
+        </div>
+      </div>
+      <div class="value-grid">
+        <div class="value-item"><span class="value-num">01</span><p data-i18n="why.v1">Hệ sinh thái đa dạng hỗ trợ phát triển nguồn lực</p></div>
+        <div class="value-item"><span class="value-num">02</span><p data-i18n="why.v2">Khả năng đáp ứng nhanh nhu cầu tuyển dụng</p></div>
+        <div class="value-item"><span class="value-num">03</span><p data-i18n="why.v3">Triển khai quy mô lớn với tiến độ rõ ràng</p></div>
+        <div class="value-item"><span class="value-num">04</span><p data-i18n="why.v4">Ứng dụng công nghệ và khai thác dữ liệu lớn</p></div>
+        <div class="value-item"><span class="value-num">05</span><p data-i18n="why.v5">Am hiểu thị trường lao động và đặc thù từng ngành</p></div>
+        <div class="value-item"><span class="value-num">06</span><p data-i18n="why.v6">Cam kết bằng kết quả tuyển dụng, không chỉ quy trình</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PIPELINE ============ -->
+<section id="pipeline">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow" data-i18n="pipeline.eyebrow">Quy trình</div>
+      <h2 class="navy-text" data-i18n="pipeline.title">Quy trình tuyển dụng 5 bước, minh bạch từ đầu đến cuối</h2>
+      <p data-i18n="pipeline.sub">Một quy trình rõ ràng, có thể mở rộng — từ một vị trí đơn lẻ đến chương trình tuyển dụng quy mô lớn.</p>
+    </div>
+    <div class="pipeline-steps">
+      <div class="step-item">
+        <div class="step-circle">1</div>
+        <h3 data-i18n="pipeline.step1title">Tìm kiếm &amp; tư vấn</h3>
+        <p data-i18n="pipeline.step1desc">Tiếp nhận yêu cầu tuyển dụng và tư vấn phương án phù hợp với vị trí, quy mô và thời gian triển khai.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-circle">2</div>
+        <h3 data-i18n="pipeline.step2title">Sàng lọc &amp; đánh giá</h3>
+        <p data-i18n="pipeline.step2desc">Sàng lọc hồ sơ và đánh giá năng lực ứng viên theo đúng tiêu chí doanh nghiệp yêu cầu.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-circle">3</div>
+        <h3 data-i18n="pipeline.step3title">Phỏng vấn sơ bộ</h3>
+        <p data-i18n="pipeline.step3desc">Phỏng vấn sơ bộ để xác nhận sự phù hợp trước khi gửi hồ sơ cho khách hàng.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-circle">4</div>
+        <h3 data-i18n="pipeline.step4title">Gửi hồ sơ ứng viên</h3>
+        <p data-i18n="pipeline.step4desc">Gửi hồ sơ ứng viên phù hợp cho khách hàng để tiến hành các bước tiếp theo.</p>
+      </div>
+      <div class="step-item">
+        <div class="step-circle">5</div>
+        <h3 data-i18n="pipeline.step5title">Báo cáo hiệu quả</h3>
+        <p data-i18n="pipeline.step5desc">Báo cáo hiệu quả tuyển dụng cho khách hàng, minh bạch và dễ theo dõi.</p>
+      </div>
+    </div>
+    <div class="pipe-benefits">
+      <div class="pipe-benefit" data-i18n="pipeline.benefit1">Tiết kiệm thời gian và chi phí tuyển dụng</div>
+      <div class="pipe-benefit" data-i18n="pipeline.benefit2">Tiếp cận nguồn ứng viên phù hợp theo yêu cầu</div>
+      <div class="pipe-benefit" data-i18n="pipeline.benefit3">Quy trình minh bạch, tuân thủ quy định pháp lý</div>
+      <div class="pipe-benefit" data-i18n="pipeline.benefit4">Dễ dàng theo dõi và đánh giá hiệu quả tuyển dụng</div>
+      <div class="pipe-benefit" data-i18n="pipeline.benefit5">Đảm bảo chất lượng nhân sự và hiệu quả sau tuyển</div>
+    </div>
+
+    <div class="bpo-note">
+      <div class="bpo-note-text">
+        <h3 data-i18n="bpo.title">Mô hình vận hành BPO</h3>
+        <p data-i18n="bpo.sub">Tuyển dụng &amp; đào tạo — Team Leader onsite chuyên trách — kiểm soát nhân lực hàng ngày — vận hành dựa trên KPI — báo cáo minh bạch.</p>
+      </div>
+      <div class="bpo-commit-list">
+        <div data-i18n="bpo.c1">Phạm vi &amp; trách nhiệm rõ ràng</div>
+        <div data-i18n="bpo.c2">Thay thế nhân sự trong thời gian đã thống nhất</div>
+        <div data-i18n="bpo.c3">Giám sát vận hành trực tiếp tại nhà máy, khu công nghiệp</div>
+        <div data-i18n="bpo.c4">Tuân thủ nội quy &amp; yêu cầu audit của nhà máy</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAPACITY ============ -->
+<section id="capacity" style="background:var(--white)">
+  <div class="wrap">
+    <div class="sec-head" style="margin-bottom:24px">
+      <div class="eyebrow" data-i18n="capacity.eyebrow">Năng lực tuyển dụng</div>
+      <h2 class="navy-text" data-i18n="capacity.title">Năng lực đã được chứng minh qua thực tế triển khai</h2>
+    </div>
+    <div class="case-carousel-wrap">
+      <div class="case-nav">
+        <div class="case-dots" id="case-dots">
+          <span class="active" onclick="showCase(0)"></span>
+          <span onclick="showCase(1)"></span>
+        </div>
+        <div class="case-nav-btns">
+          <button type="button" aria-label="Previous" onclick="showCase(caseIndex-1)">‹</button>
+          <button type="button" aria-label="Next" onclick="showCase(caseIndex+1)">›</button>
+        </div>
+      </div>
+      <div class="case-slide active" data-case-slide="0">
+        <div class="case-card">
+          <div class="case-body">
+            <div class="case-tag" data-i18n="case1.tag">TUYỂN DỤNG CẤP ĐIỀU HÀNH &amp; KỸ THUẬT</div>
+            <h3 data-i18n="case1.title">Tuyển dụng đội ngũ điều hành và khối kỹ thuật</h3>
+            <p data-i18n="case1.desc">Đã và đang tuyển dụng các vị trí cấp cao như Giám đốc điều hành, Trưởng phòng cấp cao và Kỹ sư trưởng — đồng thời tiếp cận nguồn ứng viên khối kỹ thuật lớn, đáp ứng đúng yêu cầu của doanh nghiệp.</p>
+            <div class="case-stats">
+              <div class="case-stat"><div class="num">120.000+</div><div class="label" data-i18n="case1.stat1">Ứng viên đã tiếp cận</div></div>
+              <div class="case-stat"><div class="num">Cấp cao</div><div class="label" data-i18n="case1.stat2">Giám đốc, trưởng phòng, kỹ sư trưởng</div></div>
+            </div>
+          </div>
+          <!-- Thay bằng ảnh dự án thật -->
+          <img class="case-img" src="case-tuyendung.jpg" alt="Tuyển dụng đội ngũ điều hành và kỹ thuật">
+        </div>
+      </div>
+      <div class="case-slide" data-case-slide="1">
+        <div class="case-card">
+          <div class="case-body">
+            <div class="case-tag" data-i18n="case2.tag">HỢP TÁC DOANH NGHIỆP LỚN</div>
+            <h3 data-i18n="case2.title">Hợp tác hiệu quả với nhiều doanh nghiệp lớn</h3>
+            <p data-i18n="case2.desc">Là đối tác tin cậy của nhiều doanh nghiệp lớn trong lĩnh vực điện tử, sản xuất, năng lượng và logistics — đã tuyển dụng thành công hàng nghìn ứng viên xuất sắc hiện đang cống hiến tại các doanh nghiệp.</p>
+            <div class="case-stats">
+              <div class="case-stat"><div class="num">10.000+</div><div class="label" data-i18n="case2.stat1">Ứng viên tuyển dụng thành công</div></div>
+              <div class="case-stat"><div class="num">50–2.000</div><div class="label" data-i18n="case2.stat2">Nhân sự mỗi đợt triển khai</div></div>
+            </div>
+          </div>
+          <!-- Thay bằng ảnh dự án thật -->
+          <img class="case-img" src="case-bpo.jpg" alt="Hợp tác với doanh nghiệp sản xuất lớn">
+        </div>
+      </div>
+    </div>
+
+    <div class="capacity-tags-row">
+      <div class="capacity-tags-title" data-i18n="capacity.industriesTitle">Ngành dịch vụ trọng điểm</div>
+      <div class="capacity-tags">
+        <span class="capacity-tag" data-i18n="capacity.ind1">Linh kiện điện tử</span>
+        <span class="capacity-tag" data-i18n="capacity.ind2">Công nghiệp nặng</span>
+        <span class="capacity-tag" data-i18n="capacity.ind3">Năng lượng</span>
+        <span class="capacity-tag" data-i18n="capacity.ind4">Logistics</span>
+        <span class="capacity-tag" data-i18n="capacity.ind5">May mặc và giày da</span>
+      </div>
+      <div class="capacity-tags-title" data-i18n="capacity.positionsTitle">Vị trí tuyển dụng tiêu biểu</div>
+      <div class="capacity-tags">
+        <span class="capacity-tag" data-i18n="capacity.pos1">Công nhân sản xuất</span>
+        <span class="capacity-tag" data-i18n="capacity.pos2">Vận hành xe nâng</span>
+        <span class="capacity-tag" data-i18n="capacity.pos3">Đóng gói / bốc xếp</span>
+        <span class="capacity-tag" data-i18n="capacity.pos4">Kiểm thử</span>
+        <span class="capacity-tag" data-i18n="capacity.pos5">Vệ sinh môi trường</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARTNERS ============ -->
+<section id="partners" style="background:var(--paper); padding-top:76px; padding-bottom:76px;">
+  <div class="wrap">
+    <div class="partners-head">
+      <div class="eyebrow" data-i18n="partners.eyebrow">Khách hàng &amp; đối tác</div>
+      <h2 class="title-lg navy-text" data-i18n="partners.title">Đồng hành cùng các doanh nghiệp và tổ chức hàng đầu</h2>
+    </div>
+    <div class="partners-grid" id="partners-grid"></div>
+  </div>
+</section>
+
+<!-- ============ CTA + LEAD FORM ============ -->
+<section class="cta" id="contact">
+  <div class="wrap cta-grid">
+    <div class="cta-text">
+      <h2 data-i18n="cta.title">Tìm hiểu giải pháp nhân sự cho doanh nghiệp của bạn</h2>
+      <p data-i18n="cta.sub">Chia sẻ nhu cầu của bạn — chúng tôi phản hồi trong 1–2 ngày làm việc.</p>
+      <div class="cta-contact-list">
+        <a href="tel:+84983294529">📞 0983 294 529</a>
+        <a href="mailto:nhanlucquocdan@gmail.com">✉️ nhanlucquocdan@gmail.com</a>
+      </div>
+    </div>
+
+    <!--
+      Form nhận yêu cầu — gửi tới Google Apps Script Web App, ghi mỗi lượt gửi
+      thành một dòng mới trong Google Sheet. Thay GAS_WEB_APP_URL bên dưới
+      bằng URL Apps Script bạn tự deploy (xem hướng dẫn trong SETUP.md).
+    -->
+    <form class="lead-form" id="lead-form" onsubmit="return submitLeadForm(event)">
+      <div class="form-row">
+        <div class="form-field">
+          <label data-i18n="form.name">Họ và tên</label>
+          <input type="text" name="name" data-i18n-ph="form.namePh" placeholder="Nguyễn Văn A" required>
+        </div>
+        <div class="form-field">
+          <label data-i18n="form.company">Công ty</label>
+          <input type="text" name="company" data-i18n-ph="form.companyPh" placeholder="Tên công ty của bạn" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label data-i18n="form.email">Email công việc</label>
+          <input type="email" name="email" data-i18n-ph="form.emailPh" placeholder="ban@congty.com" required>
+        </div>
+        <div class="form-field">
+          <label data-i18n="form.phone">Số điện thoại</label>
+          <input type="tel" name="phone" data-i18n-ph="form.phonePh" placeholder="+84 ...">
+        </div>
+      </div>
+      <div class="form-field">
+        <label data-i18n="form.service">Bạn quan tâm dịch vụ nào?</label>
+        <select name="service">
+          <option data-i18n="form.serviceOpt1">Tuyển dụng lao động</option>
+          <option data-i18n="form.serviceOpt2">BPO — Thuê ngoài vận hành</option>
+          <option data-i18n="form.serviceOpt3">Cả hai / Chưa rõ</option>
+        </select>
+      </div>
+      <div class="form-field">
+        <label data-i18n="form.message">Chia sẻ về nhu cầu của bạn</label>
+        <textarea name="message" data-i18n-ph="form.messagePh" placeholder="Vị trí cần tuyển, số lượng, thời gian, địa điểm làm việc..." required></textarea>
+      </div>
+      <button type="submit" class="btn-primary form-submit" id="lead-form-submit" data-i18n="form.submit">Gửi yêu cầu</button>
+      <div class="form-note" id="lead-form-note" data-i18n="form.note">Chúng tôi thường phản hồi trong vòng 1–2 ngày làm việc.</div>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <img src="logo.png" alt="Nhân Lực Quốc Dân" class="logo-img" style="filter:brightness(0) invert(1)" onerror="var w=this.closest('.logo'); this.remove(); w.querySelector('.logo-fallback').style.display='flex'">
+          <span class="logo-fallback">
+            <span class="stars">
+              <svg viewBox="0 0 24 24" style="fill:#FFA64D"><path d="M12 1l2.9 6.9L22 9l-5.5 4.8L18 21l-6-3.9L6 21l1.5-7.2L2 9l7.1-1.1z"/></svg>
+              <svg viewBox="0 0 24 24" style="fill:#F2661D"><path d="M12 1l2.9 6.9L22 9l-5.5 4.8L18 21l-6-3.9L6 21l1.5-7.2L2 9l7.1-1.1z"/></svg>
+              <svg viewBox="0 0 24 24" style="fill:#FFA64D"><path d="M12 1l2.9 6.9L22 9l-5.5 4.8L18 21l-6-3.9L6 21l1.5-7.2L2 9l7.1-1.1z"/></svg>
+            </span>
+            <span class="word" style="color:#fff">QUỐC DÂN</span>
+          </span>
+        </a>
+        <p data-i18n="footer.tagline">Tuyển dụng lao động và BPO — thuê ngoài vận hành cho doanh nghiệp, với hệ sinh thái hỗ trợ nâng cao chất lượng nguồn lực.</p>
+        <div class="footer-qr-row">
+          <div class="footer-qr">
+            <!-- Thay qr-zalo.png bằng ảnh QR Zalo/liên hệ thật -->
+            <img src="qr-zalo.png" alt="Zalo QR" onerror="this.src='https://placehold.co/120x120/FFFFFF/0B1F3A?text=QR'">
+            <div class="qr-label">Zalo</div>
+          </div>
+          <div class="footer-qr">
+            <!-- Thay qr-facebook.png bằng ảnh QR Fanpage thật -->
+            <img src="qr-facebook.png" alt="Facebook QR" onerror="this.src='https://placehold.co/120x120/FFFFFF/0B1F3A?text=QR'">
+            <div class="qr-label">Fanpage</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.contactTitle">Liên hệ</h4>
+        <div>Email: <a href="mailto:nhanlucquocdan@gmail.com">nhanlucquocdan@gmail.com</a></div>
+        <div><span data-i18n="footer.phoneLabel">Điện thoại:</span> <a href="tel:+84983294529">0983 294 529</a></div>
+        <div style="margin-top:16px" data-i18n="footer.companyName">Công ty Cổ phần Nhân Lực Quốc Dân</div>
+        <div data-i18n="footer.msdn">Mã số doanh nghiệp: 0110921437</div>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer.networkTitle">Mạng lưới</h4>
+        <div class="footer-branch">
+          <div class="b-name" data-i18n="footer.hqLabel">Trụ sở chính — Hà Nội</div>
+          <div class="b-addr" data-i18n="footer.hqAddr">B-TT13-04, Khu nhà ở Ngân Hà Vạn Phúc, P. Vạn Phúc, Q. Hà Đông, TP. Hà Nội</div>
+        </div>
+        <div class="footer-branch">
+          <div class="b-name" data-i18n="footer.hpLabel">Chi nhánh Hải Phòng</div>
+          <div class="b-addr" data-i18n="footer.hpAddr">Tiểu khu Đôn Lương, TT. Cát Hải / Chung cư Evergreen Tràng Duệ, Q. An Dương</div>
+        </div>
+        <div class="footer-branch">
+          <div class="b-name" data-i18n="footer.tbLabel">Chi nhánh Thái Bình</div>
+          <div class="b-addr" data-i18n="footer.tbAddr">Thôn Đồng Thanh, xã Tân Bình, TP. Thái Bình</div>
+        </div>
+        <div class="footer-branch">
+          <div class="b-name" data-i18n="footer.hyLabel">Chi nhánh Hưng Yên</div>
+          <div class="b-addr" data-i18n="footer.hyAddr">Thửa đất số 272, đường Nguyễn Bình, P. Mỹ Hào, Hưng Yên</div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div data-i18n="footer.copyright">© 2026 Nhân Lực Quốc Dân. Bảo lưu mọi quyền.</div>
+      <div data-i18n="footer.capital">Vốn điều lệ: 3.000.000.000 VNĐ</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const trans = {
+  vi: {
+    "nav.services": "Dịch vụ",
+    "nav.why": "Vì sao chọn chúng tôi",
+    "nav.pipeline": "Quy trình",
+    "nav.capacity": "Năng lực",
+    "nav.partners": "Khách hàng",
+    "nav.cta": "Liên hệ ngay",
+    "hero.eyebrow": "TUYỂN DỤNG \u0026 BPO NHÂN SỰ \u2014 MIỀN BẮC VIỆT NAM",
+    "hero.headline": "Nhân lực quy mô lớn, triển khai nhanh, vận hành ổn định",
+    "hero.sub": "Nhân Lực Quốc Dân tuyển dụng và cung ứng nhân sự cho doanh nghiệp sản xuất, đồng thời vận hành BPO thuê ngoài tại các nhà máy, khu công nghiệp và khu đô thị.",
+    "hero.cta1": "Nhận tư vấn tuyển dụng",
+    "hero.cta2": "Xem dịch vụ",
+    "hero.tag1": "Tuyển dụng lao động",
+    "hero.tag2": "BPO \u2014 Thuê ngoài vận hành",
+    "hero.tag3": "Cung ứng 50\u20132.000 nhân sự",
+    "stats.label1": "Ứng viên đã tiếp cận (khối kỹ thuật)",
+    "stats.label2": "Ứng viên tuyển dụng thành công",
+    "stats.label3": "Nhân sự triển khai mỗi đợt",
+    "stats.label4": "Tỉnh/thành có mạng lưới hoạt động",
+    "services.eyebrow": "Dịch vụ",
+    "services.title": "Hai dịch vụ cốt lõi, một cam kết chất lượng",
+    "services.sub": "Triển khai linh hoạt theo nhu cầu vận hành thực tế của từng doanh nghiệp \u2014 từ một đợt tuyển dụng đến vận hành trọn gói.",
+    "svc1.eyebrow": "01",
+    "svc1.title": "Tuyển Dụng Lao Động",
+    "svc1.desc": "Chúng tôi làm tuyển dụng theo hướng bài bản, minh bạch và có trách nhiệm, tập trung tuyển đúng người phù hợp với công việc và môi trường doanh nghiệp.",
+    "svc1.b1": "Từ vị trí cấp cao, khối văn phòng đến kỹ thuật, kỹ sư, lao động phổ thông",
+    "svc1.b2": "Cung ứng 50\u20132.000 nhân sự cho doanh nghiệp trong thời gian ngắn",
+    "svc1.b3": "Quy trình 5 bước minh bạch, tuân thủ quy định pháp lý",
+    "svc2.eyebrow": "02",
+    "svc2.title": "BPO \u2014 Thuê Ngoài Vận Hành",
+    "svc2.desc": "Giải pháp vận hành thuê ngoài trọn gói cho nhà máy và doanh nghiệp sản xuất. Chúng tôi trực tiếp tuyển dụng, quản lý, thay thế nhân sự và vận hành theo KPI đã thống nhất.",
+    "svc2.b1": "Hỗ trợ dây chuyền, cấp phát vật tư, picking \u0026 logistics nội bộ",
+    "svc2.b2": "Sorting \u0026 rework theo dự án; 5S \u0026 vệ sinh cảnh quan khu vực",
+    "svc2.b3": "Đảm bảo sản xuất ổn định, liên tục theo KPI đã thống nhất",
+    "svc.note": "\u201cNhân Lực Quốc Dân hỗ trợ vận hành khu đô thị, khu công nghiệp, nhà máy hoạt động dịch vụ, sản xuất cốt lõi \u2014 không thay thế hoạt động chính.\u201d",
+    "why.eyebrow": "Vì sao chọn Nhân Lực Quốc Dân",
+    "why.title": "Lấy kết quả tuyển dụng làm cam kết, không chỉ quy trình",
+    "why.body": "Chúng tôi cam kết huy động tối đa nguồn lực để cung cấp các giải pháp nhân sự chất lượng cao, phù hợp và tạo giá trị cho khách hàng. Mọi hoạt động được triển khai trách nhiệm, chính trực, minh bạch, cùng tinh thần đồng hành lâu dài.",
+    "why.visionLabel": "Tầm nhìn.",
+    "why.visionText": "Trở thành đơn vị cung ứng nhân lực uy tín và hàng đầu, đóng vai trò cầu nối hiệu quả giữa doanh nghiệp và người lao động.",
+    "why.missionLabel": "Sứ mệnh.",
+    "why.missionText": "Cung cấp giải pháp tuyển dụng phù hợp với nhu cầu thực tế của doanh nghiệp, góp phần xây dựng đội ngũ nhân sự ổn định và hiệu quả.",
+    "why.v1": "Hệ sinh thái đa dạng hỗ trợ phát triển nguồn lực",
+    "why.v2": "Khả năng đáp ứng nhanh nhu cầu tuyển dụng",
+    "why.v3": "Triển khai quy mô lớn với tiến độ rõ ràng",
+    "why.v4": "Ứng dụng công nghệ và khai thác dữ liệu lớn",
+    "why.v5": "Am hiểu thị trường lao động và đặc thù từng ngành",
+    "why.v6": "Cam kết bằng kết quả tuyển dụng, không chỉ quy trình",
+    "pipeline.eyebrow": "Quy trình",
+    "pipeline.title": "Quy trình tuyển dụng 5 bước, minh bạch từ đầu đến cuối",
+    "pipeline.sub": "Một quy trình rõ ràng, có thể mở rộng \u2014 từ một vị trí đơn lẻ đến chương trình tuyển dụng quy mô lớn.",
+    "pipeline.step1title": "Tìm kiếm \u0026 tư vấn",
+    "pipeline.step1desc": "Tiếp nhận yêu cầu tuyển dụng và tư vấn phương án phù hợp với vị trí, quy mô và thời gian triển khai.",
+    "pipeline.step2title": "Sàng lọc \u0026 đánh giá",
+    "pipeline.step2desc": "Sàng lọc hồ sơ và đánh giá năng lực ứng viên theo đúng tiêu chí doanh nghiệp yêu cầu.",
+    "pipeline.step3title": "Phỏng vấn sơ bộ",
+    "pipeline.step3desc": "Phỏng vấn sơ bộ để xác nhận sự phù hợp trước khi gửi hồ sơ cho khách hàng.",
+    "pipeline.step4title": "Gửi hồ sơ ứng viên",
+    "pipeline.step4desc": "Gửi hồ sơ ứng viên phù hợp cho khách hàng để tiến hành các bước tiếp theo.",
+    "pipeline.step5title": "Báo cáo hiệu quả",
+    "pipeline.step5desc": "Báo cáo hiệu quả tuyển dụng cho khách hàng, minh bạch và dễ theo dõi.",
+    "pipeline.benefit1": "Tiết kiệm thời gian và chi phí tuyển dụng",
+    "pipeline.benefit2": "Tiếp cận nguồn ứng viên phù hợp theo yêu cầu",
+    "pipeline.benefit3": "Quy trình minh bạch, tuân thủ quy định pháp lý",
+    "pipeline.benefit4": "Dễ dàng theo dõi và đánh giá hiệu quả tuyển dụng",
+    "pipeline.benefit5": "Đảm bảo chất lượng nhân sự và hiệu quả sau tuyển",
+    "bpo.title": "Mô hình vận hành BPO",
+    "bpo.sub": "Tuyển dụng \u0026 đào tạo \u2014 Team Leader onsite chuyên trách \u2014 kiểm soát nhân lực hàng ngày \u2014 vận hành dựa trên KPI \u2014 báo cáo minh bạch.",
+    "bpo.c1": "Phạm vi \u0026 trách nhiệm rõ ràng",
+    "bpo.c2": "Thay thế nhân sự trong thời gian đã thống nhất",
+    "bpo.c3": "Giám sát vận hành trực tiếp tại nhà máy, khu công nghiệp",
+    "bpo.c4": "Tuân thủ nội quy \u0026 yêu cầu audit của nhà máy",
+    "capacity.eyebrow": "Năng lực tuyển dụng",
+    "capacity.title": "Năng lực đã được chứng minh qua thực tế triển khai",
+    "case1.tag": "TUYỂN DỤNG CẤP ĐIỀU HÀNH \u0026 KỸ THUẬT",
+    "case1.title": "Tuyển dụng đội ngũ điều hành và khối kỹ thuật",
+    "case1.desc": "Đã và đang tuyển dụng các vị trí cấp cao như Giám đốc điều hành, Trưởng phòng cấp cao và Kỹ sư trưởng \u2014 đồng thời tiếp cận nguồn ứng viên khối kỹ thuật lớn, đáp ứng đúng yêu cầu của doanh nghiệp.",
+    "case1.stat1": "Ứng viên đã tiếp cận",
+    "case1.stat2": "Giám đốc, trưởng phòng, kỹ sư trưởng",
+    "case2.tag": "HỢP TÁC DOANH NGHIỆP LỚN",
+    "case2.title": "Hợp tác hiệu quả với nhiều doanh nghiệp lớn",
+    "case2.desc": "Là đối tác tin cậy của nhiều doanh nghiệp lớn trong lĩnh vực điện tử, sản xuất, năng lượng và logistics \u2014 đã tuyển dụng thành công hàng nghìn ứng viên xuất sắc hiện đang cống hiến tại các doanh nghiệp.",
+    "case2.stat1": "Ứng viên tuyển dụng thành công",
+    "case2.stat2": "Nhân sự mỗi đợt triển khai",
+    "capacity.industriesTitle": "Ngành dịch vụ trọng điểm",
+    "capacity.ind1": "Linh kiện điện tử",
+    "capacity.ind2": "Công nghiệp nặng",
+    "capacity.ind3": "Năng lượng",
+    "capacity.ind4": "Logistics",
+    "capacity.ind5": "May mặc và giày da",
+    "capacity.positionsTitle": "Vị trí tuyển dụng tiêu biểu",
+    "capacity.pos1": "Công nhân sản xuất",
+    "capacity.pos2": "Vận hành xe nâng",
+    "capacity.pos3": "Đóng gói / bốc xếp",
+    "capacity.pos4": "Kiểm thử",
+    "capacity.pos5": "Vệ sinh môi trường",
+    "partners.eyebrow": "Khách hàng \u0026 đối tác",
+    "partners.title": "Đồng hành cùng các doanh nghiệp và tổ chức hàng đầu",
+    "cta.title": "Tìm hiểu giải pháp nhân sự cho doanh nghiệp của bạn",
+    "cta.sub": "Chia sẻ nhu cầu của bạn \u2014 chúng tôi phản hồi trong 1\u20132 ngày làm việc.",
+    "form.name": "Họ và tên",
+    "form.namePh": "Nguyễn Văn A",
+    "form.company": "Công ty",
+    "form.companyPh": "Tên công ty của bạn",
+    "form.email": "Email công việc",
+    "form.emailPh": "ban@congty.com",
+    "form.phone": "Số điện thoại",
+    "form.phonePh": "+84 ...",
+    "form.service": "Bạn quan tâm dịch vụ nào?",
+    "form.serviceOpt1": "Tuyển dụng lao động",
+    "form.serviceOpt2": "BPO \u2014 Thuê ngoài vận hành",
+    "form.serviceOpt3": "Cả hai / Chưa rõ",
+    "form.message": "Chia sẻ về nhu cầu của bạn",
+    "form.messagePh": "Vị trí cần tuyển, số lượng, thời gian, địa điểm làm việc...",
+    "form.submit": "Gửi yêu cầu",
+    "form.note": "Chúng tôi thường phản hồi trong vòng 1\u20132 ngày làm việc.",
+    "footer.tagline": "Tuyển dụng lao động và BPO \u2014 thuê ngoài vận hành cho doanh nghiệp, với hệ sinh thái hỗ trợ nâng cao chất lượng nguồn lực.",
+    "footer.contactTitle": "Liên hệ",
+    "footer.phoneLabel": "Điện thoại:",
+    "footer.companyName": "Công ty Cổ phần Nhân Lực Quốc Dân",
+    "footer.msdn": "Mã số doanh nghiệp: 0110921437",
+    "footer.networkTitle": "Mạng lưới",
+    "footer.hqLabel": "Trụ sở chính \u2014 Hà Nội",
+    "footer.hqAddr": "B-TT13-04, Khu nhà ở Ngân Hà Vạn Phúc, P. Vạn Phúc, Q. Hà Đông, TP. Hà Nội",
+    "footer.hpLabel": "Chi nhánh Hải Phòng",
+    "footer.hpAddr": "Tiểu khu Đôn Lương, TT. Cát Hải / Chung cư Evergreen Tràng Duệ, Q. An Dương",
+    "footer.tbLabel": "Chi nhánh Thái Bình",
+    "footer.tbAddr": "Thôn Đồng Thanh, xã Tân Bình, TP. Thái Bình",
+    "footer.hyLabel": "Chi nhánh Hưng Yên",
+    "footer.hyAddr": "Thửa đất số 272, đường Nguyễn Bình, P. Mỹ Hào, Hưng Yên",
+    "footer.copyright": "\u00a9 2026 Nhân Lực Quốc Dân. Bảo lưu mọi quyền.",
+    "footer.capital": "Vốn điều lệ: 3.000.000.000 VNĐ"
+  },
+  en: {
+    "nav.services": "Services",
+    "nav.why": "Why Quoc Dan",
+    "nav.pipeline": "Our Process",
+    "nav.capacity": "Track Record",
+    "nav.partners": "Clients",
+    "nav.cta": "Get in touch",
+    "hero.eyebrow": "RECRUITMENT \u0026 WORKFORCE BPO \u2014 NORTHERN VIETNAM",
+    "hero.headline": "Large-scale manpower, deployed fast, run reliably",
+    "hero.sub": "Quoc Dan Manpower recruits and supplies workforce for manufacturing businesses, and runs outsourced BPO operations at factories, industrial parks and urban zones.",
+    "hero.cta1": "Get a recruitment consult",
+    "hero.cta2": "See our services",
+    "hero.tag1": "Labor Recruitment",
+    "hero.tag2": "BPO \u2014 Outsourced Operations",
+    "hero.tag3": "50\u20132,000 staff per deployment",
+    "stats.label1": "Candidates reached (technical roles)",
+    "stats.label2": "Candidates successfully placed",
+    "stats.label3": "Staff deployed per program",
+    "stats.label4": "Provinces/cities in our network",
+    "services.eyebrow": "Services",
+    "services.title": "Two core services, one commitment to quality",
+    "services.sub": "Deployed flexibly to match each business's real operating needs \u2014 from a single hiring round to full outsourced operations.",
+    "svc1.eyebrow": "01",
+    "svc1.title": "Labor Recruitment",
+    "svc1.desc": "We recruit in a structured, transparent and accountable way, focused on placing the right person for the role and the company culture.",
+    "svc1.b1": "From senior roles and office staff to technicians, engineers and general labor",
+    "svc1.b2": "Able to supply 50\u20132,000 staff for a business in a short timeframe",
+    "svc1.b3": "Transparent 5-step process, compliant with labor regulations",
+    "svc2.eyebrow": "02",
+    "svc2.title": "BPO \u2014 Outsourced Operations",
+    "svc2.desc": "A full outsourced operating solution for factories and manufacturers. We directly recruit, manage and replace staff, and run day-to-day work against agreed KPIs.",
+    "svc2.b1": "Line support, material supply, internal picking \u0026 logistics",
+    "svc2.b2": "Project-based sorting \u0026 rework; 5S and site landscaping upkeep",
+    "svc2.b3": "Keeps production stable and continuous against agreed KPIs",
+    "svc.note": "\u201cQuoc Dan Manpower supports operations at urban zones, industrial parks and factories \u2014 it does not replace the core business activity.\u201d",
+    "why.eyebrow": "Why Quoc Dan Manpower",
+    "why.title": "Judged on recruitment results, not just process",
+    "why.body": "We commit to mobilizing maximum resources to deliver high-quality, well-matched workforce solutions that create value for our clients. Every activity is carried out responsibly, with integrity and transparency, and a long-term partnership mindset.",
+    "why.visionLabel": "Vision.",
+    "why.visionText": "To become a trusted, leading manpower provider \u2014 an effective bridge between businesses and workers.",
+    "why.missionLabel": "Mission.",
+    "why.missionText": "To provide recruitment solutions matched to each business's real needs, helping build a stable and effective workforce.",
+    "why.v1": "A diverse ecosystem supporting workforce development",
+    "why.v2": "Ability to respond quickly to hiring needs",
+    "why.v3": "Large-scale deployment with a clear timeline",
+    "why.v4": "Technology and data-driven sourcing",
+    "why.v5": "Deep understanding of the labor market and each industry",
+    "why.v6": "Committed to recruitment results, not just process",
+    "pipeline.eyebrow": "Our Process",
+    "pipeline.title": "A transparent 5-step recruitment process",
+    "pipeline.sub": "A clear process that scales \u2014 from a single open role to a large recruitment program.",
+    "pipeline.step1title": "Sourcing \u0026 consulting",
+    "pipeline.step1desc": "We take in the hiring brief and advise on the right approach for the role, scale and timeline.",
+    "pipeline.step2title": "Screening \u0026 assessment",
+    "pipeline.step2desc": "Applications are screened and candidates assessed against the client's exact criteria.",
+    "pipeline.step3title": "Initial interview",
+    "pipeline.step3desc": "A first interview confirms fit before a candidate is sent to the client.",
+    "pipeline.step4title": "Candidate submission",
+    "pipeline.step4desc": "Matching candidate profiles are sent to the client for the next steps.",
+    "pipeline.step5title": "Performance reporting",
+    "pipeline.step5desc": "Recruitment results are reported back to the client, clearly and on time.",
+    "pipeline.benefit1": "Saves recruitment time and cost",
+    "pipeline.benefit2": "Access to a candidate pool matched to your requirements",
+    "pipeline.benefit3": "A transparent process, compliant with labor law",
+    "pipeline.benefit4": "Easy to track and evaluate hiring performance",
+    "pipeline.benefit5": "Ensures workforce quality and post-hire effectiveness",
+    "bpo.title": "BPO operating model",
+    "bpo.sub": "Recruit \u0026 train \u2014 dedicated onsite team leader \u2014 daily workforce control \u2014 KPI-based operations \u2014 transparent reporting.",
+    "bpo.c1": "Clear scope \u0026 responsibilities",
+    "bpo.c2": "Staff replacement within the agreed timeframe",
+    "bpo.c3": "Direct on-site supervision at factories and industrial parks",
+    "bpo.c4": "Compliance with site rules and factory audit requirements",
+    "capacity.eyebrow": "Track Record",
+    "capacity.title": "Capability proven through real deployments",
+    "case1.tag": "EXECUTIVE \u0026 TECHNICAL RECRUITMENT",
+    "case1.title": "Recruiting executive and technical teams",
+    "case1.desc": "We have recruited senior roles such as CEOs, senior department heads and chief engineers \u2014 while reaching a large pool of technical candidates matched to client requirements.",
+    "case1.stat1": "Candidates reached",
+    "case1.stat2": "CEOs, department heads, chief engineers",
+    "case2.tag": "PARTNERING WITH LARGE ENTERPRISES",
+    "case2.title": "Effective partnerships with large enterprises",
+    "case2.desc": "A trusted partner to many large businesses in electronics, manufacturing, energy and logistics \u2014 having successfully placed thousands of strong candidates now contributing at these companies.",
+    "case2.stat1": "Candidates successfully placed",
+    "case2.stat2": "Staff per deployment",
+    "capacity.industriesTitle": "Key industries served",
+    "capacity.ind1": "Electronic components",
+    "capacity.ind2": "Heavy industry",
+    "capacity.ind3": "Energy",
+    "capacity.ind4": "Logistics",
+    "capacity.ind5": "Garments \u0026 footwear",
+    "capacity.positionsTitle": "Typical roles filled",
+    "capacity.pos1": "Production workers",
+    "capacity.pos2": "Forklift operators",
+    "capacity.pos3": "Packing / loading staff",
+    "capacity.pos4": "QC / testing staff",
+    "capacity.pos5": "Site cleaning staff",
+    "partners.eyebrow": "Clients \u0026 Partners",
+    "partners.title": "Working alongside leading businesses and institutions",
+    "cta.title": "Find the right workforce solution for your business",
+    "cta.sub": "Tell us what you need \u2014 we typically reply within 1\u20132 business days.",
+    "form.name": "Your name",
+    "form.namePh": "Jane Smith",
+    "form.company": "Your company",
+    "form.companyPh": "Your company",
+    "form.email": "Work email",
+    "form.emailPh": "you@company.com",
+    "form.phone": "Phone number",
+    "form.phonePh": "+84 ...",
+    "form.service": "Which service are you interested in?",
+    "form.serviceOpt1": "Labor recruitment",
+    "form.serviceOpt2": "BPO \u2014 outsourced operations",
+    "form.serviceOpt3": "Both / not sure yet",
+    "form.message": "Tell us about your needs",
+    "form.messagePh": "Roles to fill, headcount, timeline, work location...",
+    "form.submit": "Send request",
+    "form.note": "We typically respond within 1\u20132 business days.",
+    "footer.tagline": "Labor recruitment and BPO \u2014 outsourced operations for businesses, backed by an ecosystem that strengthens workforce quality.",
+    "footer.contactTitle": "Contact",
+    "footer.phoneLabel": "Phone:",
+    "footer.companyName": "Quoc Dan Manpower Joint Stock Company",
+    "footer.msdn": "Business Registration No.: 0110921437",
+    "footer.networkTitle": "Network",
+    "footer.hqLabel": "Headquarters \u2014 Hanoi",
+    "footer.hqAddr": "B-TT13-04, Ngan Ha Van Phuc Residential Area, Van Phuc Ward, Ha Dong District, Hanoi",
+    "footer.hpLabel": "Hai Phong Branch",
+    "footer.hpAddr": "Don Luong sub-zone, Cat Hai Town / Evergreen Trang Due Apartments, An Duong District",
+    "footer.tbLabel": "Thai Binh Branch",
+    "footer.tbAddr": "Dong Thanh Hamlet, Tan Binh Commune, Thai Binh City",
+    "footer.hyLabel": "Hung Yen Branch",
+    "footer.hyAddr": "Plot 272, Nguyen Binh Street, My Hao Ward, Hung Yen",
+    "footer.copyright": "\u00a9 2026 Quoc Dan Manpower. All rights reserved.",
+    "footer.capital": "Charter capital: VND 3,000,000,000"
+  }
+};
+
+let caseIndex = 0;
+const caseCount = 2;
+function showCase(i) {
+  caseIndex = (i + caseCount) % caseCount;
+  document.querySelectorAll('.case-slide').forEach((el, idx) => {
+    el.classList.toggle('active', idx === caseIndex);
+  });
+  document.querySelectorAll('#case-dots span').forEach((el, idx) => {
+    el.classList.toggle('active', idx === caseIndex);
+  });
+}
+
+// ===== Form liên hệ -> Google Sheets =====
+// 1. Deploy Google Apps Script Web App theo hướng dẫn trong SETUP.md.
+// 2. Dán URL /exec vào GAS_WEB_APP_URL bên dưới.
+const GAS_WEB_APP_URL = "https://script.google.com/macros/s/REPLACE_WITH_YOUR_DEPLOYMENT_ID/exec";
+
+function submitLeadForm(e) {
+  e.preventDefault();
+  const form = e.target;
+  const btn = document.getElementById('lead-form-submit');
+  const note = document.getElementById('lead-form-note');
+  const data = new FormData(form);
+
+  btn.disabled = true;
+  btn.textContent = '...';
+
+  fetch(GAS_WEB_APP_URL, { method: 'POST', mode: 'no-cors', body: data })
+    .then(() => {
+      form.reset();
+      note.textContent = 'Cảm ơn bạn — chúng tôi đã nhận được yêu cầu và sẽ phản hồi trong 1–2 ngày làm việc.';
+      note.style.color = '#FFA64D';
+      btn.textContent = 'Đã gửi ✓';
+    })
+    .catch(() => {
+      note.textContent = 'Có lỗi xảy ra — vui lòng gửi email trực tiếp tới nhanlucquocdan@gmail.com.';
+      btn.disabled = false;
+      btn.textContent = 'Gửi yêu cầu';
+    });
+  return false;
+}
+
+// ===== Lưới logo khách hàng & đối tác =====
+// Thêm/bớt tên file bên dưới — lưới sẽ tự cập nhật.
+// Đặt các file ảnh tương ứng vào thư mục "logo/" cạnh file HTML này.
+// Nếu thiếu file, sẽ tự động hiện placeholder chữ thay thế.
+const partnerLogos = [
+  "VinFast.png", "VinES.png", "Compal.png", "Biel.png", "ShopeeXpress.png", "Canon.png",
+  "USI.png", "Brother.png", "LuxshareICT.png", "Eurowindow.png", "Nissin.png", "ITM.png",
+  "Ariston.png", "CoAsia.png", "WNC.png", "Bandai.png", "Stavian.png", "Goertek.png",
+  "Foxconn.png", "CTECH.png", "DHKTQD.png", "HocVienNganHang.png"
+];
+
+function renderPartners() {
+  const grid = document.getElementById('partners-grid');
+  if (!grid) return;
+  grid.innerHTML = partnerLogos.map(function(file) {
+    const name = file.substring(0, file.lastIndexOf('.'));
+    return '<img src="logo/' + file + '" alt="' + name + '" ' +
+      'onerror="this.onerror=null; this.src=\'https://placehold.co/150x50?text=' + encodeURIComponent(name) + '\'">';
+  }).join('');
+}
+renderPartners();
+
+function setLang(lang) {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (trans[lang][key] !== undefined) el.innerHTML = trans[lang][key];
+  });
+  document.querySelectorAll('[data-i18n-ph]').forEach(el => {
+    const key = el.getAttribute('data-i18n-ph');
+    if (trans[lang][key] !== undefined) el.setAttribute('placeholder', trans[lang][key]);
+  });
+  document.getElementById('html-root').setAttribute('lang', lang);
+  document.getElementById('lang-vi').classList.toggle('active', lang === 'vi');
+  document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+}
+</script>
+
+<a href="tel:+84983294529" class="float-phone" aria-label="Gọi Nhân Lực Quốc Dân">
+  <span class="float-phone-ring"></span>
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8z"/></svg>
+</a>
+
+</body>
+</html>

@@ -83,15 +83,15 @@
   @media (max-width: 800px) { .stats .wrap { grid-template-columns: repeat(2, 1fr); row-gap: 22px; } .stat:nth-child(3) { border-left: none; } }
 
   /* ---------- MISSION ---------- */
-  .mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+  .mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; max-width: 860px; margin: 0 auto; }
   .mission-card { background: var(--white); border: 1px solid var(--line-dark); border-radius: 8px; padding: 30px 26px; border-top: 3px solid var(--orange); }
   .m-label { font-family: 'Manrope'; font-weight: 800; font-size: 17px; color: var(--navy); margin-bottom: 10px; }
   .mission-card p { font-size: 14px; color: var(--slate); line-height: 1.65; }
   .mission-card p strong { color: var(--ink); font-weight: 700; }
-  .mission-card.wide { grid-column: 1 / -1; display: flex; align-items: center; gap: 30px; flex-wrap: wrap; }
-  .mission-card.wide .m-label { margin-bottom: 0; flex-shrink: 0; }
+  .mission-card.wide { grid-column: 1 / -1; text-align: center; }
+  .mission-card.wide .m-label { margin-bottom: 10px; }
   .core-value-text { font-family: 'Manrope'; font-weight: 800; color: var(--orange) !important; font-size: 24px !important; line-height: 1.35 !important; margin: 0 !important; }
-  @media (max-width: 860px) { .mission-grid { grid-template-columns: 1fr; } .mission-card.wide { flex-direction: column; align-items: flex-start; gap: 12px; } }
+  @media (max-width: 860px) { .mission-grid { grid-template-columns: 1fr; } }
 
   /* ---------- SERVICES ---------- */
   .services-grid { display: flex; gap: 24px; flex-wrap: wrap; }

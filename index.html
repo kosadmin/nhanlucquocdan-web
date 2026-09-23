@@ -83,13 +83,15 @@
   @media (max-width: 800px) { .stats .wrap { grid-template-columns: repeat(2, 1fr); row-gap: 22px; } .stat:nth-child(3) { border-left: none; } }
 
   /* ---------- MISSION ---------- */
-.mission-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-.mission-card { background: var(--white); border: 1px solid var(--line-dark); border-radius: 8px; padding: 30px 26px; border-top: 3px solid var(--orange); }
-.m-label { font-family: 'Manrope'; font-weight: 800; font-size: 17px; color: var(--navy); margin-bottom: 10px; }
-.mission-card p { font-size: 14px; color: var(--slate); line-height: 1.65; }
-.mission-card p strong { color: var(--ink); font-weight: 700; }
-.core-value-text { font-family: 'Manrope'; font-weight: 800; color: var(--orange) !important; font-size: 24px !important; line-height: 1.35 !important; }
-@media (max-width: 860px) { .mission-grid { grid-template-columns: 1fr; } }
+  .mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+  .mission-card { background: var(--white); border: 1px solid var(--line-dark); border-radius: 8px; padding: 30px 26px; border-top: 3px solid var(--orange); }
+  .m-label { font-family: 'Manrope'; font-weight: 800; font-size: 17px; color: var(--navy); margin-bottom: 10px; }
+  .mission-card p { font-size: 14px; color: var(--slate); line-height: 1.65; }
+  .mission-card p strong { color: var(--ink); font-weight: 700; }
+  .mission-card.wide { grid-column: 1 / -1; text-align: center; }
+  .mission-card.wide .m-label { margin-bottom: 10px; }
+  .core-value-text { font-family: 'Manrope'; font-weight: 800; color: var(--orange) !important; font-size: 24px !important; line-height: 1.35 !important; margin: 0 !important; }
+  @media (max-width: 860px) { .mission-grid { grid-template-columns: 1fr; } }
 
   /* ---------- SERVICES ---------- */
   .services-grid { display: flex; gap: 24px; flex-wrap: wrap; }
@@ -298,9 +300,9 @@
         <div class="m-label" data-i18n="mission.missionTitle">Sứ Mệnh</div>
         <p data-i18n="mission.missionText">Cung cấp giải pháp tuyển dụng phù hợp với nhu cầu thực tế của doanh nghiệp, góp phần xây dựng đội ngũ nhân sự ổn định và hiệu quả.</p>
       </div>
-      <div class="mission-card">
+      <div class="mission-card wide">
         <div class="m-label" data-i18n="mission.valuesTitle">Giá Trị Cốt Lõi</div>
-        <p class="core-value-text" data-i18n="mission.valuesText">Quy mô lớn –<br>Triển khai nhanh</p>
+        <p class="core-value-text" data-i18n="mission.valuesText">Quy mô lớn – Triển khai nhanh</p>
       </div>
     </div>
   </div>
@@ -493,7 +495,7 @@
         </a>
         <div class="f-company" data-i18n="footer.companyName">Công ty Cổ phần Nhân Lực Quốc Dân</div>
         <div class="f-tax" data-i18n="footer.msdn">Mã số thuế: 0110921437</div>
-        <div class="footer-addr"><span data-i18n="footer.addressLabel">Trụ sở chính:</span> <span data-i18n="network.hqAddr">B-TT13-04, Khu nhà ở Ngân Hà Vạn Phúc, Phường Hà Đông, TP. Hà Nội</span></div>
+        <div class="footer-addr"><span data-i18n="footer.addressLabel">Trụ sở chính:</span> <span data-i18n="network.hqAddr">B-TT13-04, Khu nhà ở Ngân Hà Vạn Phúc, Phường Hà Đông, Hà Nội</span></div>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer.contactTitle">Liên hệ</h4>
@@ -580,13 +582,13 @@ const trans = {
     "network.eyebrow": "Mạng lưới",
     "network.title": "Trụ sở chính và các chi nhánh khu vực miền Bắc",
     "network.hqLabel": "Trụ sở chính \u2014 Hà Nội",
-    "network.hqAddr": "B-TT13-04, Khu nhà ở Ngân Hà Vạn Phúc, phường Hà Đông, TP. Hà Nội",
+    "network.hqAddr": "B-TT13-04, Khu nhà ở Ngân Hà Vạn Phúc, Phường Hà Đông, Hà Nội",
     "network.hpLabel": "Chi nhánh Hải Phòng",
-    "network.hpAddr": "Tiểu khu Đôn Lương, TT. Cát Hải / Chung cư Evergreen Tràng Duệ, Q. An Dương",
+    "network.hpAddr": "Chung cư Evergreen Tràng Duệ, Phường An Dương, Hải Phòng",
     "network.tbLabel": "Chi nhánh Thái Bình",
-    "network.tbAddr": "Thôn Đồng Thanh, xã Tân Bình, TP. Thái Bình",
+    "network.tbAddr": "Thôn Đồng Thanh, phường Thái Bình, Thái Bình",
     "network.hyLabel": "Chi nhánh Hưng Yên",
-    "network.hyAddr": "Thửa đất số 272, đường Nguyễn Bình, P. Mỹ Hào, Hưng Yên",
+    "network.hyAddr": "Thửa đất số 272, đường Nguyễn Bình, phường Mỹ Hào, Hưng Yên",
     "partners.eyebrow": "Khách hàng \u0026 đối tác",
     "partners.title": "Đồng hành cùng các doanh nghiệp và tổ chức hàng đầu",
     "cta.title": "Tìm hiểu giải pháp nhân sự cho doanh nghiệp của bạn",
@@ -666,8 +668,8 @@ const trans = {
     "capacity.c4text": "Effective partnerships with leading clients, having placed over 10,000 outstanding candidates now contributing and growing at these companies.",
     "capacity.c4statlabel": "Candidates successfully placed",
     "network.eyebrow": "Network",
-    "network.title": "Headquarter and branches across Northern Vietnam",
-    "network.hqLabel": "Headquarter \u2014 Hanoi",
+    "network.title": "Headquarters and branches across Northern Vietnam",
+    "network.hqLabel": "Headquarters \u2014 Hanoi",
     "network.hqAddr": "B-TT13-04, Ngan Ha Van Phuc Residential Area, Ha Dong Ward, Hanoi",
     "network.hpLabel": "Hai Phong Branch",
     "network.hpAddr": "Evergreen Trang Due Apartments, An Duong Ward, Hai Phong",
@@ -693,7 +695,7 @@ const trans = {
     "form.note": "We typically respond within 1\u20132 business days.",
     "footer.contactTitle": "Contact",
     "footer.phoneLabel": "Phone:",
-    "footer.addressLabel": "Headquarter:",
+    "footer.addressLabel": "Headquarters:",
     "footer.companyName": "Quoc Dan Manpower Joint Stock Company",
     "footer.msdn": "Tax code: 0110921437",
     "footer.socialTitle": "Connect with us",

@@ -84,15 +84,11 @@
 
   /* ---------- MISSION ---------- */
   .mission-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-  .mission-card { background: var(--white); border: 1px solid var(--line-dark); border-radius: 8px; padding: 30px 26px; }
-  .m-label { font-family: 'Manrope'; font-weight: 800; font-size: 22px; color: var(--ink); margin-bottom: 12px; }
-  .m-underline { display: flex; gap: 6px; margin-bottom: 18px; }
-  .m-underline span:first-child { width: 26px; height: 3px; background: var(--navy); }
-  .m-underline span:last-child { width: 60px; height: 3px; background: var(--orange); }
+  .mission-card { background: var(--white); border: 1px solid var(--line-dark); border-radius: 8px; padding: 30px 26px; border-top: 3px solid var(--orange); }
+  .m-label { font-family: 'Manrope'; font-weight: 800; font-size: 17px; color: var(--navy); margin-bottom: 10px; }
   .mission-card p { font-size: 14px; color: var(--slate); line-height: 1.65; }
   .mission-card p strong { color: var(--ink); font-weight: 700; }
-  .mission-card.value-card-highlight { display: flex; flex-direction: column; justify-content: center; }
-  .core-value-text { font-family: 'Manrope'; font-weight: 800; font-style: italic; color: var(--orange) !important; font-size: 24px !important; line-height: 1.3 !important; }
+  .core-value-text { font-family: 'Manrope'; font-weight: 800; font-style: italic; color: var(--orange) !important; font-size: 24px !important; line-height: 1.35 !important; }
   @media (max-width: 860px) { .mission-grid { grid-template-columns: 1fr; } }
 
   /* ---------- SERVICES ---------- */
@@ -118,23 +114,23 @@
 
   /* ---------- CAPACITY ---------- */
   .capacity-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
-  .capacity-card { background: var(--navy); border-radius: 10px; padding: 32px 28px; display: flex; flex-direction: column; }
-  .capacity-card h3 { font-size: 18.5px; color: var(--amber); }
-  .capacity-card p { font-size: 14px; color: rgba(255,255,255,0.78); margin-top: 12px; line-height: 1.6; flex-grow: 1; }
-  .capacity-card .stat-inline { margin-top: 20px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.16); font-family: 'Manrope'; font-weight: 800; font-size: 30px; color: var(--orange); }
-  .capacity-card .stat-inline-label { font-size: 12.5px; color: rgba(255,255,255,0.55); margin-top: 2px; }
+  .capacity-card { background: var(--white); border: 1px solid var(--line-dark); border-top: 3px solid var(--orange); border-radius: 10px; padding: 30px 26px; display: flex; flex-direction: column; }
+  .capacity-card h3 { font-size: 18px; color: var(--navy); }
+  .capacity-card p { font-size: 14px; color: var(--slate); margin-top: 12px; line-height: 1.6; flex-grow: 1; }
+  .capacity-card .stat-inline { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line-dark); font-family: 'Manrope'; font-weight: 800; font-size: 30px; color: var(--orange); }
+  .capacity-card .stat-inline-label { font-size: 12.5px; color: var(--slate-2); margin-top: 2px; }
   @media (max-width: 860px) { .capacity-grid { grid-template-columns: 1fr; } }
 
   /* ---------- NETWORK ---------- */
-  .network-grid { display: flex; gap: 48px; align-items: center; }
-  .network-img { flex: 1 1 440px; }
+  .network-grid { display: flex; gap: 40px; align-items: flex-start; }
+  .network-img { flex: 1.35 1 480px; }
   .network-img img { width: 100%; height: auto; border-radius: 10px; display: block; }
-  .network-list { flex: 1 1 380px; display: flex; flex-direction: column; gap: 16px; }
-  .network-branch { padding: 18px 20px; border: 1px solid var(--line-dark); border-radius: 8px; background: var(--white); }
-  .network-branch.hq { border-color: var(--orange); border-width: 1.5px; }
-  .network-branch .n-name { font-family: 'Manrope'; font-weight: 800; font-size: 15.5px; color: var(--navy); }
-  .network-branch .n-addr { font-size: 13.5px; color: var(--slate); margin-top: 6px; }
-  @media (max-width: 860px) { .network-grid { flex-direction: column; } }
+  .network-list { flex: 1 1 340px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-content: start; }
+  .network-branch { padding: 14px 16px; border: 1px solid var(--line-dark); border-top: 2px solid var(--orange); border-radius: 8px; background: var(--white); }
+  .network-branch .n-name { font-family: 'Manrope'; font-weight: 800; font-size: 13.5px; color: var(--navy); }
+  .network-branch .n-addr { font-size: 12px; color: var(--slate); margin-top: 5px; line-height: 1.45; }
+  @media (max-width: 860px) { .network-grid { flex-direction: column; } .network-list { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .network-list { grid-template-columns: 1fr; } }
 
   /* ---------- PARTNERS ---------- */
   .partners-head { margin-bottom: 40px; }
@@ -151,12 +147,13 @@
     display: flex; justify-content: center; align-items: center; flex-wrap: wrap;
     gap: 36px; margin-top: 28px; padding-top: 28px; border-top: 1px solid var(--line-dark);
   }
-  .partners-edu-row img { max-height: 36px; width: auto; max-width: 140px; object-fit: contain; filter: grayscale(15%); }
+  .partners-edu-row img { max-height: 46px; width: auto; max-width: 160px; object-fit: contain; filter: grayscale(15%); }
   @media (min-width: 560px) { .partners-grid { grid-template-columns: repeat(4, 1fr); } }
   @media (min-width: 860px) {
     .partners-panel { padding: 38px; }
     .partners-grid { grid-template-columns: repeat(8, 1fr); gap: 30px 22px; }
-    .partners-grid img, .partners-edu-row img { max-height: 42px; }
+    .partners-grid img { max-height: 42px; }
+    .partners-edu-row img { max-height: 58px; }
   }
 
   /* ---------- CTA + FORM ---------- */
@@ -204,7 +201,6 @@
   }
   .social-links a svg { width: 17px; height: 17px; fill: currentColor; }
   .social-links a:hover { color: var(--white); border-color: var(--amber); background: rgba(255,166,77,0.12); }
-  .social-note { font-size: 11.5px; color: rgba(255,255,255,0.35); margin-top: 10px; }
   .footer-bottom { display:flex; justify-content: flex-start; padding-top: 22px; font-size: 12px; color: rgba(255,255,255,0.4); }
   @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr; gap: 28px; } }
 
@@ -296,18 +292,15 @@
     <div class="mission-grid">
       <div class="mission-card">
         <div class="m-label" data-i18n="mission.visionTitle">Tầm Nhìn</div>
-        <div class="m-underline"><span></span><span></span></div>
         <p data-i18n="mission.visionText">Trở thành <strong>đơn vị cung ứng nhân lực uy tín và hàng đầu</strong>, đóng vai trò cầu nối hiệu quả giữa doanh nghiệp và người lao động. Thông qua việc cung cấp nguồn nhân lực phù hợp, ổn định và kịp thời, chúng tôi góp phần <strong>thúc đẩy hiệu quả vận hành</strong>, đồng thời <strong>tạo nền tảng cho sự phát triển bền vững</strong> của doanh nghiệp và người lao động trong dài hạn.</p>
       </div>
       <div class="mission-card">
         <div class="m-label" data-i18n="mission.missionTitle">Sứ Mệnh</div>
-        <div class="m-underline"><span></span><span></span></div>
         <p data-i18n="mission.missionText">Cung cấp giải pháp tuyển dụng phù hợp với nhu cầu thực tế của doanh nghiệp, góp phần xây dựng đội ngũ nhân sự ổn định và hiệu quả.</p>
       </div>
-      <div class="mission-card value-card-highlight">
+      <div class="mission-card">
         <div class="m-label" data-i18n="mission.valuesTitle">Giá Trị Cốt Lõi</div>
-        <div class="m-underline"><span></span><span></span></div>
-        <p class="core-value-text" data-i18n="mission.valuesText">Quy mô lớn – Triển khai nhanh</p>
+        <p class="core-value-text" data-i18n="mission.valuesText">Quy mô lớn –<br>Triển khai nhanh</p>
       </div>
     </div>
   </div>
@@ -403,7 +396,7 @@
         <img src="branch-map.png" alt="Bản đồ mạng lưới chi nhánh" onerror="this.onerror=null; this.src='https://placehold.co/640x480/F6F8FB/0B1F3A?text=branch-map.png'">
       </div>
       <div class="network-list">
-        <div class="network-branch hq">
+        <div class="network-branch">
           <div class="n-name" data-i18n="network.hqLabel">Trụ sở chính — Hà Nội</div>
           <div class="n-addr" data-i18n="network.hqAddr">B-TT13-04, Khu nhà ở Ngân Hà Vạn Phúc, P. Vạn Phúc, Q. Hà Đông, TP. Hà Nội</div>
         </div>
@@ -521,7 +514,6 @@
             <svg viewBox="0 0 24 24"><path d="M16.5 3c.4 2.2 1.8 3.6 4 3.8v2.9c-1.4.1-2.8-.3-4-1.1v6.4c0 3.2-2.6 5.5-5.6 5.5-3.2 0-5.6-2.5-5.6-5.6 0-3.2 2.7-5.6 5.9-5.5v3c-.2 0-.4-.1-.6-.1-1.5 0-2.7 1.2-2.7 2.7 0 1.5 1.2 2.7 2.7 2.7 1.6 0 2.9-1.3 2.9-3.2V3h3z"/></svg>
           </a>
         </div>
-        <div class="social-note" data-i18n="footer.socialNote">(Liên kết sẽ được cập nhật)</div>
       </div>
     </div>
     <div class="footer-bottom">
@@ -554,7 +546,7 @@ const trans = {
     "mission.missionTitle": "Sứ Mệnh",
     "mission.missionText": "Cung cấp giải pháp tuyển dụng phù hợp với nhu cầu thực tế của doanh nghiệp, góp phần xây dựng đội ngũ nhân sự ổn định và hiệu quả.",
     "mission.valuesTitle": "Giá Trị Cốt Lõi",
-    "mission.valuesText": "Quy mô lớn – Triển khai nhanh",
+    "mission.valuesText": "Quy mô lớn –<br>Triển khai nhanh",
     "services.eyebrow": "Dịch vụ",
     "services.title": "Dịch vụ thiết kế linh hoạt theo nhu cầu",
     "svc1.title": "Tuyển Dụng Lao Động",
@@ -618,7 +610,6 @@ const trans = {
     "footer.companyName": "Công ty Cổ phần Nhân Lực Quốc Dân",
     "footer.msdn": "Mã số thuế: 0110921437",
     "footer.socialTitle": "Kết nối với chúng tôi",
-    "footer.socialNote": "(Liên kết sẽ được cập nhật)",
     "footer.copyright": "\u00a9 2026 Nhân Lực Quốc Dân. Bảo lưu mọi quyền."
   },
   en: {
@@ -643,7 +634,7 @@ const trans = {
     "mission.missionTitle": "Mission",
     "mission.missionText": "To provide recruitment solutions matched to each business's real needs, helping build a stable and effective workforce.",
     "mission.valuesTitle": "Core Value",
-    "mission.valuesText": "Large Scale \u2013 Fast Deployment",
+    "mission.valuesText": "Large Scale \u2013<br>Fast Deployment",
     "services.eyebrow": "Services",
     "services.title": "Services designed around your needs",
     "svc1.title": "Labor Recruitment",
@@ -707,7 +698,6 @@ const trans = {
     "footer.companyName": "Quoc Dan Manpower Joint Stock Company",
     "footer.msdn": "Tax code: 0110921437",
     "footer.socialTitle": "Connect with us",
-    "footer.socialNote": "(Links coming soon)",
     "footer.copyright": "\u00a9 2026 Quoc Dan Manpower. All rights reserved."
   }
 };
@@ -730,7 +720,7 @@ function submitLeadForm(e) {
   fetch(GAS_WEB_APP_URL, { method: 'POST', mode: 'no-cors', body: data })
     .then(() => {
       form.reset();
-      note.textContent = 'Cảm ơn bạn — chúng tôi đã nhận được yêu cầu và sẽ phản hồi trong 1–2 ngày làm việc.';
+      note.textContent = 'Cảm ơn bạn - Chúng tôi sẽ phản hồi sớm.';
       note.style.color = '#FFA64D';
       btn.textContent = 'Đã gửi ✓';
     })

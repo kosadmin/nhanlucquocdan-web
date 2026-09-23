@@ -83,15 +83,13 @@
   @media (max-width: 800px) { .stats .wrap { grid-template-columns: repeat(2, 1fr); row-gap: 22px; } .stat:nth-child(3) { border-left: none; } }
 
   /* ---------- MISSION ---------- */
-  .mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; max-width: 860px; margin: 0 auto; }
-  .mission-card { background: var(--white); border: 1px solid var(--line-dark); border-radius: 8px; padding: 30px 26px; border-top: 3px solid var(--orange); }
-  .m-label { font-family: 'Manrope'; font-weight: 800; font-size: 17px; color: var(--navy); margin-bottom: 10px; }
-  .mission-card p { font-size: 14px; color: var(--slate); line-height: 1.65; }
-  .mission-card p strong { color: var(--ink); font-weight: 700; }
-  .mission-card.wide { grid-column: 1 / -1; text-align: center; }
-  .mission-card.wide .m-label { margin-bottom: 10px; }
-  .core-value-text { font-family: 'Manrope'; font-weight: 800; color: var(--orange) !important; font-size: 24px !important; line-height: 1.35 !important; margin: 0 !important; }
-  @media (max-width: 860px) { .mission-grid { grid-template-columns: 1fr; } }
+.mission-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.mission-card { background: var(--white); border: 1px solid var(--line-dark); border-radius: 8px; padding: 30px 26px; border-top: 3px solid var(--orange); }
+.m-label { font-family: 'Manrope'; font-weight: 800; font-size: 17px; color: var(--navy); margin-bottom: 10px; }
+.mission-card p { font-size: 14px; color: var(--slate); line-height: 1.65; }
+.mission-card p strong { color: var(--ink); font-weight: 700; }
+.core-value-text { font-family: 'Manrope'; font-weight: 800; color: var(--orange) !important; font-size: 24px !important; line-height: 1.35 !important; }
+@media (max-width: 860px) { .mission-grid { grid-template-columns: 1fr; } }
 
   /* ---------- SERVICES ---------- */
   .services-grid { display: flex; gap: 24px; flex-wrap: wrap; }
@@ -300,9 +298,9 @@
         <div class="m-label" data-i18n="mission.missionTitle">Sứ Mệnh</div>
         <p data-i18n="mission.missionText">Cung cấp giải pháp tuyển dụng phù hợp với nhu cầu thực tế của doanh nghiệp, góp phần xây dựng đội ngũ nhân sự ổn định và hiệu quả.</p>
       </div>
-      <div class="mission-card wide">
+      <div class="mission-card">
         <div class="m-label" data-i18n="mission.valuesTitle">Giá Trị Cốt Lõi</div>
-        <p class="core-value-text" data-i18n="mission.valuesText">Quy mô lớn – Triển khai nhanh</p>
+        <p class="core-value-text" data-i18n="mission.valuesText">Quy mô lớn –<br>Triển khai nhanh</p>
       </div>
     </div>
   </div>

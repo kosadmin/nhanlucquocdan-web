@@ -83,13 +83,15 @@
   @media (max-width: 800px) { .stats .wrap { grid-template-columns: repeat(2, 1fr); row-gap: 22px; } .stat:nth-child(3) { border-left: none; } }
 
   /* ---------- MISSION ---------- */
-  .mission-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+  .mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
   .mission-card { background: var(--white); border: 1px solid var(--line-dark); border-radius: 8px; padding: 30px 26px; border-top: 3px solid var(--orange); }
   .m-label { font-family: 'Manrope'; font-weight: 800; font-size: 17px; color: var(--navy); margin-bottom: 10px; }
   .mission-card p { font-size: 14px; color: var(--slate); line-height: 1.65; }
   .mission-card p strong { color: var(--ink); font-weight: 700; }
-  .core-value-text { font-family: 'Manrope'; font-weight: 800; font-style: italic; color: var(--orange) !important; font-size: 24px !important; line-height: 1.35 !important; }
-  @media (max-width: 860px) { .mission-grid { grid-template-columns: 1fr; } }
+  .mission-card.wide { grid-column: 1 / -1; display: flex; align-items: center; gap: 30px; flex-wrap: wrap; }
+  .mission-card.wide .m-label { margin-bottom: 0; flex-shrink: 0; }
+  .core-value-text { font-family: 'Manrope'; font-weight: 800; color: var(--orange) !important; font-size: 24px !important; line-height: 1.35 !important; margin: 0 !important; }
+  @media (max-width: 860px) { .mission-grid { grid-template-columns: 1fr; } .mission-card.wide { flex-direction: column; align-items: flex-start; gap: 12px; } }
 
   /* ---------- SERVICES ---------- */
   .services-grid { display: flex; gap: 24px; flex-wrap: wrap; }
@@ -123,6 +125,7 @@
 
   /* ---------- NETWORK ---------- */
   .network-grid { display: flex; gap: 40px; align-items: flex-start; }
+  #network { padding-bottom: 0; }
   .network-img { flex: 1.35 1 480px; }
   .network-img img { width: 100%; height: auto; border-radius: 10px; display: block; }
   .network-list { flex: 1 1 340px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-content: start; }
@@ -147,13 +150,13 @@
     display: flex; justify-content: center; align-items: center; flex-wrap: wrap;
     gap: 36px; margin-top: 28px; padding-top: 28px; border-top: 1px solid var(--line-dark);
   }
-  .partners-edu-row img { max-height: 46px; width: auto; max-width: 160px; object-fit: contain; filter: grayscale(15%); }
+  .partners-edu-row img { max-height: 58px; width: auto; max-width: 190px; object-fit: contain; filter: grayscale(15%); }
   @media (min-width: 560px) { .partners-grid { grid-template-columns: repeat(4, 1fr); } }
   @media (min-width: 860px) {
     .partners-panel { padding: 38px; }
     .partners-grid { grid-template-columns: repeat(8, 1fr); gap: 30px 22px; }
     .partners-grid img { max-height: 42px; }
-    .partners-edu-row img { max-height: 58px; }
+    .partners-edu-row img { max-height: 76px; }
   }
 
   /* ---------- CTA + FORM ---------- */
@@ -192,8 +195,7 @@
   .footer-col h4 { font-size: 12.5px; color: rgba(255,255,255,0.8); font-weight: 700; margin-bottom: 14px; letter-spacing: 0.02em; }
   .footer-col div { margin-bottom: 9px; }
   .footer-col a:hover { color: var(--amber); }
-  .footer-addr-label { color: rgba(255,255,255,0.7); font-size: 13px; margin-top: 14px; }
-  .footer-addr-value { color: rgba(255,255,255,0.5); font-size: 13px; margin-top: 3px; }
+  .footer-addr { color: rgba(255,255,255,0.5); font-size: 13px; margin-top: 8px; line-height: 1.5; }
   .social-links { display: flex; align-items: center; gap: 12px; margin-top: 2px; }
   .social-links a {
     width: 38px; height: 38px; border-radius: 50%; border: 1px solid var(--line);
@@ -242,7 +244,7 @@
       <a href="#why" data-i18n="nav.why">Vì sao chọn chúng tôi</a>
       <a href="#capacity" data-i18n="nav.capacity">Năng lực</a>
       <a href="#network" data-i18n="nav.network">Mạng lưới</a>
-      <a href="#partners" data-i18n="nav.partners">Khách hàng</a>
+      <a href="#partners" data-i18n="nav.partners">Đối tác</a>
     </div>
     <div class="nav-right">
       <div class="lang-switch">
@@ -298,9 +300,9 @@
         <div class="m-label" data-i18n="mission.missionTitle">Sứ Mệnh</div>
         <p data-i18n="mission.missionText">Cung cấp giải pháp tuyển dụng phù hợp với nhu cầu thực tế của doanh nghiệp, góp phần xây dựng đội ngũ nhân sự ổn định và hiệu quả.</p>
       </div>
-      <div class="mission-card">
+      <div class="mission-card wide">
         <div class="m-label" data-i18n="mission.valuesTitle">Giá Trị Cốt Lõi</div>
-        <p class="core-value-text" data-i18n="mission.valuesText">Quy mô lớn –<br>Triển khai nhanh</p>
+        <p class="core-value-text" data-i18n="mission.valuesText">Quy mô lớn – Triển khai nhanh</p>
       </div>
     </div>
   </div>
@@ -493,8 +495,7 @@
         </a>
         <div class="f-company" data-i18n="footer.companyName">Công ty Cổ phần Nhân Lực Quốc Dân</div>
         <div class="f-tax" data-i18n="footer.msdn">Mã số thuế: 0110921437</div>
-        <div class="footer-addr-label" data-i18n="footer.addressLabel">Trụ sở chính:</div>
-        <div class="footer-addr-value" data-i18n="network.hqAddr">B-TT13-04, Khu nhà ở Ngân Hà Vạn Phúc, P. Vạn Phúc, Q. Hà Đông, TP. Hà Nội</div>
+        <div class="footer-addr"><span data-i18n="footer.addressLabel">Trụ sở chính:</span> <span data-i18n="network.hqAddr">B-TT13-04, Khu nhà ở Ngân Hà Vạn Phúc, P. Vạn Phúc, Q. Hà Đông, TP. Hà Nội</span></div>
       </div>
       <div class="footer-col">
         <h4 data-i18n="footer.contactTitle">Liên hệ</h4>
@@ -529,7 +530,7 @@ const trans = {
     "nav.why": "Vì sao chọn chúng tôi",
     "nav.capacity": "Năng lực",
     "nav.network": "Mạng lưới",
-    "nav.partners": "Khách hàng",
+    "nav.partners": "Đối tác",
     "nav.cta": "Liên hệ ngay",
     "hero.headline": "Nhân lực quy mô lớn, triển khai nhanh, vận hành ổn định",
     "hero.sub": "Nhân Lực Quốc Dân cung cấp dịch vụ tuyển dụng trực tiếp cho doanh nghiệp, triển khai linh hoạt theo nhu cầu thực tế của từng vị trí và từng giai đoạn vận hành.",
@@ -546,7 +547,7 @@ const trans = {
     "mission.missionTitle": "Sứ Mệnh",
     "mission.missionText": "Cung cấp giải pháp tuyển dụng phù hợp với nhu cầu thực tế của doanh nghiệp, góp phần xây dựng đội ngũ nhân sự ổn định và hiệu quả.",
     "mission.valuesTitle": "Giá Trị Cốt Lõi",
-    "mission.valuesText": "Quy mô lớn –<br>Triển khai nhanh",
+    "mission.valuesText": "Quy mô lớn – Triển khai nhanh",
     "services.eyebrow": "Dịch vụ",
     "services.title": "Dịch vụ thiết kế linh hoạt theo nhu cầu",
     "svc1.title": "Tuyển Dụng Lao Động",
@@ -617,7 +618,7 @@ const trans = {
     "nav.why": "Why Choose Us",
     "nav.capacity": "Track Record",
     "nav.network": "Network",
-    "nav.partners": "Clients",
+    "nav.partners": "Partners",
     "nav.cta": "Get in touch",
     "hero.headline": "Large-scale manpower, deployed fast, run reliably",
     "hero.sub": "Quoc Dan Manpower provides direct recruitment services for businesses, deployed flexibly to match the real needs of each role and each stage of operation.",
@@ -634,7 +635,7 @@ const trans = {
     "mission.missionTitle": "Mission",
     "mission.missionText": "To provide recruitment solutions matched to each business's real needs, helping build a stable and effective workforce.",
     "mission.valuesTitle": "Core Value",
-    "mission.valuesText": "Large Scale \u2013<br>Fast Deployment",
+    "mission.valuesText": "Large Scale \u2013 Fast Deployment",
     "services.eyebrow": "Services",
     "services.title": "Services designed around your needs",
     "svc1.title": "Labor Recruitment",

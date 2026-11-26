@@ -145,12 +145,12 @@
     display: grid; grid-template-columns: repeat(3, 1fr);
     gap: 26px 18px; align-items: center; justify-items: center;
   }
-  .partners-grid img { max-height: 36px; width: auto; max-width: 100%; object-fit: contain; filter: grayscale(15%); }
+  .partners-grid img { max-height: 36px; width: auto; max-width: 100%; object-fit: contain; filter: none; }
   .partners-edu-row {
     display: flex; justify-content: center; align-items: center; flex-wrap: wrap;
     gap: 36px; margin-top: 28px; padding-top: 28px; border-top: 1px solid var(--line-dark);
   }
-  .partners-edu-row img { max-height: 58px; width: auto; max-width: 190px; object-fit: contain; filter: grayscale(15%); }
+  .partners-edu-row img { max-height: 58px; width: auto; max-width: 190px; object-fit: contain; filter: none; }
   @media (min-width: 560px) { .partners-grid { grid-template-columns: repeat(4, 1fr); } }
   @media (min-width: 860px) {
     .partners-panel { padding: 38px; }
@@ -280,12 +280,12 @@
   .marquee-track { display: inline-flex; animation: marquee 32s linear infinite; }
   .marquee:hover .marquee-track { animation-play-state: paused; }
   .marquee-item { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 20px; text-transform: uppercase; letter-spacing: .04em; display: inline-flex; align-items: center; gap: 28px; padding-right: 28px; }
-  .marquee-item svg { width: 18px; height: 18px; fill: var(--navy); flex-shrink: 0; }
+  .marquee-item svg { width: 18px; height: 18px; fill: #111111; flex-shrink: 0; }
   @keyframes marquee { to { transform: translateX(-50%); } }
 
-  /* ---------- ĐỐI TÁC: logo xám, hover hiện màu ---------- */
-  .partners-grid img, .partners-edu-row img { filter: grayscale(100%); opacity: .72; transition: filter .35s, opacity .35s, transform .35s; }
-  .partners-grid img:hover, .partners-edu-row img:hover { filter: none; opacity: 1; transform: scale(1.08); }
+  /* ---------- ĐỐI TÁC: logo luôn hiện màu, hover phóng nhẹ ---------- */
+  .partners-grid img, .partners-edu-row img { filter: none; opacity: 1; transition: transform .35s; }
+  .partners-grid img:hover, .partners-edu-row img:hover { transform: scale(1.08); }
 
   /* ---------- DỊCH VỤ: 3 thẻ ngang hàng ---------- */
   .services-grid .svc-card { flex: 1 1 300px; display: flex; flex-direction: column; }
@@ -317,6 +317,18 @@
     .navlinks .m-cta { display: block; margin-top: 18px; text-align: center; background: var(--orange); color: var(--white); border: none; border-radius: 6px; padding: 14px; font-weight: 700; }
     .navlinks a.m-cta:hover { color: var(--white); }
   }
+
+  /* ---------- Làm nổi thẻ & form trên nền tối (xanh xám cân bằng, sáng hơn nền) ---------- */
+  .value-card { background: linear-gradient(160deg, #263D5E 0%, #1C2F4C 100%); border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 16px 36px rgba(0,0,0,0.25); }
+  .value-card .vnum { opacity: 1; }
+  .value-card p { color: var(--white); }
+  .value-card:hover { background: linear-gradient(160deg, #2D4870 0%, #22385A 100%); border-color: rgba(255,255,255,0.28); box-shadow: 0 24px 50px rgba(0,0,0,0.35); }
+  .lead-form { background: linear-gradient(160deg, #263D5E 0%, #1C2F4C 100%); border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 30px 70px rgba(0,0,0,0.35); }
+  .lead-form .form-field label { color: rgba(255,255,255,0.88); }
+  .lead-form .form-field input, .lead-form .form-field textarea, .lead-form .form-field select { background: rgba(255,255,255,0.09); border: 1px solid rgba(255,255,255,0.16); color: var(--white); transition: border-color .2s, box-shadow .2s, background .2s; }
+  .lead-form .form-field input::placeholder, .lead-form .form-field textarea::placeholder { color: rgba(255,255,255,0.45); }
+  .lead-form .form-field input:focus, .lead-form .form-field textarea:focus, .lead-form .form-field select:focus { background: rgba(255,255,255,0.13); border-color: var(--amber); box-shadow: 0 0 0 3px rgba(255,166,77,0.18); }
+  .lead-form .form-note { color: rgba(255,255,255,0.55); }
 
   @media (prefers-reduced-motion: reduce) {
     .float-phone-ring { animation: none; display:none; } html { scroll-behavior: auto; }

@@ -47,7 +47,7 @@
   .logo-fallback .stars { display:flex; gap:2px; }
   .logo-fallback .stars svg { width: 15px; height:15px; fill: var(--orange); }
   .logo-fallback .stars svg:nth-child(2) { width:19px; height:19px; }
-  .logo-fallback .word { font-family:'Manrope'; font-weight:800; font-size: 23px; color: var(--navy); letter-spacing: 0.01em; }
+  .logo-fallback .word { font-family: 'Manrope', sans-serif; font-weight:800; font-size: 23px; color: var(--navy); letter-spacing: 0.01em; }
   .navlinks { display:flex; gap: 26px; font-size: 14px; font-weight: 600; color: var(--slate); }
   .navlinks a:hover { color: var(--orange); }
   .nav-right { display:flex; align-items:center; gap: 16px; }
@@ -56,7 +56,7 @@
   .lang-switch button.active { background: var(--navy); color: var(--white); }
   .navcta { background: var(--orange); color: var(--white); padding: 9px 18px; border-radius: 4px; font-size: 14px; font-weight: 700; }
   .navcta:hover { background: #d9550f; }
-  @media (max-width: 780px) { .navlinks { display: none; } .navcta { display: none; } }
+  @media (max-width: 780px) { .navcta { display: none; } }
 
   /* ---------- HERO ---------- */
   .hero { background: radial-gradient(ellipse 950px 520px at 78% 0%, var(--navy-3), var(--navy) 68%); color: var(--white); padding: 92px 0 80px; position: relative; overflow: hidden; }
@@ -78,19 +78,19 @@
   .stats .wrap { display: grid; grid-template-columns: repeat(4, 1fr); padding: 28px 32px; }
   .stat { padding: 0 20px; border-left: 1px solid var(--line); }
   .stat:first-child { border-left: none; }
-  .stat .num { font-family:'Manrope'; font-size: 25px; font-weight: 800; color: var(--amber); }
+  .stat .num { font-family: 'Manrope', sans-serif; font-size: 25px; font-weight: 800; color: var(--amber); }
   .stat .label { font-size: 12.5px; color: rgba(255,255,255,0.62); margin-top: 4px; }
   @media (max-width: 800px) { .stats .wrap { grid-template-columns: repeat(2, 1fr); row-gap: 22px; } .stat:nth-child(3) { border-left: none; } }
 
   /* ---------- MISSION ---------- */
   .mission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
   .mission-card { background: var(--white); border: 1px solid var(--line-dark); border-radius: 8px; padding: 30px 26px; border-top: 3px solid var(--orange); }
-  .m-label { font-family: 'Manrope'; font-weight: 800; font-size: 17px; color: var(--navy); margin-bottom: 10px; }
+  .m-label { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 17px; color: var(--navy); margin-bottom: 10px; }
   .mission-card p { font-size: 14px; color: var(--slate); line-height: 1.65; }
   .mission-card p strong { color: var(--ink); font-weight: 700; }
   .mission-card.wide { grid-column: 1 / -1; text-align: center; }
   .mission-card.wide .m-label { margin-bottom: 10px; }
-  .core-value-text { font-family: 'Manrope'; font-weight: 800; color: var(--orange) !important; font-size: 24px !important; line-height: 1.35 !important; margin: 0 !important; }
+  .core-value-text { font-family: 'Manrope', sans-serif; font-weight: 800; color: var(--orange) !important; font-size: 24px !important; line-height: 1.35 !important; margin: 0 !important; }
   @media (max-width: 860px) { .mission-grid { grid-template-columns: 1fr; } }
 
   /* ---------- SERVICES ---------- */
@@ -109,7 +109,7 @@
   .advantage .sec-head p { color: rgba(255,255,255,0.65); margin-top: 16px; }
   .why-values { margin-top: 52px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
   .value-card { background: rgba(255,255,255,0.045); border: 1px solid var(--line); border-radius: 10px; padding: 28px 24px 24px; }
-  .value-card .vnum { font-family: 'Manrope'; font-weight: 800; font-size: 44px; color: var(--orange); line-height: 1; opacity: 0.92; }
+  .value-card .vnum { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 44px; color: var(--orange); line-height: 1; opacity: 0.92; }
   .value-card p { margin-top: 14px; font-size: 15px; font-weight: 600; color: var(--white); line-height: 1.45; }
   @media (max-width: 900px) { .why-values { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 560px) { .why-values { grid-template-columns: 1fr; } }
@@ -119,7 +119,7 @@
   .capacity-card { background: var(--white); border: 1px solid var(--line-dark); border-top: 3px solid var(--orange); border-radius: 10px; padding: 30px 26px; display: flex; flex-direction: column; }
   .capacity-card h3 { font-size: 18px; color: var(--navy); }
   .capacity-card p { font-size: 14px; color: var(--slate); margin-top: 12px; line-height: 1.6; flex-grow: 1; }
-  .capacity-card .stat-inline { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line-dark); font-family: 'Manrope'; font-weight: 800; font-size: 30px; color: var(--orange); }
+  .capacity-card .stat-inline { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line-dark); font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 30px; color: var(--orange); }
   .capacity-card .stat-inline-label { font-size: 12.5px; color: var(--slate-2); margin-top: 2px; }
   @media (max-width: 860px) { .capacity-grid { grid-template-columns: 1fr; } }
 
@@ -130,7 +130,7 @@
   .network-img img { width: 100%; height: auto; border-radius: 10px; display: block; }
   .network-list { flex: 1 1 340px; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; align-content: start; }
   .network-branch { padding: 14px 16px; border: 1px solid var(--line-dark); border-top: 2px solid var(--orange); border-radius: 8px; background: var(--white); }
-  .network-branch .n-name { font-family: 'Manrope'; font-weight: 800; font-size: 13.5px; color: var(--navy); }
+  .network-branch .n-name { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 13.5px; color: var(--navy); }
   .network-branch .n-addr { font-size: 12px; color: var(--slate); margin-top: 5px; line-height: 1.45; }
   @media (max-width: 860px) { .network-grid { flex-direction: column; } .network-list { grid-template-columns: 1fr 1fr; } }
   @media (max-width: 560px) { .network-list { grid-template-columns: 1fr; } }
@@ -219,10 +219,210 @@
   }
   @keyframes floatring { 0% { transform: scale(1); opacity: 0.55; } 100% { transform: scale(1.7); opacity: 0; } }
 
-  @media (prefers-reduced-motion: reduce) { .float-phone-ring { animation: none; display:none; } html { scroll-behavior: auto; } }
+  /* ================================================================
+     NÂNG CẤP GIAO DIỆN: loader, scroll reveal, hover, ERP, marquee
+     ================================================================ */
+
+  /* ---------- LOADER (màn hình chờ logo) ---------- */
+  .loader { display: none; }
+  .js .loader {
+    position: fixed; inset: 0; z-index: 2000; background: var(--white);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 30px;
+    transition: transform .9s cubic-bezier(.77,0,.18,1), opacity .5s ease .5s;
+  }
+  .js.no-loader .loader { display: none; }
+  .js.no-loader body.loading { overflow: auto; }
+  .js .loader.done { transform: translateY(-100%); opacity: 0; pointer-events: none; }
+  .js body.loading { overflow: hidden; }
+  .loader-logo { width: min(280px, 62vw); height: auto; opacity: 0; animation: ldLogo 1s cubic-bezier(.2,.7,.2,1) .1s forwards; }
+  @keyframes ldLogo { from { opacity: 0; transform: translateY(16px) scale(.94); filter: blur(8px); } to { opacity: 1; transform: none; filter: blur(0); } }
+  .loader-bar { width: 170px; height: 3px; background: var(--line-dark); border-radius: 3px; overflow: hidden; }
+  .loader-bar span { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--orange), var(--amber)); animation: ldBar 1.4s cubic-bezier(.4,0,.2,1) .25s forwards; }
+  @keyframes ldBar { to { width: 100%; } }
+
+  /* ---------- SCROLL REVEAL (kéo tới đâu hiện tới đó) ---------- */
+  .js .reveal { opacity: 0; transform: translateY(32px); transition: opacity .85s cubic-bezier(.2,.7,.2,1), transform .85s cubic-bezier(.2,.7,.2,1); transition-delay: var(--d, 0s); }
+  .js .reveal.reveal-left { transform: translateX(-40px); }
+  .js .reveal.reveal-right { transform: translateX(40px); }
+  .js .reveal.reveal-zoom { transform: scale(.9); }
+  .js .reveal.in { opacity: 1; transform: none; }
+
+  /* ---------- NAV khi cuộn ---------- */
+  nav { transition: box-shadow .3s, background .3s; }
+  nav.scrolled { box-shadow: 0 8px 30px rgba(11,31,58,0.08); background: rgba(255,255,255,0.96); }
+  .navlinks a { position: relative; transition: color .2s; }
+  .navlinks a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px; background: var(--orange); transform: scaleX(0); transform-origin: left; transition: transform .3s; }
+  .navlinks a:hover::after { transform: scaleX(1); }
+  .nav-erp { color: var(--navy); }
+  .nav-erp::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #2F6BFF; margin-right: 6px; vertical-align: 1px; box-shadow: 0 0 0 0 rgba(47,107,255,.6); animation: pulseDot 2s infinite; }
+  @keyframes pulseDot { 70% { box-shadow: 0 0 0 7px rgba(47,107,255,0); } 100% { box-shadow: 0 0 0 0 rgba(47,107,255,0); } }
+
+  /* ---------- Nút & thẻ: hover mượt ---------- */
+  .btn-primary, .btn-ghost, .navcta { transition: transform .25s, box-shadow .25s, background .25s, color .25s, border-color .25s; }
+  .btn-primary:hover, .navcta:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(242,102,29,0.35); }
+  .btn-ghost:hover { transform: translateY(-2px); }
+  .mission-card, .svc-card, .capacity-card, .network-branch, .value-card { transition: transform .4s cubic-bezier(.2,.7,.2,1), box-shadow .4s, border-color .4s, background .4s; }
+  .mission-card:hover, .svc-card:hover, .capacity-card:hover, .network-branch:hover { transform: translateY(-6px); box-shadow: 0 20px 44px rgba(11,31,58,0.10); }
+  .value-card:hover { transform: translateY(-6px); background: rgba(255,255,255,0.08); border-color: rgba(255,166,77,0.45); }
+
+  /* ---------- HERO: lưới chấm + ảnh lơ lửng ---------- */
+  .hero::before { content: ""; position: absolute; inset: 0; pointer-events: none;
+    background-image: radial-gradient(rgba(255,255,255,0.10) 1px, transparent 1px); background-size: 26px 26px;
+    -webkit-mask-image: radial-gradient(ellipse 70% 80% at 80% 20%, #000 20%, transparent 75%); mask-image: radial-gradient(ellipse 70% 80% at 80% 20%, #000 20%, transparent 75%); }
+  .hero::after { content: ""; position: absolute; width: 520px; height: 520px; right: -120px; top: -160px; border-radius: 50%; background: radial-gradient(circle, rgba(242,102,29,0.22), transparent 65%); pointer-events: none; }
+  .hero .wrap { position: relative; z-index: 1; }
+  .hero-visual img { animation: floaty 6s ease-in-out infinite; }
+  @keyframes floaty { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+  .hero h1 .hl { background: linear-gradient(90deg, var(--orange), var(--amber)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+  /* ---------- MARQUEE (dải giá trị chạy ngang) ---------- */
+  .marquee { background: var(--orange); color: var(--white); overflow: hidden; padding: 16px 0; white-space: nowrap; }
+  .marquee-track { display: inline-flex; animation: marquee 32s linear infinite; }
+  .marquee:hover .marquee-track { animation-play-state: paused; }
+  .marquee-item { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 20px; text-transform: uppercase; letter-spacing: .04em; display: inline-flex; align-items: center; gap: 28px; padding-right: 28px; }
+  .marquee-item svg { width: 18px; height: 18px; fill: var(--navy); flex-shrink: 0; }
+  @keyframes marquee { to { transform: translateX(-50%); } }
+
+  /* ---------- ĐỐI TÁC: logo xám, hover hiện màu ---------- */
+  .partners-grid img, .partners-edu-row img { filter: grayscale(100%); opacity: .72; transition: filter .35s, opacity .35s, transform .35s; }
+  .partners-grid img:hover, .partners-edu-row img:hover { filter: none; opacity: 1; transform: scale(1.08); }
+
+  /* ---------- DỊCH VỤ: 3 thẻ ngang hàng ---------- */
+  .services-grid .svc-card { flex: 1 1 300px; display: flex; flex-direction: column; }
+  .badge-new { display: inline-block; font-family: 'Inter', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--white); background: linear-gradient(90deg, #2F6BFF, #20B5E8); padding: 4px 10px; border-radius: 100px; vertical-align: middle; }
+  .svc-kobee { position: relative; overflow: hidden; border-color: rgba(47,107,255,0.25); }
+  .svc-kobee::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px; background: linear-gradient(90deg, #2F6BFF, #4DE0EE); }
+  .svc-kobee h3 { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .svc-kobee li::before { color: #2F6BFF; }
+  .svc-link { margin-top: auto; padding-top: 20px; font-weight: 700; font-size: 14.5px; color: #2F6BFF; display: inline-flex; align-items: center; gap: 6px; }
+  .svc-link span { transition: transform .25s; }
+  .svc-link:hover span { transform: translateX(5px); }
+
+  /* ---------- KOBEE (section giới thiệu phần mềm) ---------- */
+  .kobee { --kb-blue: #2F6BFF; --kb-cyan: #4DE0EE; --kb-deep: #06122A;
+    background: radial-gradient(ellipse 900px 560px at 85% 0%, rgba(47,107,255,0.38), transparent 62%),
+                radial-gradient(ellipse 760px 520px at 0% 70%, rgba(77,224,238,0.14), transparent 62%), var(--kb-deep);
+    color: var(--white); position: relative; overflow: hidden; padding: 108px 0; }
+  .kobee-head { max-width: 780px; margin: 0 auto; text-align: center; }
+  .kobee-logo { height: 56px; width: auto; display: block; margin: 0 auto 26px; }
+  .kb-eyebrow { color: var(--kb-cyan); }
+  .kb-title { font-size: clamp(30px, 4.4vw, 48px); }
+  .kb-grad { background: linear-gradient(90deg, var(--kb-cyan), #8AAEFF); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .kb-lead { color: rgba(255,255,255,0.74); font-size: 17px; margin-top: 20px; }
+  .kb-ctas { display: flex; justify-content: center; gap: 14px; margin-top: 34px; flex-wrap: wrap; }
+  .btn-kobee { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(90deg, var(--kb-blue), #20B5E8); color: var(--white); font-weight: 700; font-size: 15.5px; padding: 15px 30px; border-radius: 100px; box-shadow: 0 12px 30px rgba(47,107,255,0.45); transition: transform .25s, box-shadow .25s; }
+  .btn-kobee:hover { transform: translateY(-2px); box-shadow: 0 18px 42px rgba(47,107,255,0.65); }
+  .btn-kobee svg { width: 18px; height: 18px; transition: transform .25s; }
+  .btn-kobee:hover svg { transform: translateX(4px); }
+
+  .kb-showcase { position: relative; isolation: isolate; max-width: 1020px; margin: 68px auto 0; padding-bottom: 96px; }
+  .kb-glow { position: absolute; inset: 8% 6% 4%; z-index: -1; background: radial-gradient(closest-side, rgba(47,107,255,0.55), transparent); filter: blur(50px); }
+  .kb-frame { background: var(--white); border-radius: 14px; overflow: hidden; box-shadow: 0 40px 90px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.08); }
+  .kb-frame img { display: block; width: 100%; height: auto; }
+  .kb-bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: #EEF2F8; border-bottom: 1px solid #DDE3EC; }
+  .kb-bar i { width: 10px; height: 10px; border-radius: 50%; background: #FF6159; }
+  .kb-bar i:nth-child(2) { background: #FFBD2E; } .kb-bar i:nth-child(3) { background: #28C941; }
+  .kb-bar span { margin-left: 10px; font-size: 12px; font-weight: 600; color: #5A6780; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .kb-frame-main { width: 86%; }
+  .kb-frame-sub { position: absolute; right: 0; bottom: 0; width: 46%; animation: floaty 7s ease-in-out infinite; }
+  .kb-chip { position: absolute; z-index: 2; display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.96); color: var(--ink); font-size: 13px; font-weight: 700; padding: 10px 14px 10px 10px; border-radius: 12px; box-shadow: 0 16px 34px rgba(0,0,0,0.32); animation: floaty 6s ease-in-out infinite; }
+  .kb-chip i { width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center; background: linear-gradient(135deg, var(--kb-blue), var(--kb-cyan)); color: var(--white); font-style: normal; font-size: 14px; }
+  .kb-chip-1 { left: -18px; top: 18%; }
+  .kb-chip-2 { left: 9%; bottom: 22px; animation-delay: -3s; }
+
+  .kb-flow { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; margin-top: 84px; position: relative; }
+  .kb-flow::before { content: ""; position: absolute; left: 10%; right: 10%; top: 28px; height: 2px; background: linear-gradient(90deg, #2F6BFF, #4DE0EE, #F7B538, #EF5B5B, #2EBF7A); opacity: .75; }
+  .kb-step { text-align: center; position: relative; }
+  .kb-step b { width: 56px; height: 56px; margin: 0 auto 14px; border-radius: 50%; display: grid; place-items: center; font-family: 'Manrope', sans-serif; font-size: 17px; background: var(--kb-deep); border: 2px solid var(--c); color: var(--c); box-shadow: 0 0 0 7px rgba(6,18,42,1), 0 0 24px var(--c); }
+  .kb-step h4 { font-family: 'Manrope', sans-serif; font-size: 16px; font-weight: 800; }
+  .kb-step p { font-size: 13px; color: rgba(255,255,255,0.62); margin-top: 6px; line-height: 1.5; }
+  .kb-flow-note { text-align: center; margin-top: 34px; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 15px; letter-spacing: .02em; color: var(--kb-cyan); }
+
+  .kb-sub { text-align: center; max-width: 660px; margin: 96px auto 34px; }
+  .kb-sub h3 { font-size: clamp(24px, 3vw, 32px); }
+  .kb-sub p { color: rgba(255,255,255,0.65); margin-top: 12px; font-size: 15.5px; }
+
+  .kb-diffs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .kb-diff { border-radius: 18px; padding: 28px 24px; background: linear-gradient(160deg, rgba(47,107,255,0.24), rgba(255,255,255,0.03) 62%); border: 1px solid rgba(255,255,255,0.12); transition: transform .4s cubic-bezier(.2,.7,.2,1), border-color .4s; }
+  .kb-diff:hover { transform: translateY(-6px); border-color: rgba(77,224,238,0.5); }
+  .kb-tag { font-size: 11.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--kb-cyan); }
+  .kb-diff h4 { font-family: 'Manrope', sans-serif; font-size: 19px; font-weight: 800; margin-top: 10px; line-height: 1.3; }
+  .kb-diff p { font-size: 14px; color: rgba(255,255,255,0.7); margin-top: 10px; }
+  .kb-chat { margin-top: 18px; display: grid; gap: 8px; }
+  .kb-msg { font-size: 12.5px; line-height: 1.45; padding: 9px 13px; border-radius: 14px; max-width: 92%; }
+  .kb-msg.me { justify-self: end; background: var(--kb-blue); border-bottom-right-radius: 4px; }
+  .kb-msg.bot { background: rgba(255,255,255,0.1); border-bottom-left-radius: 4px; }
+
+  .kb-modules { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .kb-module { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 14px; padding: 22px 20px; transition: transform .4s cubic-bezier(.2,.7,.2,1), background .4s, border-color .4s; }
+  .kb-module:hover { transform: translateY(-5px); background: rgba(47,107,255,0.13); border-color: rgba(77,224,238,0.45); }
+  .kb-ico { width: 42px; height: 42px; border-radius: 11px; display: grid; place-items: center; background: linear-gradient(135deg, rgba(47,107,255,0.4), rgba(77,224,238,0.22)); color: var(--kb-cyan); margin-bottom: 14px; }
+  .kb-ico svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .kb-module h4 { font-family: 'Manrope', sans-serif; font-size: 15.5px; font-weight: 800; }
+  .kb-module p { font-size: 13px; color: rgba(255,255,255,0.62); margin-top: 6px; line-height: 1.5; }
+
+  .kb-proof { margin-top: 84px; border: 1px solid rgba(255,255,255,0.12); border-radius: 22px; padding: 36px 38px; display: grid; grid-template-columns: 1.5fr repeat(4, 1fr); gap: 26px; align-items: center; background: rgba(255,255,255,0.035); }
+  .kb-proof-text h4 { font-family: 'Manrope', sans-serif; font-size: 21px; font-weight: 800; line-height: 1.3; }
+  .kb-proof-text p { font-size: 13.5px; color: rgba(255,255,255,0.62); margin-top: 8px; }
+  .kb-num { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1; background: linear-gradient(90deg, var(--kb-cyan), #8AAEFF); -webkit-background-clip: text; background-clip: text; color: transparent; }
+  .kb-lab { font-size: 12.5px; color: rgba(255,255,255,0.62); margin-top: 4px; line-height: 1.4; min-height: 2.8em; }
+  .kb-final { text-align: center; margin-top: 56px; }
+  .kb-final h3 { font-size: clamp(22px, 2.8vw, 30px); }
+
+  @media (max-width: 960px) {
+    .kb-flow { grid-template-columns: repeat(2, 1fr); row-gap: 30px; } .kb-flow::before { display: none; }
+    .kb-step:last-child { grid-column: 1 / -1; }
+    .kb-diffs { grid-template-columns: 1fr; }
+    .kb-modules { grid-template-columns: repeat(2, 1fr); }
+    .kb-proof { grid-template-columns: repeat(2, 1fr); padding: 28px; } .kb-proof-text { grid-column: 1 / -1; }
+  }
+  @media (max-width: 600px) {
+    .kobee { padding: 80px 0; }
+    .kb-frame-main { width: 100%; } .kb-frame-sub { width: 58%; right: -6px; } .kb-showcase { padding-bottom: 70px; }
+    .kb-chip { display: none; }
+    .kb-modules { grid-template-columns: 1fr; }
+  }
+
+  /* ---------- MENU ĐIỆN THOẠI ---------- */
+  .menu-btn { display: none; width: 42px; height: 42px; border: 1px solid var(--line-dark); border-radius: 8px; background: var(--white); flex-direction: column; align-items: center; justify-content: center; gap: 5px; cursor: pointer; }
+  .menu-btn span { width: 18px; height: 2px; background: var(--navy); border-radius: 2px; transition: transform .3s, opacity .3s; }
+  nav.open .menu-btn span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  nav.open .menu-btn span:nth-child(2) { opacity: 0; }
+  nav.open .menu-btn span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+  .navlinks .m-cta { display: none; }
+  @media (max-width: 780px) {
+    nav .wrap { height: 68px; padding: 0 20px; }
+    .logo-img { height: 38px; }
+    .menu-btn { display: flex; }
+    .navlinks { display: flex; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; gap: 0; background: var(--white); padding: 6px 24px 22px;
+      box-shadow: 0 24px 40px rgba(11,31,58,0.14); border-bottom: 1px solid var(--line-dark); transform: translateY(-10px); opacity: 0; visibility: hidden; transition: transform .3s, opacity .3s, visibility .3s; }
+    nav.open .navlinks { transform: none; opacity: 1; visibility: visible; }
+    .navlinks a { padding: 15px 2px; font-size: 16px; color: var(--navy); border-bottom: 1px solid var(--line-dark); }
+    .navlinks a::after { display: none; }
+    .navlinks .m-cta { display: block; margin-top: 18px; text-align: center; background: var(--orange); color: var(--white); border: none; border-radius: 6px; padding: 14px; font-weight: 700; }
+    .navlinks a.m-cta:hover { color: var(--white); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .float-phone-ring { animation: none; display:none; } html { scroll-behavior: auto; }
+    .js .reveal { opacity: 1; transform: none; transition: none; }
+    .hero-visual img, .marquee-track, .nav-erp::before { animation: none; }
+    .kb-frame-sub, .kb-chip { animation: none; }
+  }
 </style>
+<script>
+  document.documentElement.classList.add('js');
+  // Loading logo chỉ hiện ở lần đầu tiên khách vào trang (ghi nhớ trên trình duyệt)
+  try { if (localStorage.getItem('nlqd_loader_seen')) document.documentElement.classList.add('no-loader'); } catch (e) {}
+</script>
 </head>
-<body>
+<body class="loading">
+
+<!-- ============ LOADER ============ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <img src="logo.png" alt="" class="loader-logo">
+  <div class="loader-bar"><span></span></div>
+</div>
 
 <!-- ============ NAV ============ -->
 <nav>
@@ -239,12 +439,14 @@
         <span class="word">QUỐC DÂN</span>
       </span>
     </a>
-    <div class="navlinks">
+    <div class="navlinks" id="navlinks">
       <a href="#services" data-i18n="nav.services">Dịch vụ</a>
+      <a href="#kobee" class="nav-erp" data-i18n="nav.kobee">Phần mềm Kobee</a>
       <a href="#why" data-i18n="nav.why">Vì sao chọn chúng tôi</a>
       <a href="#capacity" data-i18n="nav.capacity">Năng lực</a>
       <a href="#network" data-i18n="nav.network">Mạng lưới</a>
       <a href="#partners" data-i18n="nav.partners">Đối tác</a>
+      <a href="#contact" class="m-cta" data-i18n="nav.cta">Liên hệ ngay</a>
     </div>
     <div class="nav-right">
       <div class="lang-switch">
@@ -252,6 +454,7 @@
         <button id="lang-en" onclick="setLang('en')">EN</button>
       </div>
       <a class="navcta" href="#contact" data-i18n="nav.cta">Liên hệ ngay</a>
+      <button class="menu-btn" id="menu-btn" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="navlinks"><span></span><span></span><span></span></button>
     </div>
   </div>
 </nav>
@@ -260,7 +463,7 @@
 <header class="hero">
   <div class="wrap hero-grid">
     <div class="hero-text">
-      <h1 data-i18n="hero.headline">Nhân lực quy mô lớn, triển khai nhanh, vận hành ổn định</h1>
+      <h1 data-i18n="hero.headline">Nhân lực quy mô lớn, <span class="hl">triển khai nhanh</span>, vận hành ổn định</h1>
       <p class="lead" data-i18n="hero.sub">Nhân Lực Quốc Dân cung cấp dịch vụ tuyển dụng trực tiếp cho doanh nghiệp, triển khai linh hoạt theo nhu cầu thực tế của từng vị trí và từng giai đoạn vận hành.</p>
       <div class="hero-ctas">
         <a class="btn-primary" href="#contact" data-i18n="hero.cta1">Nhận tư vấn tuyển dụng</a>
@@ -281,6 +484,18 @@
     <div class="stat"><div class="num">10.000+</div><div class="label" data-i18n="stats.label2">Ứng viên tuyển dụng thành công</div></div>
     <div class="stat"><div class="num">2.000</div><div class="label" data-i18n="stats.label3">Nhân sự triển khai trong 1 tháng</div></div>
     <div class="stat"><div class="num">05</div><div class="label" data-i18n="stats.label4">Chi nhánh tại miền Bắc</div></div>
+  </div>
+</div>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track" id="marquee-track">
+    <span class="marquee-item"><span data-i18n="marq.1">Quy mô lớn</span><svg viewBox="0 0 24 24"><path d="M12 1l2.9 6.9L22 9l-5.5 4.8L18 21l-6-3.9L6 21l1.5-7.2L2 9l7.1-1.1z"/></svg></span>
+    <span class="marquee-item"><span data-i18n="marq.2">Triển khai nhanh</span><svg viewBox="0 0 24 24"><path d="M12 1l2.9 6.9L22 9l-5.5 4.8L18 21l-6-3.9L6 21l1.5-7.2L2 9l7.1-1.1z"/></svg></span>
+    <span class="marquee-item"><span data-i18n="marq.3">Vận hành ổn định</span><svg viewBox="0 0 24 24"><path d="M12 1l2.9 6.9L22 9l-5.5 4.8L18 21l-6-3.9L6 21l1.5-7.2L2 9l7.1-1.1z"/></svg></span>
+    <span class="marquee-item"><span data-i18n="marq.4">Minh bạch</span><svg viewBox="0 0 24 24"><path d="M12 1l2.9 6.9L22 9l-5.5 4.8L18 21l-6-3.9L6 21l1.5-7.2L2 9l7.1-1.1z"/></svg></span>
+    <span class="marquee-item"><span data-i18n="marq.5">Công nghệ ERP</span><svg viewBox="0 0 24 24"><path d="M12 1l2.9 6.9L22 9l-5.5 4.8L18 21l-6-3.9L6 21l1.5-7.2L2 9l7.1-1.1z"/></svg></span>
+    <span class="marquee-item"><span data-i18n="marq.6">Đồng hành dài hạn</span><svg viewBox="0 0 24 24"><path d="M12 1l2.9 6.9L22 9l-5.5 4.8L18 21l-6-3.9L6 21l1.5-7.2L2 9l7.1-1.1z"/></svg></span>
   </div>
 </div>
 
@@ -333,6 +548,113 @@
           <li data-i18n="svc2.b2">Sorting &amp; rework theo dự án; 5S &amp; vệ sinh cảnh quan khu vực</li>
           <li data-i18n="svc2.b3">Đảm bảo sản xuất ổn định, liên tục theo KPI đã thống nhất</li>
         </ul>
+      </div>
+
+      <!-- ===== DỊCH VỤ 3: PHẦN MỀM KOBEE (SAAS) — giới thiệu vắn tắt ===== -->
+      <div class="svc-card svc-kobee">
+        <h3><span data-i18n="svc3.title">Phần Mềm Kobee</span> <span class="badge-new" data-i18n="svc3.badge">Mới</span></h3>
+        <p data-i18n="svc3.desc">Nền tảng quản trị (SaaS) dành riêng cho doanh nghiệp tuyển dụng và cung ứng nhân lực, do chính Nhân Lực Quốc Dân phát triển và vận hành hằng ngày.</p>
+        <ul>
+          <li data-i18n="svc3.b1">Quản lý trọn vòng đời: tìm nguồn, tuyển dụng, nhận việc, chấm công, tính lương</li>
+          <li data-i18n="svc3.b2">AI gợi ý việc làm, kết nối vendor và khách hàng theo thời gian thực</li>
+          <li data-i18n="svc3.b3">Thay thế hàng chục file Excel rời rạc bằng một hệ thống duy nhất</li>
+        </ul>
+        <a class="svc-link" href="#kobee"><b data-i18n="svc3.link">Khám phá Kobee</b> <span>→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KOBEE — PHẦN MỀM QUẢN TRỊ NHÂN SỰ ============ -->
+<section class="kobee" id="kobee">
+  <div class="wrap">
+    <div class="kobee-head">
+      <img src="kobee/kobee-logo-white.png" alt="Kobee" class="kobee-logo">
+      <div class="eyebrow kb-eyebrow" data-i18n="kb.eyebrow">Sản phẩm công nghệ của Nhân Lực Quốc Dân</div>
+      <h2 class="kb-title" data-i18n="kb.title">Vận hành cả doanh nghiệp nhân sự <span class="kb-grad">trên một nền tảng duy nhất</span></h2>
+      <p class="kb-lead" data-i18n="kb.lead">Kobee là phần mềm quản trị được thiết kế riêng cho ngành tuyển dụng và cung ứng lao động. Từ tìm nguồn ứng viên, phỏng vấn, nhận việc đến chấm công và tính lương, tất cả nằm trên cùng một hồ sơ và cập nhật theo thời gian thực. Tạm biệt những file Excel rời rạc.</p>
+      <div class="kb-ctas">
+        <a class="btn-kobee kobee-explore" href="#contact"><span data-i18n="kb.cta">Khám phá Kobee</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+
+    <div class="kb-showcase">
+      <div class="kb-glow"></div>
+      <div class="kb-frame kb-frame-main">
+        <div class="kb-bar"><i></i><i></i><i></i><span data-i18n="kb.frame1">Kobee · Bảng điều khiển quản trị</span></div>
+        <img src="kobee/kobee-dashboard.webp" alt="Giao diện quản trị Kobee: tổng quan tuyển dụng và tiến độ dự án" width="1400" height="608" loading="lazy">
+      </div>
+      <div class="kb-frame kb-frame-sub">
+        <div class="kb-bar"><i></i><i></i><i></i><span data-i18n="kb.frame2">Kobee · Cổng việc làm cho ứng viên</span></div>
+        <img src="kobee/kobee-portal.webp" alt="Cổng việc làm Kobee dành cho ứng viên" width="1400" height="928" loading="lazy">
+      </div>
+      <div class="kb-chip kb-chip-1"><i>✦</i><span data-i18n="kb.chip1">AI gợi ý việc phù hợp</span></div>
+      <div class="kb-chip kb-chip-2"><i>⟳</i><span data-i18n="kb.chip2">Đồng bộ theo thời gian thực</span></div>
+    </div>
+
+    <div class="kb-flow">
+      <div class="kb-step" style="--c:#2F6BFF"><b>01</b><h4 data-i18n="kb.s1t">Tìm nguồn</h4><p data-i18n="kb.s1">Webform, mạng xã hội, quảng cáo đổ về một kho dữ liệu chung</p></div>
+      <div class="kb-step" style="--c:#4DE0EE"><b>02</b><h4 data-i18n="kb.s2t">Tuyển dụng CRM</h4><p data-i18n="kb.s2">Ghép ứng viên với việc, theo sát từng vòng phỏng vấn</p></div>
+      <div class="kb-step" style="--c:#F7B538"><b>03</b><h4 data-i18n="kb.s3t">Onboarding</h4><p data-i18n="kb.s3">Chăm sóc người lao động mới, hỗ trợ 24/7 để giữ chân</p></div>
+      <div class="kb-step" style="--c:#EF5B5B"><b>04</b><h4 data-i18n="kb.s4t">HRM</h4><p data-i18n="kb.s4">Chấm công, tính lương, lưu trữ hồ sơ và hợp đồng</p></div>
+      <div class="kb-step" style="--c:#2EBF7A"><b>05</b><h4 data-i18n="kb.s5t">Tái kích hoạt</h4><p data-i18n="kb.s5">Làm mới dữ liệu người đã nghỉ để sẵn sàng tuyển lại</p></div>
+    </div>
+    <p class="kb-flow-note" data-i18n="kb.flowNote">Không trùng dữ liệu. Không nhập lại. Một hồ sơ xuyên suốt cả vòng đời người lao động.</p>
+
+    <div class="kb-sub">
+      <h3 data-i18n="kb.diffTitle">Thông minh hơn với AI, minh bạch hơn với hệ sinh thái</h3>
+    </div>
+    <div class="kb-diffs">
+      <div class="kb-diff">
+        <div class="kb-tag">AI Job Matching</div>
+        <h4 data-i18n="kb.d1t">Ghép đúng người, đúng việc trong vài giây</h4>
+        <p data-i18n="kb.d1">Kobee tự gợi ý việc làm phù hợp cho từng ứng viên và danh sách ứng viên phù hợp cho từng vị trí. Tuyển dụng viên không còn phải dò từng file.</p>
+      </div>
+      <div class="kb-diff">
+        <div class="kb-tag">AI Chatbot</div>
+        <h4 data-i18n="kb.d2t">Hỏi một câu, có ngay câu trả lời</h4>
+        <div class="kb-chat" aria-hidden="true">
+          <div class="kb-msg me" data-i18n="kb.chatMe">Tìm việc cho ứng viên 35 tuổi ở Hải Phòng</div>
+          <div class="kb-msg bot" data-i18n="kb.chatBot">Có 2 việc phù hợp: Công nhân lắp ráp tại Công ty X và Kỹ sư tại Công ty Y.</div>
+        </div>
+      </div>
+      <div class="kb-diff">
+        <div class="kb-tag" data-i18n="kb.d3tag">Kết nối hệ sinh thái</div>
+        <h4 data-i18n="kb.d3t">Vendor, khách hàng và bạn trên cùng một luồng</h4>
+        <p data-i18n="kb.d3">Vendor nhập ứng viên, khách hàng trả kết quả phỏng vấn, mọi thứ đồng bộ tức thì. Đối soát minh bạch, hết tranh cãi.</p>
+      </div>
+    </div>
+
+    <div class="kb-sub">
+      <h3 data-i18n="kb.modTitle">8 phân hệ, một hệ thống vận hành</h3>
+      <p data-i18n="kb.modSub">Đầy đủ nghiệp vụ tuyển dụng và quản trị nhân sự, xây dựng theo quy trình chuẩn của ngành.</p>
+    </div>
+    <div class="kb-modules">
+      <div class="kb-module"><div class="kb-ico"><svg viewBox="0 0 24 24"><path d="M3 3h7v9H3zM14 3h7v5h-7zM14 12h7v9h-7zM3 16h7v5H3z"/></svg></div><h4>Dashboard</h4><p data-i18n="kb.m1">Báo cáo quản trị theo thời gian thực</p></div>
+      <div class="kb-module"><div class="kb-ico"><svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><h4 data-i18n="kb.m2t">Dự án</h4><p data-i18n="kb.m2">Cấu trúc dự án cha/con, yêu cầu tuyển dụng chi tiết</p></div>
+      <div class="kb-module"><div class="kb-ico"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5M16 4.5a3.5 3.5 0 0 1 0 7M18.5 14.8c1.7.8 2.7 2.6 3 5.2"/></svg></div><h4 data-i18n="kb.m3t">Ứng viên (CRM)</h4><p data-i18n="kb.m3">Phễu tuyển dụng 8 bước, lọc trùng thông minh, ghép việc bằng AI</p></div>
+      <div class="kb-module"><div class="kb-ico"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><h4 data-i18n="kb.m4t">OB &amp; Bảo hành</h4><p data-i18n="kb.m4">Chăm sóc sau nhận việc 1–3–7–30 ngày, hỗ trợ 24/7</p></div>
+      <div class="kb-module"><div class="kb-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4M8 14h3M8 17h6"/></svg></div><h4>HRM</h4><p data-i18n="kb.m5">Chấm công GPS/máy, nghỉ phép, tính lương, hợp đồng</p></div>
+      <div class="kb-module"><div class="kb-ico"><svg viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></div><h4 data-i18n="kb.m6t">CTV / Vendor</h4><p data-i18n="kb.m6">Đối tác tuyển dụng cùng tham gia, kết quả cập nhật minh bạch</p></div>
+      <div class="kb-module"><div class="kb-ico"><svg viewBox="0 0 24 24"><path d="M4 21V5a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v16M15 9h4a1 1 0 0 1 1 1v11M2 21h20M8 8h3M8 12h3M8 16h3"/></svg></div><h4 data-i18n="kb.m7t">Cổng khách hàng</h4><p data-i18n="kb.m7">Khách hàng theo dõi ứng viên, cập nhật kết quả phỏng vấn</p></div>
+      <div class="kb-module"><div class="kb-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15 9.5c-.5-1-1.6-1.5-3-1.5-1.7 0-3 .8-3 2s1.3 1.7 3 2 3 .8 3 2-1.3 2-3 2c-1.4 0-2.6-.6-3-1.6M12 6v2M12 16v2"/></svg></div><h4 data-i18n="kb.m8t">Tài chính</h4><p data-i18n="kb.m8">Quản lý phí, hoa hồng theo nhân sự, vendor, dự án</p></div>
+    </div>
+
+    <div class="kb-proof">
+      <div class="kb-proof-text">
+        <h4 data-i18n="kb.proofT">Đã kiểm chứng trong vận hành thực tế</h4>
+        <p data-i18n="kb.proof">Kobee được Nhân Lực Quốc Dân xây dựng và dùng hằng ngày trước khi mang ra thị trường. Mỗi tính năng đều sinh ra từ một bài toán có thật.</p>
+      </div>
+      <div><div class="kb-num">8</div><div class="kb-lab" data-i18n="kb.p1">Phân hệ hoàn thiện</div></div>
+      <div><div class="kb-num">200+</div><div class="kb-lab" data-i18n="kb.p2">Người dùng thực tế</div></div>
+      <div><div class="kb-num">4</div><div class="kb-lab" data-i18n="kb.p3">Chi nhánh đang triển khai</div></div>
+      <div><div class="kb-num static">4,8/5</div><div class="kb-lab" data-i18n="kb.p4">Độ phù hợp với công việc thực tế</div></div>
+    </div>
+
+    <div class="kb-final">
+      <h3 data-i18n="kb.finalT">Sẵn sàng số hóa doanh nghiệp nhân sự của bạn?</h3>
+      <div class="kb-ctas">
+        <a class="btn-kobee kobee-explore" href="#contact"><span data-i18n="kb.cta">Khám phá Kobee</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
   </div>
@@ -527,12 +849,75 @@
 const trans = {
   vi: {
     "nav.services": "Dịch vụ",
+    "marq.1": "Quy mô lớn", "marq.2": "Triển khai nhanh", "marq.3": "Vận hành ổn định",
+    "marq.4": "Minh bạch", "marq.5": "Công nghệ ERP", "marq.6": "Đồng hành dài hạn",
+    "nav.kobee": "Phần mềm Kobee",
+    "svc3.title": "Phần Mềm Kobee",
+    "svc3.badge": "Mới",
+    "svc3.desc": "Nền tảng quản trị (SaaS) dành riêng cho doanh nghiệp tuyển dụng và cung ứng nhân lực, do chính Nhân Lực Quốc Dân phát triển và vận hành hằng ngày.",
+    "svc3.b1": "Quản lý trọn vòng đời: tìm nguồn, tuyển dụng, nhận việc, chấm công, tính lương",
+    "svc3.b2": "AI gợi ý việc làm, kết nối vendor và khách hàng theo thời gian thực",
+    "svc3.b3": "Thay thế hàng chục file Excel rời rạc bằng một hệ thống duy nhất",
+    "svc3.link": "Khám phá Kobee",
+    "kb.eyebrow": "Sản phẩm công nghệ của Nhân Lực Quốc Dân",
+    "kb.title": "Vận hành cả doanh nghiệp nhân sự <span class=\"kb-grad\">trên một nền tảng duy nhất</span>",
+    "kb.lead": "Kobee là phần mềm quản trị được thiết kế riêng cho ngành tuyển dụng và cung ứng lao động. Từ tìm nguồn ứng viên, phỏng vấn, nhận việc đến chấm công và tính lương, tất cả nằm trên cùng một hồ sơ và cập nhật theo thời gian thực. Tạm biệt những file Excel rời rạc.",
+    "kb.cta": "Khám phá Kobee",
+    "kb.prefill": "Tôi muốn tìm hiểu phần mềm Kobee cho doanh nghiệp. Quy mô nhân sự hiện tại: ...",
+    "kb.frame1": "Kobee · Bảng điều khiển quản trị",
+    "kb.frame2": "Kobee · Cổng việc làm cho ứng viên",
+    "kb.chip1": "AI gợi ý việc phù hợp",
+    "kb.chip2": "Đồng bộ theo thời gian thực",
+    "kb.s1t": "Tìm nguồn",
+    "kb.s1": "Webform, mạng xã hội, quảng cáo đổ về một kho dữ liệu chung",
+    "kb.s2t": "Tuyển dụng CRM",
+    "kb.s2": "Ghép ứng viên với việc, theo sát từng vòng phỏng vấn",
+    "kb.s3t": "Onboarding",
+    "kb.s3": "Chăm sóc người lao động mới, hỗ trợ 24/7 để giữ chân",
+    "kb.s4t": "HRM",
+    "kb.s4": "Chấm công, tính lương, lưu trữ hồ sơ và hợp đồng",
+    "kb.s5t": "Tái kích hoạt",
+    "kb.s5": "Làm mới dữ liệu người đã nghỉ để sẵn sàng tuyển lại",
+    "kb.flowNote": "Không trùng dữ liệu. Không nhập lại. Một hồ sơ xuyên suốt cả vòng đời người lao động.",
+    "kb.diffTitle": "Thông minh hơn với AI, minh bạch hơn với hệ sinh thái",
+    "kb.d1t": "Ghép đúng người, đúng việc trong vài giây",
+    "kb.d1": "Kobee tự gợi ý việc làm phù hợp cho từng ứng viên và danh sách ứng viên phù hợp cho từng vị trí. Tuyển dụng viên không còn phải dò từng file.",
+    "kb.d2t": "Hỏi một câu, có ngay câu trả lời",
+    "kb.chatMe": "Tìm việc cho ứng viên 35 tuổi ở Hải Phòng",
+    "kb.chatBot": "Có 2 việc phù hợp: Công nhân lắp ráp tại Công ty X và Kỹ sư tại Công ty Y.",
+    "kb.d3tag": "Kết nối hệ sinh thái",
+    "kb.d3t": "Vendor, khách hàng và bạn trên cùng một luồng",
+    "kb.d3": "Vendor nhập ứng viên, khách hàng trả kết quả phỏng vấn, mọi thứ đồng bộ tức thì. Đối soát minh bạch, hết tranh cãi.",
+    "kb.modTitle": "8 phân hệ, một hệ thống vận hành",
+    "kb.modSub": "Đầy đủ nghiệp vụ tuyển dụng và quản trị nhân sự, xây dựng theo quy trình chuẩn của ngành.",
+    "kb.m1": "Báo cáo quản trị theo thời gian thực",
+    "kb.m2t": "Dự án",
+    "kb.m2": "Cấu trúc dự án cha/con, yêu cầu tuyển dụng chi tiết",
+    "kb.m3t": "Ứng viên (CRM)",
+    "kb.m3": "Phễu tuyển dụng 8 bước, lọc trùng thông minh, ghép việc bằng AI",
+    "kb.m4t": "OB & Bảo hành",
+    "kb.m4": "Chăm sóc sau nhận việc 1–3–7–30 ngày, hỗ trợ 24/7",
+    "kb.m5": "Chấm công GPS/máy, nghỉ phép, tính lương, hợp đồng",
+    "kb.m6t": "CTV / Vendor",
+    "kb.m6": "Đối tác tuyển dụng cùng tham gia, kết quả cập nhật minh bạch",
+    "kb.m7t": "Cổng khách hàng",
+    "kb.m7": "Khách hàng theo dõi ứng viên, cập nhật kết quả phỏng vấn",
+    "kb.m8t": "Tài chính",
+    "kb.m8": "Quản lý phí, hoa hồng theo nhân sự, vendor, dự án",
+    "kb.proofT": "Đã kiểm chứng trong vận hành thực tế",
+    "kb.proof": "Kobee được Nhân Lực Quốc Dân xây dựng và dùng hằng ngày trước khi mang ra thị trường. Mỗi tính năng đều sinh ra từ một bài toán có thật.",
+    "kb.p1": "Phân hệ hoàn thiện",
+    "kb.p2": "Người dùng thực tế",
+    "kb.p3": "Chi nhánh đang triển khai",
+    "kb.p4": "Độ phù hợp với công việc thực tế",
+    "kb.finalT": "Sẵn sàng số hóa doanh nghiệp nhân sự của bạn?",
+    "nav.menu": "Mở menu",
     "nav.why": "Vì sao chọn chúng tôi",
     "nav.capacity": "Năng lực",
     "nav.network": "Mạng lưới",
     "nav.partners": "Đối tác",
     "nav.cta": "Liên hệ ngay",
-    "hero.headline": "Nhân lực quy mô lớn, triển khai nhanh, vận hành ổn định",
+    "hero.headline": "Nhân lực quy mô lớn, <span class=\"hl\">triển khai nhanh</span>, vận hành ổn định",
     "hero.sub": "Nhân Lực Quốc Dân cung cấp dịch vụ tuyển dụng trực tiếp cho doanh nghiệp, triển khai linh hoạt theo nhu cầu thực tế của từng vị trí và từng giai đoạn vận hành.",
     "hero.cta1": "Nhận tư vấn tuyển dụng",
     "hero.cta2": "Xem dịch vụ",
@@ -615,12 +1000,75 @@ const trans = {
   },
   en: {
     "nav.services": "Services",
+    "marq.1": "Large scale", "marq.2": "Fast deployment", "marq.3": "Reliable operations",
+    "marq.4": "Transparency", "marq.5": "ERP technology", "marq.6": "Long-term partnership",
+    "nav.kobee": "Kobee Software",
+    "svc3.title": "Kobee Software",
+    "svc3.badge": "New",
+    "svc3.desc": "A management platform (SaaS) built for recruitment and staffing businesses, developed and used every day by Quoc Dan Manpower itself.",
+    "svc3.b1": "The full lifecycle: sourcing, recruiting, onboarding, timekeeping, payroll",
+    "svc3.b2": "AI job matching, with vendors and clients connected in real time",
+    "svc3.b3": "Replaces dozens of scattered Excel files with a single system",
+    "svc3.link": "Explore Kobee",
+    "kb.eyebrow": "A technology product by Quoc Dan Manpower",
+    "kb.title": "Run your entire staffing business <span class=\"kb-grad\">on one single platform</span>",
+    "kb.lead": "Kobee is management software built specifically for recruitment and staffing supply. From sourcing and interviews to onboarding, timekeeping and payroll, everything lives on one profile and updates in real time. Say goodbye to scattered spreadsheets.",
+    "kb.cta": "Explore Kobee",
+    "kb.prefill": "I would like to learn more about Kobee for my business. Current headcount: ...",
+    "kb.frame1": "Kobee · Admin dashboard",
+    "kb.frame2": "Kobee · Candidate job portal",
+    "kb.chip1": "AI job suggestions",
+    "kb.chip2": "Real-time sync",
+    "kb.s1t": "Sourcing",
+    "kb.s1": "Webforms, social media and ads flow into one shared data pool",
+    "kb.s2t": "Recruiting CRM",
+    "kb.s2": "Match candidates to jobs and track every interview round",
+    "kb.s3t": "Onboarding",
+    "kb.s3": "Care for new workers with 24/7 support to keep them on",
+    "kb.s4t": "HRM",
+    "kb.s4": "Timekeeping, payroll, records and contracts",
+    "kb.s5t": "Renew",
+    "kb.s5": "Refresh data of past workers, ready to re-hire",
+    "kb.flowNote": "No duplicate data. No re-entry. One profile across the entire worker lifecycle.",
+    "kb.diffTitle": "Smarter with AI, more transparent with an ecosystem",
+    "kb.d1t": "The right person for the right job, in seconds",
+    "kb.d1": "Kobee suggests suitable jobs for each candidate and suitable candidates for each role. Recruiters no longer dig through files.",
+    "kb.d2t": "Ask one question, get an instant answer",
+    "kb.chatMe": "Find a job for a 35-year-old candidate in Hai Phong",
+    "kb.chatBot": "2 good matches: Assembly Worker at Company X and Engineer at Company Y.",
+    "kb.d3tag": "Connected ecosystem",
+    "kb.d3t": "Vendors, clients and you on one workflow",
+    "kb.d3": "Vendors submit candidates, clients return interview results, and everything syncs instantly. Transparent reconciliation, no more disputes.",
+    "kb.modTitle": "8 modules, one operating system",
+    "kb.modSub": "Complete recruitment and HR management, built around the industry's standard workflows.",
+    "kb.m1": "Real-time management reporting",
+    "kb.m2t": "Projects",
+    "kb.m2": "Parent/child project structure with detailed job requirements",
+    "kb.m3t": "Candidates (CRM)",
+    "kb.m3": "8-step funnel, smart de-duplication, AI job matching",
+    "kb.m4t": "OB & Warranty",
+    "kb.m4": "1–3–7–30 day post-onboarding care, 24/7 support",
+    "kb.m5": "GPS/machine check-in, leave, payroll, contracts",
+    "kb.m6t": "Collaborators / Vendors",
+    "kb.m6": "Recruiting partners join in, with transparent results",
+    "kb.m7t": "Client portal",
+    "kb.m7": "Clients follow applicants and update interview results",
+    "kb.m8t": "Finance",
+    "kb.m8": "Fees and commissions by worker, vendor and project",
+    "kb.proofT": "Proven in real operations",
+    "kb.proof": "Quoc Dan Manpower built Kobee and uses it every day before bringing it to market. Every feature comes from a real problem.",
+    "kb.p1": "Modules completed",
+    "kb.p2": "Active users",
+    "kb.p3": "Branches deployed",
+    "kb.p4": "Fit to real work",
+    "kb.finalT": "Ready to digitize your staffing business?",
+    "nav.menu": "Open menu",
     "nav.why": "Why Choose Us",
     "nav.capacity": "Track Record",
     "nav.network": "Network",
     "nav.partners": "Partners",
     "nav.cta": "Get in touch",
-    "hero.headline": "Large-scale manpower, deployed fast, run reliably",
+    "hero.headline": "Large-scale manpower, <span class=\"hl\">deployed fast</span>, run reliably",
     "hero.sub": "Quoc Dan Manpower provides direct recruitment services for businesses, deployed flexibly to match the real needs of each role and each stage of operation.",
     "hero.cta1": "Get a recruitment consult",
     "hero.cta2": "See our services",
@@ -760,7 +1208,153 @@ function renderLogoGrid(elId, files) {
 renderLogoGrid('partners-grid', partnerLogos);
 renderLogoGrid('partners-edu-grid', partnerEduLogos);
 
+// ===== Dải chữ chạy: nhân bản nội dung để lặp liền mạch =====
+(function () {
+  const track = document.getElementById('marquee-track');
+  if (!track) return;
+  const items = Array.from(track.children);
+  for (let i = 0; i < 3; i++) items.forEach(n => track.appendChild(n.cloneNode(true)));
+})();
+
+// ===== Nút "Khám phá Kobee" =====
+// Khi Kobee có trang web riêng, dán link vào KOBEE_URL (vd: "https://kobee.vn").
+// Để trống: nút sẽ chuyển xuống form liên hệ và điền sẵn lời nhắn tìm hiểu Kobee.
+const KOBEE_URL = "";
+let currentLang = 'vi';
+document.querySelectorAll('.kobee-explore').forEach(btn => {
+  if (KOBEE_URL) { btn.href = KOBEE_URL; btn.target = '_blank'; btn.rel = 'noopener'; return; }
+  btn.addEventListener('click', () => {
+    const ta = document.querySelector('#lead-form textarea[name="message"]');
+    if (ta && !ta.value.trim()) ta.value = trans[currentLang]['kb.prefill'];
+    setTimeout(() => ta && ta.focus({ preventScroll: true }), 800);
+  });
+});
+
+// ===== Menu điện thoại =====
+(function () {
+  const nav = document.querySelector('nav');
+  const btn = document.getElementById('menu-btn');
+  if (!btn) return;
+  const setOpen = open => { nav.classList.toggle('open', open); btn.setAttribute('aria-expanded', open); };
+  btn.addEventListener('click', () => setOpen(!nav.classList.contains('open')));
+  document.querySelectorAll('#navlinks a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') setOpen(false); });
+  document.addEventListener('click', e => { if (!nav.contains(e.target)) setOpen(false); });
+})();
+
+// ===== Scroll reveal: kéo tới đâu, chữ & thẻ hiện tới đó =====
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const revealGroups = [
+  // [selector, kiểu hiệu ứng, độ trễ giữa các phần tử cùng nhóm (giây)]
+  ['.hero-text > *', '', 0.12],
+  ['.hero-visual', 'reveal-zoom', 0],
+  ['.stat', '', 0.08],
+  ['.sec-head > *, .partners-head > *', '', 0.08],
+  ['.mission-card', '', 0.1],
+  ['.svc-card', '', 0.12],
+  ['.kobee-head > *', '', 0.08],
+  ['.kb-showcase', 'reveal-zoom', 0],
+  ['.kb-step', '', 0.1],
+  ['.kb-flow-note, .kb-sub > *, .kb-final > *', '', 0.08],
+  ['.kb-diff', '', 0.1],
+  ['.kb-module', '', 0.05],
+  ['.kb-proof > *', '', 0.08],
+  ['.value-card', '', 0.07],
+  ['.capacity-card', '', 0.1],
+  ['.network-img', 'reveal-left', 0],
+  ['.network-branch', '', 0.08],
+  ['.partners-panel', '', 0],
+  ['.cta-text > *', '', 0.1],
+  ['.lead-form', 'reveal-right', 0.1],
+  ['.footer-grid > *', '', 0.08]
+];
+revealGroups.forEach(([sel, kind, step]) => {
+  const counter = new Map();
+  document.querySelectorAll(sel).forEach(el => {
+    if (el.classList.contains('reveal')) return;
+    const i = counter.get(el.parentElement) || 0;
+    counter.set(el.parentElement, i + 1);
+    el.classList.add('reveal');
+    if (kind) el.classList.add(kind);
+    el.style.setProperty('--d', (i * step).toFixed(2) + 's');
+  });
+});
+
+function initReveal() {
+  const els = document.querySelectorAll('.reveal');
+  if (reduceMotion || !('IntersectionObserver' in window)) { els.forEach(el => el.classList.add('in')); return; }
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      el.classList.add('in');
+      io.unobserve(el);
+      // Sau khi hiện xong, gỡ lớp reveal để hiệu ứng hover của thẻ chạy bình thường
+      const d = parseFloat(el.style.getPropertyValue('--d')) || 0;
+      setTimeout(() => { el.classList.remove('reveal', 'reveal-left', 'reveal-right', 'reveal-zoom'); el.style.removeProperty('--d'); }, d * 1000 + 950);
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(el => io.observe(el));
+}
+
+// ===== Số liệu chạy từ 0 khi cuộn tới =====
+function animateCount(el) {
+  const raw = el.textContent.trim();
+  const target = parseInt(raw.replace(/\D/g, ''), 10);
+  if (!target) return;
+  const suffix = raw.replace(/[\d.,\s]/g, '');
+  const pad = /^0\d/.test(raw) ? raw.replace(/\D/g, '').length : 0;
+  const fmt = n => (pad ? String(n).padStart(pad, '0') : n.toLocaleString('de-DE')) + suffix;
+  const dur = 1600, t0 = performance.now();
+  (function tick(t) {
+    const p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3);
+    el.textContent = fmt(Math.round(target * e));
+    if (p < 1) requestAnimationFrame(tick);
+  })(t0);
+}
+function initCounters() {
+  const nums = document.querySelectorAll('.stat .num, .capacity-card .stat-inline, .kb-num:not(.static)');
+  if (reduceMotion || !('IntersectionObserver' in window)) return;
+  const io = new IntersectionObserver(entries => entries.forEach(e => {
+    if (e.isIntersecting) { animateCount(e.target); io.unobserve(e.target); }
+  }), { threshold: 0.6 });
+  nums.forEach(n => io.observe(n));
+}
+
+// ===== Thanh menu đổ bóng khi cuộn =====
+const navEl = document.querySelector('nav');
+window.addEventListener('scroll', () => navEl.classList.toggle('scrolled', window.scrollY > 10), { passive: true });
+
+// ===== Màn hình loading logo =====
+(function () {
+  const loader = document.getElementById('loader');
+  const MIN_SHOW = reduceMotion ? 200 : 1500; // thời gian tối thiểu hiển thị logo (ms)
+  const t0 = performance.now();
+  let finished = false;
+  // Đã từng vào trang: bỏ qua loading, chạy hiệu ứng luôn
+  if (document.documentElement.classList.contains('no-loader')) {
+    loader.remove(); document.body.classList.remove('loading');
+    initReveal(); initCounters();
+    return;
+  }
+  try { localStorage.setItem('nlqd_loader_seen', '1'); } catch (e) {}
+  function finish() {
+    if (finished) return; finished = true;
+    setTimeout(() => {
+      loader.classList.add('done');
+      document.body.classList.remove('loading');
+      initReveal();
+      initCounters();
+      setTimeout(() => loader.remove(), 1100);
+    }, Math.max(0, MIN_SHOW - (performance.now() - t0)));
+  }
+  if (document.readyState === 'complete') finish();
+  else window.addEventListener('load', finish);
+  setTimeout(finish, 4500); // mạng chậm: tối đa 4,5 giây vẫn vào trang
+})();
+
 function setLang(lang) {
+  currentLang = lang;
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (trans[lang][key] !== undefined) el.innerHTML = trans[lang][key];

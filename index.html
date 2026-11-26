@@ -298,91 +298,6 @@
   .svc-link span { transition: transform .25s; }
   .svc-link:hover span { transform: translateX(5px); }
 
-  /* ---------- KOBEE (section giới thiệu phần mềm) ---------- */
-  .kobee { --kb-blue: #2F6BFF; --kb-cyan: #4DE0EE; --kb-deep: #06122A;
-    background: radial-gradient(ellipse 900px 560px at 85% 0%, rgba(47,107,255,0.38), transparent 62%),
-                radial-gradient(ellipse 760px 520px at 0% 70%, rgba(77,224,238,0.14), transparent 62%), var(--kb-deep);
-    color: var(--white); position: relative; overflow: hidden; padding: 108px 0; }
-  .kobee-head { max-width: 780px; margin: 0 auto; text-align: center; }
-  .kobee-logo { height: 56px; width: auto; display: block; margin: 0 auto 26px; }
-  .kb-eyebrow { color: var(--kb-cyan); }
-  .kb-title { font-size: clamp(30px, 4.4vw, 48px); }
-  .kb-grad { background: linear-gradient(90deg, var(--kb-cyan), #8AAEFF); -webkit-background-clip: text; background-clip: text; color: transparent; }
-  .kb-lead { color: rgba(255,255,255,0.74); font-size: 17px; margin-top: 20px; }
-  .kb-ctas { display: flex; justify-content: center; gap: 14px; margin-top: 34px; flex-wrap: wrap; }
-  .btn-kobee { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(90deg, var(--kb-blue), #20B5E8); color: var(--white); font-weight: 700; font-size: 15.5px; padding: 15px 30px; border-radius: 100px; box-shadow: 0 12px 30px rgba(47,107,255,0.45); transition: transform .25s, box-shadow .25s; }
-  .btn-kobee:hover { transform: translateY(-2px); box-shadow: 0 18px 42px rgba(47,107,255,0.65); }
-  .btn-kobee svg { width: 18px; height: 18px; transition: transform .25s; }
-  .btn-kobee:hover svg { transform: translateX(4px); }
-
-  .kb-showcase { position: relative; isolation: isolate; max-width: 1020px; margin: 68px auto 0; padding-bottom: 96px; }
-  .kb-glow { position: absolute; inset: 8% 6% 4%; z-index: -1; background: radial-gradient(closest-side, rgba(47,107,255,0.55), transparent); filter: blur(50px); }
-  .kb-frame { background: var(--white); border-radius: 14px; overflow: hidden; box-shadow: 0 40px 90px rgba(0,0,0,0.55), 0 0 0 1px rgba(255,255,255,0.08); }
-  .kb-frame img { display: block; width: 100%; height: auto; }
-  .kb-bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: #EEF2F8; border-bottom: 1px solid #DDE3EC; }
-  .kb-bar i { width: 10px; height: 10px; border-radius: 50%; background: #FF6159; }
-  .kb-bar i:nth-child(2) { background: #FFBD2E; } .kb-bar i:nth-child(3) { background: #28C941; }
-  .kb-bar span { margin-left: 10px; font-size: 12px; font-weight: 600; color: #5A6780; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-  .kb-frame-main { width: 86%; }
-  .kb-frame-sub { position: absolute; right: 0; bottom: 0; width: 46%; animation: floaty 7s ease-in-out infinite; }
-  .kb-chip { position: absolute; z-index: 2; display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.96); color: var(--ink); font-size: 13px; font-weight: 700; padding: 10px 14px 10px 10px; border-radius: 12px; box-shadow: 0 16px 34px rgba(0,0,0,0.32); animation: floaty 6s ease-in-out infinite; }
-  .kb-chip i { width: 28px; height: 28px; border-radius: 8px; display: grid; place-items: center; background: linear-gradient(135deg, var(--kb-blue), var(--kb-cyan)); color: var(--white); font-style: normal; font-size: 14px; }
-  .kb-chip-1 { left: -18px; top: 18%; }
-  .kb-chip-2 { left: 9%; bottom: 22px; animation-delay: -3s; }
-
-  .kb-flow { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; margin-top: 84px; position: relative; }
-  .kb-flow::before { content: ""; position: absolute; left: 10%; right: 10%; top: 28px; height: 2px; background: linear-gradient(90deg, #2F6BFF, #4DE0EE, #F7B538, #EF5B5B, #2EBF7A); opacity: .75; }
-  .kb-step { text-align: center; position: relative; }
-  .kb-step b { width: 56px; height: 56px; margin: 0 auto 14px; border-radius: 50%; display: grid; place-items: center; font-family: 'Manrope', sans-serif; font-size: 17px; background: var(--kb-deep); border: 2px solid var(--c); color: var(--c); box-shadow: 0 0 0 7px rgba(6,18,42,1), 0 0 24px var(--c); }
-  .kb-step h4 { font-family: 'Manrope', sans-serif; font-size: 16px; font-weight: 800; }
-  .kb-step p { font-size: 13px; color: rgba(255,255,255,0.62); margin-top: 6px; line-height: 1.5; }
-  .kb-flow-note { text-align: center; margin-top: 34px; font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 15px; letter-spacing: .02em; color: var(--kb-cyan); }
-
-  .kb-sub { text-align: center; max-width: 660px; margin: 96px auto 34px; }
-  .kb-sub h3 { font-size: clamp(24px, 3vw, 32px); }
-  .kb-sub p { color: rgba(255,255,255,0.65); margin-top: 12px; font-size: 15.5px; }
-
-  .kb-diffs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-  .kb-diff { border-radius: 18px; padding: 28px 24px; background: linear-gradient(160deg, rgba(47,107,255,0.24), rgba(255,255,255,0.03) 62%); border: 1px solid rgba(255,255,255,0.12); transition: transform .4s cubic-bezier(.2,.7,.2,1), border-color .4s; }
-  .kb-diff:hover { transform: translateY(-6px); border-color: rgba(77,224,238,0.5); }
-  .kb-tag { font-size: 11.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--kb-cyan); }
-  .kb-diff h4 { font-family: 'Manrope', sans-serif; font-size: 19px; font-weight: 800; margin-top: 10px; line-height: 1.3; }
-  .kb-diff p { font-size: 14px; color: rgba(255,255,255,0.7); margin-top: 10px; }
-  .kb-chat { margin-top: 18px; display: grid; gap: 8px; }
-  .kb-msg { font-size: 12.5px; line-height: 1.45; padding: 9px 13px; border-radius: 14px; max-width: 92%; }
-  .kb-msg.me { justify-self: end; background: var(--kb-blue); border-bottom-right-radius: 4px; }
-  .kb-msg.bot { background: rgba(255,255,255,0.1); border-bottom-left-radius: 4px; }
-
-  .kb-modules { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-  .kb-module { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 14px; padding: 22px 20px; transition: transform .4s cubic-bezier(.2,.7,.2,1), background .4s, border-color .4s; }
-  .kb-module:hover { transform: translateY(-5px); background: rgba(47,107,255,0.13); border-color: rgba(77,224,238,0.45); }
-  .kb-ico { width: 42px; height: 42px; border-radius: 11px; display: grid; place-items: center; background: linear-gradient(135deg, rgba(47,107,255,0.4), rgba(77,224,238,0.22)); color: var(--kb-cyan); margin-bottom: 14px; }
-  .kb-ico svg { width: 21px; height: 21px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
-  .kb-module h4 { font-family: 'Manrope', sans-serif; font-size: 15.5px; font-weight: 800; }
-  .kb-module p { font-size: 13px; color: rgba(255,255,255,0.62); margin-top: 6px; line-height: 1.5; }
-
-  .kb-proof { margin-top: 84px; border: 1px solid rgba(255,255,255,0.12); border-radius: 22px; padding: 36px 38px; display: grid; grid-template-columns: 1.5fr repeat(4, 1fr); gap: 26px; align-items: center; background: rgba(255,255,255,0.035); }
-  .kb-proof-text h4 { font-family: 'Manrope', sans-serif; font-size: 21px; font-weight: 800; line-height: 1.3; }
-  .kb-proof-text p { font-size: 13.5px; color: rgba(255,255,255,0.62); margin-top: 8px; }
-  .kb-num { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1; background: linear-gradient(90deg, var(--kb-cyan), #8AAEFF); -webkit-background-clip: text; background-clip: text; color: transparent; }
-  .kb-lab { font-size: 12.5px; color: rgba(255,255,255,0.62); margin-top: 4px; line-height: 1.4; min-height: 2.8em; }
-  .kb-final { text-align: center; margin-top: 56px; }
-  .kb-final h3 { font-size: clamp(22px, 2.8vw, 30px); }
-
-  @media (max-width: 960px) {
-    .kb-flow { grid-template-columns: repeat(2, 1fr); row-gap: 30px; } .kb-flow::before { display: none; }
-    .kb-step:last-child { grid-column: 1 / -1; }
-    .kb-diffs { grid-template-columns: 1fr; }
-    .kb-modules { grid-template-columns: repeat(2, 1fr); }
-    .kb-proof { grid-template-columns: repeat(2, 1fr); padding: 28px; } .kb-proof-text { grid-column: 1 / -1; }
-  }
-  @media (max-width: 600px) {
-    .kobee { padding: 80px 0; }
-    .kb-frame-main { width: 100%; } .kb-frame-sub { width: 58%; right: -6px; } .kb-showcase { padding-bottom: 70px; }
-    .kb-chip { display: none; }
-    .kb-modules { grid-template-columns: 1fr; }
-  }
-
   /* ---------- MENU ĐIỆN THOẠI ---------- */
   .menu-btn { display: none; width: 42px; height: 42px; border: 1px solid var(--line-dark); border-radius: 8px; background: var(--white); flex-direction: column; align-items: center; justify-content: center; gap: 5px; cursor: pointer; }
   .menu-btn span { width: 18px; height: 2px; background: var(--navy); border-radius: 2px; transition: transform .3s, opacity .3s; }
@@ -441,7 +356,7 @@
     </a>
     <div class="navlinks" id="navlinks">
       <a href="#services" data-i18n="nav.services">Dịch vụ</a>
-      <a href="#kobee" class="nav-erp" data-i18n="nav.kobee">Phần mềm Kobee</a>
+      <a href="kobee/" class="nav-erp" data-i18n="nav.kobee">Phần mềm Kobee</a>
       <a href="#why" data-i18n="nav.why">Vì sao chọn chúng tôi</a>
       <a href="#capacity" data-i18n="nav.capacity">Năng lực</a>
       <a href="#network" data-i18n="nav.network">Mạng lưới</a>
@@ -559,102 +474,7 @@
           <li data-i18n="svc3.b2">AI gợi ý việc làm, kết nối vendor và khách hàng theo thời gian thực</li>
           <li data-i18n="svc3.b3">Thay thế hàng chục file Excel rời rạc bằng một hệ thống duy nhất</li>
         </ul>
-        <a class="svc-link" href="#kobee"><b data-i18n="svc3.link">Khám phá Kobee</b> <span>→</span></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ KOBEE — PHẦN MỀM QUẢN TRỊ NHÂN SỰ ============ -->
-<section class="kobee" id="kobee">
-  <div class="wrap">
-    <div class="kobee-head">
-      <img src="kobee/kobee-logo-white.png" alt="Kobee" class="kobee-logo">
-      <div class="eyebrow kb-eyebrow" data-i18n="kb.eyebrow">Sản phẩm công nghệ của Nhân Lực Quốc Dân</div>
-      <h2 class="kb-title" data-i18n="kb.title">Vận hành cả doanh nghiệp nhân sự <span class="kb-grad">trên một nền tảng duy nhất</span></h2>
-      <p class="kb-lead" data-i18n="kb.lead">Kobee là phần mềm quản trị được thiết kế riêng cho ngành tuyển dụng và cung ứng lao động. Từ tìm nguồn ứng viên, phỏng vấn, nhận việc đến chấm công và tính lương, tất cả nằm trên cùng một hồ sơ và cập nhật theo thời gian thực. Tạm biệt những file Excel rời rạc.</p>
-      <div class="kb-ctas">
-        <a class="btn-kobee kobee-explore" href="#contact"><span data-i18n="kb.cta">Khám phá Kobee</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      </div>
-    </div>
-
-    <div class="kb-showcase">
-      <div class="kb-glow"></div>
-      <div class="kb-frame kb-frame-main">
-        <div class="kb-bar"><i></i><i></i><i></i><span data-i18n="kb.frame1">Kobee · Bảng điều khiển quản trị</span></div>
-        <img src="kobee/kobee-dashboard.webp" alt="Giao diện quản trị Kobee: tổng quan tuyển dụng và tiến độ dự án" width="1400" height="608" loading="lazy">
-      </div>
-      <div class="kb-frame kb-frame-sub">
-        <div class="kb-bar"><i></i><i></i><i></i><span data-i18n="kb.frame2">Kobee · Cổng việc làm cho ứng viên</span></div>
-        <img src="kobee/kobee-portal.webp" alt="Cổng việc làm Kobee dành cho ứng viên" width="1400" height="928" loading="lazy">
-      </div>
-      <div class="kb-chip kb-chip-1"><i>✦</i><span data-i18n="kb.chip1">AI gợi ý việc phù hợp</span></div>
-      <div class="kb-chip kb-chip-2"><i>⟳</i><span data-i18n="kb.chip2">Đồng bộ theo thời gian thực</span></div>
-    </div>
-
-    <div class="kb-flow">
-      <div class="kb-step" style="--c:#2F6BFF"><b>01</b><h4 data-i18n="kb.s1t">Tìm nguồn</h4><p data-i18n="kb.s1">Webform, mạng xã hội, quảng cáo đổ về một kho dữ liệu chung</p></div>
-      <div class="kb-step" style="--c:#4DE0EE"><b>02</b><h4 data-i18n="kb.s2t">Tuyển dụng CRM</h4><p data-i18n="kb.s2">Ghép ứng viên với việc, theo sát từng vòng phỏng vấn</p></div>
-      <div class="kb-step" style="--c:#F7B538"><b>03</b><h4 data-i18n="kb.s3t">Onboarding</h4><p data-i18n="kb.s3">Chăm sóc người lao động mới, hỗ trợ 24/7 để giữ chân</p></div>
-      <div class="kb-step" style="--c:#EF5B5B"><b>04</b><h4 data-i18n="kb.s4t">HRM</h4><p data-i18n="kb.s4">Chấm công, tính lương, lưu trữ hồ sơ và hợp đồng</p></div>
-      <div class="kb-step" style="--c:#2EBF7A"><b>05</b><h4 data-i18n="kb.s5t">Tái kích hoạt</h4><p data-i18n="kb.s5">Làm mới dữ liệu người đã nghỉ để sẵn sàng tuyển lại</p></div>
-    </div>
-    <p class="kb-flow-note" data-i18n="kb.flowNote">Không trùng dữ liệu. Không nhập lại. Một hồ sơ xuyên suốt cả vòng đời người lao động.</p>
-
-    <div class="kb-sub">
-      <h3 data-i18n="kb.diffTitle">Thông minh hơn với AI, minh bạch hơn với hệ sinh thái</h3>
-    </div>
-    <div class="kb-diffs">
-      <div class="kb-diff">
-        <div class="kb-tag">AI Job Matching</div>
-        <h4 data-i18n="kb.d1t">Ghép đúng người, đúng việc trong vài giây</h4>
-        <p data-i18n="kb.d1">Kobee tự gợi ý việc làm phù hợp cho từng ứng viên và danh sách ứng viên phù hợp cho từng vị trí. Tuyển dụng viên không còn phải dò từng file.</p>
-      </div>
-      <div class="kb-diff">
-        <div class="kb-tag">AI Chatbot</div>
-        <h4 data-i18n="kb.d2t">Hỏi một câu, có ngay câu trả lời</h4>
-        <div class="kb-chat" aria-hidden="true">
-          <div class="kb-msg me" data-i18n="kb.chatMe">Tìm việc cho ứng viên 35 tuổi ở Hải Phòng</div>
-          <div class="kb-msg bot" data-i18n="kb.chatBot">Có 2 việc phù hợp: Công nhân lắp ráp tại Công ty X và Kỹ sư tại Công ty Y.</div>
-        </div>
-      </div>
-      <div class="kb-diff">
-        <div class="kb-tag" data-i18n="kb.d3tag">Kết nối hệ sinh thái</div>
-        <h4 data-i18n="kb.d3t">Vendor, khách hàng và bạn trên cùng một luồng</h4>
-        <p data-i18n="kb.d3">Vendor nhập ứng viên, khách hàng trả kết quả phỏng vấn, mọi thứ đồng bộ tức thì. Đối soát minh bạch, hết tranh cãi.</p>
-      </div>
-    </div>
-
-    <div class="kb-sub">
-      <h3 data-i18n="kb.modTitle">8 phân hệ, một hệ thống vận hành</h3>
-      <p data-i18n="kb.modSub">Đầy đủ nghiệp vụ tuyển dụng và quản trị nhân sự, xây dựng theo quy trình chuẩn của ngành.</p>
-    </div>
-    <div class="kb-modules">
-      <div class="kb-module"><div class="kb-ico"><svg viewBox="0 0 24 24"><path d="M3 3h7v9H3zM14 3h7v5h-7zM14 12h7v9h-7zM3 16h7v5H3z"/></svg></div><h4>Dashboard</h4><p data-i18n="kb.m1">Báo cáo quản trị theo thời gian thực</p></div>
-      <div class="kb-module"><div class="kb-ico"><svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div><h4 data-i18n="kb.m2t">Dự án</h4><p data-i18n="kb.m2">Cấu trúc dự án cha/con, yêu cầu tuyển dụng chi tiết</p></div>
-      <div class="kb-module"><div class="kb-ico"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5M16 4.5a3.5 3.5 0 0 1 0 7M18.5 14.8c1.7.8 2.7 2.6 3 5.2"/></svg></div><h4 data-i18n="kb.m3t">Ứng viên (CRM)</h4><p data-i18n="kb.m3">Phễu tuyển dụng 8 bước, lọc trùng thông minh, ghép việc bằng AI</p></div>
-      <div class="kb-module"><div class="kb-ico"><svg viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></div><h4 data-i18n="kb.m4t">OB &amp; Bảo hành</h4><p data-i18n="kb.m4">Chăm sóc sau nhận việc 1–3–7–30 ngày, hỗ trợ 24/7</p></div>
-      <div class="kb-module"><div class="kb-ico"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4M8 14h3M8 17h6"/></svg></div><h4>HRM</h4><p data-i18n="kb.m5">Chấm công GPS/máy, nghỉ phép, tính lương, hợp đồng</p></div>
-      <div class="kb-module"><div class="kb-ico"><svg viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></div><h4 data-i18n="kb.m6t">CTV / Vendor</h4><p data-i18n="kb.m6">Đối tác tuyển dụng cùng tham gia, kết quả cập nhật minh bạch</p></div>
-      <div class="kb-module"><div class="kb-ico"><svg viewBox="0 0 24 24"><path d="M4 21V5a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v16M15 9h4a1 1 0 0 1 1 1v11M2 21h20M8 8h3M8 12h3M8 16h3"/></svg></div><h4 data-i18n="kb.m7t">Cổng khách hàng</h4><p data-i18n="kb.m7">Khách hàng theo dõi ứng viên, cập nhật kết quả phỏng vấn</p></div>
-      <div class="kb-module"><div class="kb-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15 9.5c-.5-1-1.6-1.5-3-1.5-1.7 0-3 .8-3 2s1.3 1.7 3 2 3 .8 3 2-1.3 2-3 2c-1.4 0-2.6-.6-3-1.6M12 6v2M12 16v2"/></svg></div><h4 data-i18n="kb.m8t">Tài chính</h4><p data-i18n="kb.m8">Quản lý phí, hoa hồng theo nhân sự, vendor, dự án</p></div>
-    </div>
-
-    <div class="kb-proof">
-      <div class="kb-proof-text">
-        <h4 data-i18n="kb.proofT">Đã kiểm chứng trong vận hành thực tế</h4>
-        <p data-i18n="kb.proof">Kobee được Nhân Lực Quốc Dân xây dựng và dùng hằng ngày trước khi mang ra thị trường. Mỗi tính năng đều sinh ra từ một bài toán có thật.</p>
-      </div>
-      <div><div class="kb-num">8</div><div class="kb-lab" data-i18n="kb.p1">Phân hệ hoàn thiện</div></div>
-      <div><div class="kb-num">200+</div><div class="kb-lab" data-i18n="kb.p2">Người dùng thực tế</div></div>
-      <div><div class="kb-num">4</div><div class="kb-lab" data-i18n="kb.p3">Chi nhánh đang triển khai</div></div>
-      <div><div class="kb-num static">4,8/5</div><div class="kb-lab" data-i18n="kb.p4">Độ phù hợp với công việc thực tế</div></div>
-    </div>
-
-    <div class="kb-final">
-      <h3 data-i18n="kb.finalT">Sẵn sàng số hóa doanh nghiệp nhân sự của bạn?</h3>
-      <div class="kb-ctas">
-        <a class="btn-kobee kobee-explore" href="#contact"><span data-i18n="kb.cta">Khám phá Kobee</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="svc-link" href="kobee/"><b data-i18n="svc3.link">Khám phá Kobee</b> <span>→</span></a>
       </div>
     </div>
   </div>
@@ -912,6 +732,9 @@ const trans = {
     "kb.p4": "Độ phù hợp với công việc thực tế",
     "kb.finalT": "Sẵn sàng số hóa doanh nghiệp nhân sự của bạn?",
     "nav.menu": "Mở menu",
+    "kb.ctaContact": "Liên hệ tư vấn",
+    "kb.formSub": "Để lại thông tin, đội ngũ Kobee sẽ liên hệ trong 1–2 ngày làm việc để tư vấn và hướng dẫn trải nghiệm phần mềm.",
+    "kb.formMsgPh": "Quy mô nhân sự, quy trình hiện tại, phân hệ bạn quan tâm...",
     "nav.why": "Vì sao chọn chúng tôi",
     "nav.capacity": "Năng lực",
     "nav.network": "Mạng lưới",
@@ -1063,6 +886,9 @@ const trans = {
     "kb.p4": "Fit to real work",
     "kb.finalT": "Ready to digitize your staffing business?",
     "nav.menu": "Open menu",
+    "kb.ctaContact": "Talk to us",
+    "kb.formSub": "Leave your details and the Kobee team will get back to you within 1–2 business days with a consultation and product walkthrough.",
+    "kb.formMsgPh": "Headcount, current workflow, modules you are interested in...",
     "nav.why": "Why Choose Us",
     "nav.capacity": "Track Record",
     "nav.network": "Network",
@@ -1216,20 +1042,6 @@ renderLogoGrid('partners-edu-grid', partnerEduLogos);
   for (let i = 0; i < 3; i++) items.forEach(n => track.appendChild(n.cloneNode(true)));
 })();
 
-// ===== Nút "Khám phá Kobee" =====
-// Khi Kobee có trang web riêng, dán link vào KOBEE_URL (vd: "https://kobee.vn").
-// Để trống: nút sẽ chuyển xuống form liên hệ và điền sẵn lời nhắn tìm hiểu Kobee.
-const KOBEE_URL = "";
-let currentLang = 'vi';
-document.querySelectorAll('.kobee-explore').forEach(btn => {
-  if (KOBEE_URL) { btn.href = KOBEE_URL; btn.target = '_blank'; btn.rel = 'noopener'; return; }
-  btn.addEventListener('click', () => {
-    const ta = document.querySelector('#lead-form textarea[name="message"]');
-    if (ta && !ta.value.trim()) ta.value = trans[currentLang]['kb.prefill'];
-    setTimeout(() => ta && ta.focus({ preventScroll: true }), 800);
-  });
-});
-
 // ===== Menu điện thoại =====
 (function () {
   const nav = document.querySelector('nav');
@@ -1366,7 +1178,10 @@ function setLang(lang) {
   document.getElementById('html-root').setAttribute('lang', lang);
   document.getElementById('lang-vi').classList.toggle('active', lang === 'vi');
   document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+  try { localStorage.setItem('nlqd_lang', lang); } catch (e) {}
 }
+// Giữ ngôn ngữ đã chọn khi chuyển giữa trang chính và trang Kobee
+try { if (localStorage.getItem('nlqd_lang') === 'en') setLang('en'); } catch (e) {}
 </script>
 
 <a href="tel:+84983294529" class="float-phone" aria-label="Gọi Nhân Lực Quốc Dân">

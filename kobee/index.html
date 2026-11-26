@@ -146,12 +146,12 @@
     display: grid; grid-template-columns: repeat(3, 1fr);
     gap: 26px 18px; align-items: center; justify-items: center;
   }
-  .partners-grid img { max-height: 36px; width: auto; max-width: 100%; object-fit: contain; filter: grayscale(15%); }
+  .partners-grid img { max-height: 36px; width: auto; max-width: 100%; object-fit: contain; filter: none; }
   .partners-edu-row {
     display: flex; justify-content: center; align-items: center; flex-wrap: wrap;
     gap: 36px; margin-top: 28px; padding-top: 28px; border-top: 1px solid var(--line-dark);
   }
-  .partners-edu-row img { max-height: 58px; width: auto; max-width: 190px; object-fit: contain; filter: grayscale(15%); }
+  .partners-edu-row img { max-height: 58px; width: auto; max-width: 190px; object-fit: contain; filter: none; }
   @media (min-width: 560px) { .partners-grid { grid-template-columns: repeat(4, 1fr); } }
   @media (min-width: 860px) {
     .partners-panel { padding: 38px; }
@@ -281,12 +281,12 @@
   .marquee-track { display: inline-flex; animation: marquee 32s linear infinite; }
   .marquee:hover .marquee-track { animation-play-state: paused; }
   .marquee-item { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 20px; text-transform: uppercase; letter-spacing: .04em; display: inline-flex; align-items: center; gap: 28px; padding-right: 28px; }
-  .marquee-item svg { width: 18px; height: 18px; fill: var(--navy); flex-shrink: 0; }
+  .marquee-item svg { width: 18px; height: 18px; fill: #111111; flex-shrink: 0; }
   @keyframes marquee { to { transform: translateX(-50%); } }
 
-  /* ---------- ĐỐI TÁC: logo xám, hover hiện màu ---------- */
-  .partners-grid img, .partners-edu-row img { filter: grayscale(100%); opacity: .72; transition: filter .35s, opacity .35s, transform .35s; }
-  .partners-grid img:hover, .partners-edu-row img:hover { filter: none; opacity: 1; transform: scale(1.08); }
+  /* ---------- ĐỐI TÁC: logo luôn hiện màu, hover phóng nhẹ ---------- */
+  .partners-grid img, .partners-edu-row img { filter: none; opacity: 1; transition: transform .35s; }
+  .partners-grid img:hover, .partners-edu-row img:hover { transform: scale(1.08); }
 
   /* ---------- DỊCH VỤ: 3 thẻ ngang hàng ---------- */
   .services-grid .svc-card { flex: 1 1 300px; display: flex; flex-direction: column; }
@@ -404,6 +404,54 @@
     .navlinks a.m-cta:hover { color: var(--white); }
   }
 
+  /* ---------- Làm nổi thẻ & form trên nền tối (xanh xám cân bằng, sáng hơn nền) ---------- */
+  .value-card { background: linear-gradient(160deg, #263D5E 0%, #1C2F4C 100%); border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 16px 36px rgba(0,0,0,0.25); }
+  .value-card .vnum { opacity: 1; }
+  .value-card p { color: var(--white); }
+  .value-card:hover { background: linear-gradient(160deg, #2D4870 0%, #22385A 100%); border-color: rgba(255,255,255,0.28); box-shadow: 0 24px 50px rgba(0,0,0,0.35); }
+  .lead-form { background: linear-gradient(160deg, #263D5E 0%, #1C2F4C 100%); border: 1px solid rgba(255,255,255,0.12); box-shadow: 0 30px 70px rgba(0,0,0,0.35); }
+  .lead-form .form-field label { color: rgba(255,255,255,0.88); }
+  .lead-form .form-field input, .lead-form .form-field textarea, .lead-form .form-field select { background: rgba(255,255,255,0.09); border: 1px solid rgba(255,255,255,0.16); color: var(--white); transition: border-color .2s, box-shadow .2s, background .2s; }
+  .lead-form .form-field input::placeholder, .lead-form .form-field textarea::placeholder { color: rgba(255,255,255,0.45); }
+  .lead-form .form-field input:focus, .lead-form .form-field textarea:focus, .lead-form .form-field select:focus { background: rgba(255,255,255,0.13); border-color: var(--amber); box-shadow: 0 0 0 3px rgba(255,166,77,0.18); }
+  .lead-form .form-note { color: rgba(255,255,255,0.55); }
+
+  /* ---------- Kobee: xuống dòng đúng chỗ & làm nổi thẻ ---------- */
+  .kobee-head { max-width: 980px; }
+  .kb-lead { max-width: 760px; margin-left: auto; margin-right: auto; }
+  .kb-line { display: block; }
+  .kb-sub { max-width: 960px; }
+  @media (min-width: 961px) { .kb-sub p { white-space: nowrap; } }
+
+  .kb-flow::before { opacity: 1; height: 3px; top: 27px; }
+  .kb-step b { background: var(--c); color: var(--t, #fff); border: none; font-size: 18px; box-shadow: 0 0 0 7px #06122A, 0 10px 30px -2px var(--c); }
+
+  .kb-diff { background: linear-gradient(150deg, #2F6BFF 0%, #1D4ED8 100%); border: 1px solid rgba(255,255,255,0.18); box-shadow: 0 24px 50px rgba(20,60,200,0.35); }
+  .kb-diff:hover { border-color: rgba(255,255,255,0.5); box-shadow: 0 30px 60px rgba(20,60,200,0.5); }
+  .kb-diff .kb-tag { color: #BDF3FF; }
+  .kb-diff p { color: rgba(255,255,255,0.9); }
+  .kb-msg.me { background: var(--white); color: #1D4ED8; font-weight: 600; }
+  .kb-msg.bot { background: rgba(6,18,42,0.35); }
+
+  .kb-module { background: var(--white); border: 1px solid transparent; box-shadow: 0 16px 36px rgba(0,0,0,0.3); }
+  .kb-module:hover { background: var(--white); border-color: #4DE0EE; box-shadow: 0 24px 50px rgba(47,107,255,0.4); }
+  .kb-module h4 { color: var(--navy); }
+  .kb-module p { color: var(--slate); }
+  .kb-ico { background: linear-gradient(135deg, #2F6BFF, #4DE0EE); color: var(--white); }
+
+  .kb-proof { background: linear-gradient(120deg, #2F6BFF 0%, #1E8FE6 55%, #22C3DD 100%); border: none; position: relative; overflow: hidden; box-shadow: 0 30px 70px rgba(47,107,255,0.4); }
+  .kb-proof::after { content: ""; position: absolute; width: 320px; height: 320px; right: -90px; top: -140px; border-radius: 50%; background: rgba(255,255,255,0.12); pointer-events: none; }
+  .kb-proof > * { position: relative; z-index: 1; }
+  .kb-proof-text p, .kb-proof .kb-lab { color: rgba(255,255,255,0.9); }
+  .kb-proof .kb-num { background: none; -webkit-background-clip: border-box; background-clip: border-box; color: var(--white); }
+  @media (min-width: 961px) { .kb-proof > div:not(.kb-proof-text) { border-left: 1px solid rgba(255,255,255,0.3); padding-left: 22px; } }
+
+  /* 8 phân hệ: xanh đen sáng hơn nền */
+  .kb-module { background: linear-gradient(160deg, #17336A 0%, #10254D 100%); border: 1px solid rgba(120,170,255,0.22); box-shadow: 0 16px 36px rgba(0,0,0,0.3); }
+  .kb-module:hover { background: linear-gradient(160deg, #1D3F80 0%, #142D5C 100%); border-color: #4DE0EE; box-shadow: 0 24px 50px rgba(47,107,255,0.35); }
+  .kb-module h4 { color: var(--white); }
+  .kb-module p { color: rgba(255,255,255,0.7); }
+
   @media (prefers-reduced-motion: reduce) {
     .float-phone-ring { animation: none; display:none; } html { scroll-behavior: auto; }
     .js .reveal { opacity: 1; transform: none; transition: none; }
@@ -472,7 +520,7 @@
     <div class="kobee-head">
       <img src="kobee-logo-white.png" alt="Kobee" class="kobee-logo">
       <div class="eyebrow kb-eyebrow" data-i18n="kb.eyebrow">Sản phẩm công nghệ của Nhân Lực Quốc Dân</div>
-      <h2 class="kb-title" data-i18n="kb.title">Vận hành cả doanh nghiệp nhân sự <span class="kb-grad">trên một nền tảng duy nhất</span></h2>
+      <h2 class="kb-title" data-i18n="kb.title">Vận hành cả doanh nghiệp nhân sự <span class="kb-grad kb-line">trên một nền tảng duy nhất</span></h2>
       <p class="kb-lead" data-i18n="kb.lead">Kobee là phần mềm quản trị được thiết kế riêng cho ngành tuyển dụng và cung ứng lao động. Từ tìm nguồn ứng viên, phỏng vấn, nhận việc đến chấm công và tính lương, tất cả nằm trên cùng một hồ sơ và cập nhật theo thời gian thực. Tạm biệt những file Excel rời rạc.</p>
       <div class="kb-ctas">
         <a class="btn-kobee" href="#contact"><span data-i18n="kb.ctaContact">Liên hệ tư vấn</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -495,15 +543,15 @@
 
     <div class="kb-flow">
       <div class="kb-step" style="--c:#2F6BFF"><b>01</b><h4 data-i18n="kb.s1t">Tìm nguồn</h4><p data-i18n="kb.s1">Webform, mạng xã hội, quảng cáo đổ về một kho dữ liệu chung</p></div>
-      <div class="kb-step" style="--c:#4DE0EE"><b>02</b><h4 data-i18n="kb.s2t">Tuyển dụng CRM</h4><p data-i18n="kb.s2">Ghép ứng viên với việc, theo sát từng vòng phỏng vấn</p></div>
-      <div class="kb-step" style="--c:#F7B538"><b>03</b><h4 data-i18n="kb.s3t">Onboarding</h4><p data-i18n="kb.s3">Chăm sóc người lao động mới, hỗ trợ 24/7 để giữ chân</p></div>
+      <div class="kb-step" style="--c:#4DE0EE;--t:#06122A"><b>02</b><h4 data-i18n="kb.s2t">Tuyển dụng CRM</h4><p data-i18n="kb.s2">Ghép ứng viên với việc, theo sát từng vòng phỏng vấn</p></div>
+      <div class="kb-step" style="--c:#F7B538;--t:#06122A"><b>03</b><h4 data-i18n="kb.s3t">Onboarding</h4><p data-i18n="kb.s3">Chăm sóc người lao động mới, hỗ trợ 24/7 để giữ chân</p></div>
       <div class="kb-step" style="--c:#EF5B5B"><b>04</b><h4 data-i18n="kb.s4t">HRM</h4><p data-i18n="kb.s4">Chấm công, tính lương, lưu trữ hồ sơ và hợp đồng</p></div>
       <div class="kb-step" style="--c:#2EBF7A"><b>05</b><h4 data-i18n="kb.s5t">Tái kích hoạt</h4><p data-i18n="kb.s5">Làm mới dữ liệu người đã nghỉ để sẵn sàng tuyển lại</p></div>
     </div>
     <p class="kb-flow-note" data-i18n="kb.flowNote">Không trùng dữ liệu. Không nhập lại. Một hồ sơ xuyên suốt cả vòng đời người lao động.</p>
 
     <div class="kb-sub">
-      <h3 data-i18n="kb.diffTitle">Thông minh hơn với AI, minh bạch hơn với hệ sinh thái</h3>
+      <h3 data-i18n="kb.diffTitle">Thông minh hơn với AI, <span class="kb-line">minh bạch hơn với hệ sinh thái</span></h3>
     </div>
     <div class="kb-diffs">
       <div class="kb-diff">
@@ -660,7 +708,7 @@ const trans = {
     "svc3.b3": "Thay thế hàng chục file Excel rời rạc bằng một hệ thống duy nhất",
     "svc3.link": "Khám phá Kobee",
     "kb.eyebrow": "Sản phẩm công nghệ của Nhân Lực Quốc Dân",
-    "kb.title": "Vận hành cả doanh nghiệp nhân sự <span class=\"kb-grad\">trên một nền tảng duy nhất</span>",
+    "kb.title": "Vận hành cả doanh nghiệp nhân sự <span class=\"kb-grad kb-line\">trên một nền tảng duy nhất</span>",
     "kb.lead": "Kobee là phần mềm quản trị được thiết kế riêng cho ngành tuyển dụng và cung ứng lao động. Từ tìm nguồn ứng viên, phỏng vấn, nhận việc đến chấm công và tính lương, tất cả nằm trên cùng một hồ sơ và cập nhật theo thời gian thực. Tạm biệt những file Excel rời rạc.",
     "kb.cta": "Khám phá Kobee",
     "kb.prefill": "Tôi muốn tìm hiểu phần mềm Kobee cho doanh nghiệp. Quy mô nhân sự hiện tại: ...",
@@ -679,7 +727,7 @@ const trans = {
     "kb.s5t": "Tái kích hoạt",
     "kb.s5": "Làm mới dữ liệu người đã nghỉ để sẵn sàng tuyển lại",
     "kb.flowNote": "Không trùng dữ liệu. Không nhập lại. Một hồ sơ xuyên suốt cả vòng đời người lao động.",
-    "kb.diffTitle": "Thông minh hơn với AI, minh bạch hơn với hệ sinh thái",
+    "kb.diffTitle": "Thông minh hơn với AI, <span class=\"kb-line\">minh bạch hơn với hệ sinh thái</span>",
     "kb.d1t": "Ghép đúng người, đúng việc trong vài giây",
     "kb.d1": "Kobee tự gợi ý việc làm phù hợp cho từng ứng viên và danh sách ứng viên phù hợp cho từng vị trí. Tuyển dụng viên không còn phải dò từng file.",
     "kb.d2t": "Hỏi một câu, có ngay câu trả lời",
@@ -814,7 +862,7 @@ const trans = {
     "svc3.b3": "Replaces dozens of scattered Excel files with a single system",
     "svc3.link": "Explore Kobee",
     "kb.eyebrow": "A technology product by Quoc Dan Manpower",
-    "kb.title": "Run your entire staffing business <span class=\"kb-grad\">on one single platform</span>",
+    "kb.title": "Run your entire staffing business <span class=\"kb-grad kb-line\">on one single platform</span>",
     "kb.lead": "Kobee is management software built specifically for recruitment and staffing supply. From sourcing and interviews to onboarding, timekeeping and payroll, everything lives on one profile and updates in real time. Say goodbye to scattered spreadsheets.",
     "kb.cta": "Explore Kobee",
     "kb.prefill": "I would like to learn more about Kobee for my business. Current headcount: ...",
@@ -833,7 +881,7 @@ const trans = {
     "kb.s5t": "Renew",
     "kb.s5": "Refresh data of past workers, ready to re-hire",
     "kb.flowNote": "No duplicate data. No re-entry. One profile across the entire worker lifecycle.",
-    "kb.diffTitle": "Smarter with AI, more transparent with an ecosystem",
+    "kb.diffTitle": "Smarter with AI, <span class=\"kb-line\">more transparent with an ecosystem</span>",
     "kb.d1t": "The right person for the right job, in seconds",
     "kb.d1": "Kobee suggests suitable jobs for each candidate and suitable candidates for each role. Recruiters no longer dig through files.",
     "kb.d2t": "Ask one question, get an instant answer",
